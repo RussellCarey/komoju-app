@@ -1,0 +1,761 @@
+Started POST "/" for 127.0.0.1 at 2022-08-29 20:36:11 +0900
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20220801090521_devise_create_users.rb
+20220801090544_create_jwt_denylist.rb
+20220802111520_add_fields_to_users.rb
+
+
+):
+  
+activerecord (7.0.3.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.3.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.3.1) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/" for 127.0.0.1 at 2022-08-29 20:36:12 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20220801090521_devise_create_users.rb
+20220801090544_create_jwt_denylist.rb
+20220802111520_add_fields_to_users.rb
+
+
+):
+  
+activerecord (7.0.3.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.3.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.3.1) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/" for 127.0.0.1 at 2022-08-29 20:36:14 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20220801090521_devise_create_users.rb
+20220801090544_create_jwt_denylist.rb
+20220802111520_add_fields_to_users.rb
+
+
+):
+  
+activerecord (7.0.3.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.3.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.3.1) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/" for 127.0.0.1 at 2022-08-29 20:36:18 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20220801090521_devise_create_users.rb
+20220801090544_create_jwt_denylist.rb
+20220802111520_add_fields_to_users.rb
+
+
+):
+  
+activerecord (7.0.3.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.3.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.3.1) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/" for 127.0.0.1 at 2022-08-29 20:36:26 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20220801090521_devise_create_users.rb
+20220801090544_create_jwt_denylist.rb
+20220802111520_add_fields_to_users.rb
+
+
+):
+  
+activerecord (7.0.3.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.3.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.3.1) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20220801090521)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220801090521"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateJwtDenylist (20220801090544)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "jwt_denylist" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "jti" varchar NOT NULL, "exp" datetime(6) NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_jwt_denylist_on_jti" ON "jwt_denylist" ("jti")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220801090544"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddFieldsToUsers (20220802111520)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "first_name" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "last_name" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220802111520"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-08-29 11:36:34.011057"], ["updated_at", "2022-08-29 11:36:34.011057"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/" for 127.0.0.1 at 2022-08-29 20:36:40 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 127.0.0.1 at 2022-08-29 20:36:42 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 127.0.0.1 at 2022-08-29 20:38:49 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 127.0.0.1 at 2022-08-29 20:38:59 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 127.0.0.1 at 2022-08-29 20:39:11 +0900
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:42:48 +0900
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:42:48 +0900
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:42:48 +0900
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:42:48 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"00gvy0n6m10l9ir20xjzk9k82", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"0vwz7glnqkrhqc1xx0hv05bxl", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:42:46Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:42:31Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfdf", "customer_given_name"=>"dsfsdfsdf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:42:46Z", "reason"=>nil, "test"=>{"id"=>"00gvy0n6m10l9ir20xjzk9k82", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"0vwz7glnqkrhqc1xx0hv05bxl", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:42:46Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:42:31Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfdf", "customer_given_name"=>"dsfsdfsdf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:42:46Z", "reason"=>nil}}
+Processing by TestController#webhook as */*
+Processing by TestController#webhook as */*
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"b5sglj04yholce6tibwzacvke", "type"=>"payment.updated", "resource"=>"event", "data"=>{"id"=>"0vwz7glnqkrhqc1xx0hv05bxl", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:42:46Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:42:31Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfdf", "customer_given_name"=>"dsfsdfsdf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:42:46Z", "reason"=>nil, "test"=>{"id"=>"b5sglj04yholce6tibwzacvke", "type"=>"payment.updated", "resource"=>"event", "data"=>{"id"=>"0vwz7glnqkrhqc1xx0hv05bxl", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:42:46Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:42:31Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfdf", "customer_given_name"=>"dsfsdfsdf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:42:46Z", "reason"=>nil}}
+  Parameters: {"id"=>"00gvy0n6m10l9ir20xjzk9k82", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"0vwz7glnqkrhqc1xx0hv05bxl", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:42:46Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:42:31Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfdf", "customer_given_name"=>"dsfsdfsdf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:42:46Z", "reason"=>nil, "test"=>{"id"=>"00gvy0n6m10l9ir20xjzk9k82", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"0vwz7glnqkrhqc1xx0hv05bxl", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:42:46Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:42:31Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfdf", "customer_given_name"=>"dsfsdfsdf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:42:46Z", "reason"=>nil}}
+  Parameters: {"id"=>"b5sglj04yholce6tibwzacvke", "type"=>"payment.updated", "resource"=>"event", "data"=>{"id"=>"0vwz7glnqkrhqc1xx0hv05bxl", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:42:46Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:42:31Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfdf", "customer_given_name"=>"dsfsdfsdf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:42:46Z", "reason"=>nil, "test"=>{"id"=>"b5sglj04yholce6tibwzacvke", "type"=>"payment.updated", "resource"=>"event", "data"=>{"id"=>"0vwz7glnqkrhqc1xx0hv05bxl", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:42:46Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:42:31Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfdf", "customer_given_name"=>"dsfsdfsdf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:42:46Z", "reason"=>nil}}
+Completed 204 No Content in 20ms (ActiveRecord: 0.0ms | Allocations: 5532)
+
+
+Completed 204 No Content in 17ms (ActiveRecord: 0.0ms | Allocations: 5183)
+
+
+Completed 204 No Content in 17ms (ActiveRecord: 0.0ms | Allocations: 5029)
+
+
+Completed 204 No Content in 19ms (ActiveRecord: 0.0ms | Allocations: 5226)
+
+
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:44:19 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 204 No Content in 9ms (ActiveRecord: 0.0ms | Allocations: 3281)
+
+
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:46:49 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 1ms (Allocations: 504)
+
+
+  
+TypeError (no implicit conversion of ActionDispatch::Request into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:46:50 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (Allocations: 114)
+
+
+  
+TypeError (no implicit conversion of ActionDispatch::Request into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:46:52 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (Allocations: 110)
+
+
+  
+TypeError (no implicit conversion of ActionDispatch::Request into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:46:56 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (Allocations: 110)
+
+
+  
+TypeError (no implicit conversion of ActionDispatch::Request into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:47:04 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 1ms (Allocations: 492)
+
+
+  
+TypeError (no implicit conversion of StringIO into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:47:17 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3252)
+
+
+  
+TypeError (no implicit conversion of StringIO into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:47:18 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 129)
+
+
+  
+TypeError (no implicit conversion of StringIO into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:47:20 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+  
+TypeError (no implicit conversion of StringIO into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:47:21 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+  
+TypeError (no implicit conversion of StringIO into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:47:24 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 112)
+
+
+  
+TypeError (no implicit conversion of StringIO into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:47:32 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 112)
+
+
+  
+TypeError (no implicit conversion of StringIO into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:47:48 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 204 No Content in 1ms (Allocations: 531)
+
+
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:51:55 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 204 No Content in 1ms (Allocations: 643)
+
+
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:52:20 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 1ms (Allocations: 492)
+
+
+  
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:52:21 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (Allocations: 118)
+
+
+  
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:52:23 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 1ms (Allocations: 118)
+
+
+  
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:52:27 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (Allocations: 118)
+
+
+  
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:52:35 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (Allocations: 118)
+
+
+  
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:52:51 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (Allocations: 118)
+
+
+  
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:53:21 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 1ms (Allocations: 497)
+
+
+  
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:53:22 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (Allocations: 118)
+
+
+  
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:53:25 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (Allocations: 118)
+
+
+  
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:53:29 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 0ms (Allocations: 118)
+
+
+  
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:53:34 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 204 No Content in 1ms (Allocations: 480)
+
+
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:53:37 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 204 No Content in 0ms (Allocations: 99)
+
+
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:53:52 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 204 No Content in 1ms (Allocations: 480)
+
+
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:54:33 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 204 No Content in 1ms (Allocations: 577)
+
+
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:55:04 +0900
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/test_controller.rb:5: syntax error, unexpected local variable or method, expecting ')'
+        puts data.type
+        ^~~~
+):
+  
+app/controllers/test_controller.rb:5: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/test_controller.rb:5: syntax error, unexpected local variable or method, expecting ')'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:55:05 +0900
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/test_controller.rb:5: syntax error, unexpected local variable or method, expecting ')'
+        puts data.type
+        ^~~~
+):
+  
+app/controllers/test_controller.rb:5: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/test_controller.rb:5: syntax error, unexpected local variable or method, expecting ')'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:55:07 +0900
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/test_controller.rb:5: syntax error, unexpected local variable or method, expecting ')'
+        puts data.type
+        ^~~~
+):
+  
+app/controllers/test_controller.rb:5: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/test_controller.rb:5: syntax error, unexpected local variable or method, expecting ')'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:55:11 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 2ms (Allocations: 1905)
+
+
+  
+NoMethodError (undefined method `type' for {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}:Hash
+
+        puts data.type
+                 ^^^^^):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:55:15 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 3ms (Allocations: 1429)
+
+
+  
+NoMethodError (undefined method `type' for {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}:Hash
+
+        puts data.type
+                 ^^^^^):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:55:16 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 3ms (Allocations: 1430)
+
+
+  
+NoMethodError (undefined method `type' for {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}:Hash
+
+        puts data.type
+                 ^^^^^):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:55:18 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 3ms (Allocations: 1429)
+
+
+  
+NoMethodError (undefined method `type' for {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}:Hash
+
+        puts data.type
+                 ^^^^^):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:55:19 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 3ms (Allocations: 1430)
+
+
+  
+NoMethodError (undefined method `type' for {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}:Hash
+
+        puts data.type
+                 ^^^^^):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:55:22 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 2ms (Allocations: 1430)
+
+
+  
+NoMethodError (undefined method `type' for {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}:Hash
+
+        puts data.type
+                 ^^^^^):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:55:30 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 3ms (Allocations: 1430)
+
+
+  
+NoMethodError (undefined method `type' for {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}:Hash
+
+        puts data.type
+                 ^^^^^):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:55:35 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 2ms (Allocations: 1429)
+
+
+  
+NoMethodError (undefined method `type' for {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}:Hash
+
+        puts data.type
+                 ^^^^^):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:55:46 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 500 Internal Server Error in 3ms (Allocations: 1430)
+
+
+  
+NoMethodError (undefined method `type' for {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}:Hash
+
+        puts data.type
+                 ^^^^^):
+  
+app/controllers/test_controller.rb:5:in `webhook'
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 20:55:55 +0900
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil, "test"=>{"id"=>"0mkkoqmxoxs9oy515n7ch3xlz", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"8ram6zn4u4jk2s019873ellvq", "resource"=>"payment", "status"=>"captured", "amount"=>2000, "tax"=>200, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"russell_carey@hotmail.co.uk", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>4, "year"=>2025}, "payment_method_fee"=>0, "total"=>2200, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T11:43:33Z", "external_order_num"=>nil, "metadata"=>{}, "created_at"=>"2022-08-29T11:43:22Z", "amount_refunded"=>0, "locale"=>"en", "session"=>nil, "customer_family_name"=>"sdfsdf", "customer_given_name"=>"sdfdsf", "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T11:43:33Z", "reason"=>nil}}
+Completed 204 No Content in 1ms (Allocations: 429)
+
+
