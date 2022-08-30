@@ -759,3 +759,1396 @@ Processing by TestController#webhook as */*
 Completed 204 No Content in 1ms (Allocations: 429)
 
 
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 21:19:41 +0900
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 21:19:41 +0900
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 21:19:41 +0900
+Started POST "/komoju" for 127.0.0.1 at 2022-08-29 21:19:41 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#webhook as */*
+Processing by TestController#webhook as */*
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"4o8lzy05p0k75bxn09lmy3ed6", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"0dfn5kdayrslj2pn9ykvhdjp6", "resource"=>"payment", "status"=>"captured", "amount"=>1000, "tax"=>100, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"test@example.com", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>1, "year"=>2025}, "payment_method_fee"=>0, "total"=>1100, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T12:19:39Z", "external_order_num"=>"123", "metadata"=>{"foobar"=>"hoge"}, "created_at"=>"2022-08-29T12:19:39Z", "amount_refunded"=>0, "locale"=>"ja", "session"=>nil, "customer_family_name"=>nil, "customer_given_name"=>nil, "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T12:19:39Z", "reason"=>nil, "test"=>{"id"=>"4o8lzy05p0k75bxn09lmy3ed6", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"0dfn5kdayrslj2pn9ykvhdjp6", "resource"=>"payment", "status"=>"captured", "amount"=>1000, "tax"=>100, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"test@example.com", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>1, "year"=>2025}, "payment_method_fee"=>0, "total"=>1100, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T12:19:39Z", "external_order_num"=>"123", "metadata"=>{"foobar"=>"hoge"}, "created_at"=>"2022-08-29T12:19:39Z", "amount_refunded"=>0, "locale"=>"ja", "session"=>nil, "customer_family_name"=>nil, "customer_given_name"=>nil, "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T12:19:39Z", "reason"=>nil}}
+Processing by TestController#webhook as */*
+  Parameters: {"id"=>"0qrpdybfnx8xszxroot2vul8n", "type"=>"payment.updated", "resource"=>"event", "data"=>{"id"=>"0dfn5kdayrslj2pn9ykvhdjp6", "resource"=>"payment", "status"=>"captured", "amount"=>1000, "tax"=>100, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"test@example.com", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>1, "year"=>2025}, "payment_method_fee"=>0, "total"=>1100, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T12:19:39Z", "external_order_num"=>"123", "metadata"=>{"foobar"=>"hoge"}, "created_at"=>"2022-08-29T12:19:39Z", "amount_refunded"=>0, "locale"=>"ja", "session"=>nil, "customer_family_name"=>nil, "customer_given_name"=>nil, "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T12:19:39Z", "reason"=>nil, "test"=>{"id"=>"0qrpdybfnx8xszxroot2vul8n", "type"=>"payment.updated", "resource"=>"event", "data"=>{"id"=>"0dfn5kdayrslj2pn9ykvhdjp6", "resource"=>"payment", "status"=>"captured", "amount"=>1000, "tax"=>100, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"test@example.com", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>1, "year"=>2025}, "payment_method_fee"=>0, "total"=>1100, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T12:19:39Z", "external_order_num"=>"123", "metadata"=>{"foobar"=>"hoge"}, "created_at"=>"2022-08-29T12:19:39Z", "amount_refunded"=>0, "locale"=>"ja", "session"=>nil, "customer_family_name"=>nil, "customer_given_name"=>nil, "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T12:19:39Z", "reason"=>nil}}
+  Parameters: {"id"=>"4o8lzy05p0k75bxn09lmy3ed6", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"0dfn5kdayrslj2pn9ykvhdjp6", "resource"=>"payment", "status"=>"captured", "amount"=>1000, "tax"=>100, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"test@example.com", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>1, "year"=>2025}, "payment_method_fee"=>0, "total"=>1100, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T12:19:39Z", "external_order_num"=>"123", "metadata"=>{"foobar"=>"hoge"}, "created_at"=>"2022-08-29T12:19:39Z", "amount_refunded"=>0, "locale"=>"ja", "session"=>nil, "customer_family_name"=>nil, "customer_given_name"=>nil, "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T12:19:39Z", "reason"=>nil, "test"=>{"id"=>"4o8lzy05p0k75bxn09lmy3ed6", "type"=>"payment.captured", "resource"=>"event", "data"=>{"id"=>"0dfn5kdayrslj2pn9ykvhdjp6", "resource"=>"payment", "status"=>"captured", "amount"=>1000, "tax"=>100, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"test@example.com", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>1, "year"=>2025}, "payment_method_fee"=>0, "total"=>1100, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T12:19:39Z", "external_order_num"=>"123", "metadata"=>{"foobar"=>"hoge"}, "created_at"=>"2022-08-29T12:19:39Z", "amount_refunded"=>0, "locale"=>"ja", "session"=>nil, "customer_family_name"=>nil, "customer_given_name"=>nil, "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T12:19:39Z", "reason"=>nil}}
+  Parameters: {"id"=>"0qrpdybfnx8xszxroot2vul8n", "type"=>"payment.updated", "resource"=>"event", "data"=>{"id"=>"0dfn5kdayrslj2pn9ykvhdjp6", "resource"=>"payment", "status"=>"captured", "amount"=>1000, "tax"=>100, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"test@example.com", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>1, "year"=>2025}, "payment_method_fee"=>0, "total"=>1100, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T12:19:39Z", "external_order_num"=>"123", "metadata"=>{"foobar"=>"hoge"}, "created_at"=>"2022-08-29T12:19:39Z", "amount_refunded"=>0, "locale"=>"ja", "session"=>nil, "customer_family_name"=>nil, "customer_given_name"=>nil, "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T12:19:39Z", "reason"=>nil, "test"=>{"id"=>"0qrpdybfnx8xszxroot2vul8n", "type"=>"payment.updated", "resource"=>"event", "data"=>{"id"=>"0dfn5kdayrslj2pn9ykvhdjp6", "resource"=>"payment", "status"=>"captured", "amount"=>1000, "tax"=>100, "customer"=>nil, "payment_deadline"=>"2022-08-31T14:59:59Z", "payment_details"=>{"type"=>"credit_card", "email"=>"test@example.com", "brand"=>"visa", "last_four_digits"=>"1111", "month"=>1, "year"=>2025}, "payment_method_fee"=>0, "total"=>1100, "currency"=>"JPY", "description"=>nil, "captured_at"=>"2022-08-29T12:19:39Z", "external_order_num"=>"123", "metadata"=>{"foobar"=>"hoge"}, "created_at"=>"2022-08-29T12:19:39Z", "amount_refunded"=>0, "locale"=>"ja", "session"=>nil, "customer_family_name"=>nil, "customer_given_name"=>nil, "refunds"=>[], "refund_requests"=>[]}, "created_at"=>"2022-08-29T12:19:39Z", "reason"=>nil}}
+Completed 204 No Content in 6ms (ActiveRecord: 0.0ms | Allocations: 3726)
+
+
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 2732)
+
+
+Completed 204 No Content in 5ms (ActiveRecord: 0.0ms | Allocations: 3308)
+
+
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 2887)
+
+
+Started POST "/games" for ::1 at 2022-08-29 21:49:05 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_games as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 5226)
+
+
+  
+NameError (uninitialized constant TestController::Apicalypse
+
+        api = Apicalypse.new(api_endpoint, request_headers)
+              ^^^^^^^^^^):
+  
+app/controllers/test_controller.rb:12:in `get_games'
+Started POST "/games" for ::1 at 2022-08-29 21:50:03 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_games as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 5226)
+
+
+  
+NameError (uninitialized constant TestController::Apicalypse
+
+        api = Apicalypse.new(api_endpoint, request_headers)
+              ^^^^^^^^^^):
+  
+app/controllers/test_controller.rb:12:in `get_games'
+Started POST "/games" for ::1 at 2022-08-29 21:50:22 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_games as */*
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 0.0ms | Allocations: 4622)
+
+
+  
+RuntimeError (Request failed with status 403: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+Bad request.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: 1yZZfC2MKIu0PMVJlVtT7t1gjN_AARcxkdTjZDxTGIOmPZL2IvWsvA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+<script>(function(){var js = "window['__CF$cv$params']={r:'7425697b6decaf4e',m:'4Vdg_ktOmOwNOMto7Z0cY6oEmBvRdhpMIwdvfVkKZQY-1661777422-0-AYZlokmc+Y1CUnPk7Ia86oCoa37djZkvNzae/P6BkYhtpuQwlMS0wZ7QZQdDut/Eoe8DZ7Yd6zrOSU+TpShs2NToroQOGyxOhgh9yf5IPXIvzHqfvlxwkou6yEESuRdwwQ==',s:[0xb1c10b85b0,0xac2a135695],u:'/cdn-cgi/challenge-platform/h/b'};var _cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/cb/invisible.js?cb=7425697b6decaf4e',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"7425697b6decaf4e","token":"755757fdf7d54e139710bcb8ea4fba72","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+</BODY></HTML>):
+  
+app/controllers/test_controller.rb:21:in `get_games'
+Started POST "/games" for ::1 at 2022-08-29 21:51:58 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_games as */*
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.0ms | Allocations: 4631)
+
+
+  
+RuntimeError (Request failed with status 403: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+Bad request.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: Z3JbOYN5VFbFhMLG_9cbSsSMSdGWluJQuLXX-LYlmArP2Bp9DrN6Og==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+<script>(function(){var js = "window['__CF$cv$params']={r:'74256bd1694c8a9e',m:'wzwwC9Y0ZLHncC2Q7n4.bzEot2jlvBtxLY3dUVXOZQ8-1661777518-0-AXAcID+YECr5JC76o7Cq/DA6XwTj4DT2t4ipft6E61CRRT86rGX1SfKXX0bGwvtagwot8JtFFv4G7QjfdUe1cAw3QJPl4DA+b/wWng0BHshuwqezHLrlU2IrdBms4RyjMw==',s:[0x6650e1971e,0x3e3431433c],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"74256bd1694c8a9e","token":"755757fdf7d54e139710bcb8ea4fba72","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+</BODY></HTML>):
+  
+app/controllers/test_controller.rb:21:in `get_games'
+Started POST "/games" for ::1 at 2022-08-29 21:52:59 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/test_controller.rb:17: syntax error, unexpected ')'
+        .fields(*)
+                 ^
+):
+  
+app/controllers/test_controller.rb:17: syntax error, unexpected ')'
+app/controllers/test_controller.rb:17: syntax error, unexpected ')'
+Started POST "/games" for ::1 at 2022-08-29 21:53:09 +0900
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_games as */*
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms | Allocations: 4624)
+
+
+  
+RuntimeError (Request failed with status 403: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+Bad request.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: U7qzkCRNDlJ30WrcJwRNgJ5pZQO179j-Ffsrnh1pGomBrIXkaqdqEA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+<script>(function(){var js = "window['__CF$cv$params']={r:'74256d91af4c34f3',m:'hNjfOzl.HReMLnoEZLpcx04a9FF_jIN5a9XLCioFL9Y-1661777590-0-AaFOMvt1dPZnIKb+MTVgrJnjCd9p077hAhZyHTlZ+oy02Aj8bRag+pU3jkgmCVms/ux8WoGHo5FSIvOlx5nb40wotFjSgaiK8aZyYMD7HBvX0or3gQjICT8lSmQ23W0LLQ==',s:[0xa02e7b195a,0xfd308cca1c],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"74256d91af4c34f3","token":"755757fdf7d54e139710bcb8ea4fba72","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+</BODY></HTML>):
+  
+app/controllers/test_controller.rb:20:in `get_games'
+Started POST "/games" for ::1 at 2022-08-29 21:53:36 +0900
+Processing by TestController#get_games as */*
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 0.0ms | Allocations: 1092)
+
+
+  
+RuntimeError (Request failed with status 403: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+Bad request.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: tbF9IL7-1J_OCxF-O_Jw9t3BMtye9oOYzPn-EiQ-ZqtGi9x83C3mww==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+<script>(function(){var js = "window['__CF$cv$params']={r:'74256e394de12053',m:'tyg2y5sVuXwWTxzhcRPeY5Z0ODl3OnKp4UgKTlqoXjE-1661777616-0-AdTOmE0vzo4n3MQq9pmFn+xAeMWTRNqtRXXoR9wiBHDYnwlamYZ1pUDJhj/Uh+Ug+Um56IMfJeRbkh3+RxgpV+OigpWZY/j3zDqUNutget+WhieBe3YbNdAKtTzkChhKqg==',s:[0x1c0763584e,0xddd93e51a5],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"74256e394de12053","token":"755757fdf7d54e139710bcb8ea4fba72","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+</BODY></HTML>):
+  
+app/controllers/test_controller.rb:20:in `get_games'
+Started POST "/games" for ::1 at 2022-08-29 21:53:41 +0900
+Processing by TestController#get_games as */*
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms | Allocations: 1061)
+
+
+  
+RuntimeError (Request failed with status 403: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+Bad request.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: -p8KtLsDtqcePC6kjiVWuqmMGzahl3Mm-TI7qFY9ZAE1LmxKG4zdog==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+<script>(function(){var js = "window['__CF$cv$params']={r:'74256e58198034f3',m:'b_mU3bJUbQgb0qWrCrnn8KEF2sWgkZvW9ihIq8B0g1w-1661777621-0-AVPzGbildia8eU7qOjc1IlyYaw7DQGkXinxON8ioDWI7SlPW7oQwrmpZdVnbNARCPx83rDEuzDZ4pSQEOzk8p6yfOi0P+tLkNy7WdaessjRDD0oye45E4VIaLQyntlqpiQ==',s:[0xec8c01f9c1,0xaac50aebe1],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"74256e58198034f3","token":"755757fdf7d54e139710bcb8ea4fba72","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+</BODY></HTML>):
+  
+app/controllers/test_controller.rb:20:in `get_games'
+Started GET "/data" for ::1 at 2022-08-30 07:52:43 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+LoadError (cannot load such file -- apicalypse):
+  
+app/controllers/test_controller.rb:1:in `<main>'
+Started GET "/data" for ::1 at 2022-08-30 07:52:56 +0900
+Processing by TestController#get_game_data as */*
+Completed 204 No Content in 1086ms (Allocations: 5876)
+
+
+Started GET "/data" for ::1 at 2022-08-30 07:55:36 +0900
+Processing by TestController#get_game_data as */*
+Completed 500 Internal Server Error in 385ms (Allocations: 4022)
+
+
+  
+NameError (undefined local variable or method `ok' for #<TestController:0x000000000280f0>
+
+        render json: { data: req }, status: ok
+                                            ^^):
+  
+app/controllers/test_controller.rb:14:in `get_game_data'
+Started GET "/data" for ::1 at 2022-08-30 07:55:44 +0900
+Processing by TestController#get_game_data as */*
+Completed 200 OK in 935ms (Views: 7.6ms | Allocations: 6087)
+
+
+Started GET "/data" for ::1 at 2022-08-30 08:00:17 +0900
+  
+AbstractController::ActionNotFound (The action 'get_game_data' could not be found for TestController
+Did you mean?  get_price_data):
+  
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden-jwt_auth (0.6.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.6.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.2.4) lib/rack/builder.rb:244:in `call'
+warden-jwt_auth (0.6.0) lib/warden/jwt_auth/middleware.rb:22:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/data" for ::1 at 2022-08-30 08:00:31 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 11ms (Allocations: 826)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for 127.0.0.1:80)):
+  
+app/controllers/test_controller.rb:14:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:02:30 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 3185)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for 127.0.0.1:80)):
+  
+app/controllers/test_controller.rb:15:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:03:37 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 11ms (Allocations: 780)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for 127.0.0.1:80)):
+  
+app/controllers/test_controller.rb:15:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:07:02 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 3187)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for 127.0.0.1:80)):
+  
+app/controllers/test_controller.rb:15:in `get_price_data'
+Started GET "/games" for ::1 at 2022-08-30 08:07:24 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/games"):
+  
+Started GET "/data" for ::1 at 2022-08-30 08:07:40 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 15ms (Allocations: 779)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for 127.0.0.1:80)):
+  
+app/controllers/test_controller.rb:15:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:08:52 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 12ms (Allocations: 768)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for 127.0.0.1:80)):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:09:42 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 3187)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for 127.0.0.1:80)):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:10:43 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 10ms (Allocations: 779)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for 127.0.0.1:80)):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:10:50 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 10ms (Allocations: 779)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for 127.0.0.1:80)):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:10:55 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 3187)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for 127.0.0.1:80)):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:12:07 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 6ms (Allocations: 497)
+
+
+  
+Errno::ENOENT (No such file or directory - www.google.com):
+  
+app/controllers/test_controller.rb:17:in ``'
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:12:32 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 3187)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for 127.0.0.1:80)):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:13:15 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 1337ms (ActiveRecord: 0.0ms | Allocations: 8205)
+
+
+  
+NameError (undefined local variable or method `req' for #<TestController:0x00000000020828>
+
+        render json: { data: req }, status: :ok
+                             ^^^
+Did you mean?  redo):
+  
+app/controllers/test_controller.rb:23:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:13:25 +0900
+Processing by TestController#get_price_data as */*
+Completed 200 OK in 1102ms (Views: 9.6ms | Allocations: 7458)
+
+
+Started GET "/data" for ::1 at 2022-08-30 08:14:10 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 3184)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for 127.0.0.1:80)):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:17:11 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2809)
+
+
+  
+URI::InvalidURIError (bad URI(no host provided): http://):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:18:31 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 11ms (Allocations: 1687)
+
+
+  
+NoMethodError (undefined method `encode' for URI:Module
+
+        url = URI.encode(`https://rawg.io/api/games/3498?key=f0411c841de74da1818f464ffe5c0aa5`)
+                 ^^^^^^^):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:19:56 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 2809)
+
+
+  
+URI::InvalidURIError (bad URI(no host provided): http://):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:20:57 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 10ms (Allocations: 4256)
+
+
+  
+NoMethodError (undefined method `match' for #<URI::Generic >
+
+      url = 'http://' + url unless url.match(%r{\A[a-z][a-z0-9+.-]*://}i)
+                                      ^^^^^^):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:21:42 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 11ms (Allocations: 1646)
+
+
+  
+NoMethodError (undefined method `encode' for URI:Module
+
+        req = RestClient.get(URI.parse(URI.encode(`https://rawg.io/api/games/3498?key=f0411c841de74da1818f464ffe5c0aa5`)))
+                                          ^^^^^^^):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:21:51 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 9ms (Allocations: 527)
+
+
+  
+URI::InvalidURIError (bad URI(no host provided): http://):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:24:05 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 5ms (Allocations: 493)
+
+
+  
+Errno::ENOENT (No such file or directory - https://rawg.io/api/games/3498):
+  
+app/controllers/test_controller.rb:17:in ``'
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:24:26 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 6ms (Allocations: 485)
+
+
+  
+Errno::ENOENT (No such file or directory - https://rawg.io/api/games/3498):
+  
+app/controllers/test_controller.rb:17:in ``'
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:25:30 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 5ms (Allocations: 493)
+
+
+  
+Errno::ENOENT (No such file or directory - https://rawg.io/api/games/3498/):
+  
+app/controllers/test_controller.rb:17:in ``'
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:31:22 +0900
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/test_controller.rb:18: syntax error, unexpected local variable or method, expecting '}'
+        puts req
+        ^~~~
+):
+  
+app/controllers/test_controller.rb:18: syntax error, unexpected local variable or method, expecting '}'
+app/controllers/test_controller.rb:18: syntax error, unexpected local variable or method, expecting '}'
+Started GET "/data" for ::1 at 2022-08-30 08:31:44 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 6ms (Allocations: 489)
+
+
+  
+Errno::ENOENT (No such file or directory - https://rawg.io/api/games/3498):
+  
+app/controllers/test_controller.rb:17:in ``'
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:32:32 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 6ms (Allocations: 481)
+
+
+  
+Errno::ENOENT (No such file or directory - https://rawg.io/api/games/3498):
+  
+app/controllers/test_controller.rb:17:in ``'
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:32:51 +0900
+Processing by TestController#get_price_data as */*
+Completed 200 OK in 1093ms (Views: 1.2ms | Allocations: 5111)
+
+
+Started GET "/data" for ::1 at 2022-08-30 08:33:15 +0900
+Processing by TestController#get_price_data as */*
+Completed 200 OK in 1153ms (Views: 1.4ms | Allocations: 3000)
+
+
+Started GET "/data" for ::1 at 2022-08-30 08:33:32 +0900
+Processing by TestController#get_price_data as */*
+Completed 200 OK in 936ms (Views: 1.1ms | Allocations: 2896)
+
+
+Started GET "/data" for ::1 at 2022-08-30 08:33:48 +0900
+Processing by TestController#get_price_data as */*
+Completed 200 OK in 991ms (Views: 2.7ms | Allocations: 6456)
+
+
+Started GET "/data" for ::1 at 2022-08-30 08:34:35 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 1127ms (Allocations: 5623)
+
+
+  
+NameError (undefined local variable or method `data' for #<TestController:0x00000000055028>
+
+        render json: { data:  }, status: :ok
+                       ^^^^^):
+  
+app/controllers/test_controller.rb:21:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:34:43 +0900
+Processing by TestController#get_price_data as */*
+Completed 500 Internal Server Error in 788ms (Allocations: 2599)
+
+
+  
+RestClient::BadGateway (502 Bad Gateway):
+  
+app/controllers/test_controller.rb:16:in `get_price_data'
+Started GET "/data" for ::1 at 2022-08-30 08:39:27 +0900
+Processing by TestController#get_price_data as */*
+Completed 200 OK in 1058ms (Views: 2.2ms | Allocations: 6478)
+
+
+Started GET "/data" for ::1 at 2022-08-30 08:39:54 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+Completed 200 OK in 950ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 9737)
+
+
+Started GET "/data" for ::1 at 2022-08-30 08:40:06 +0900
+Processing by TestController#get_price_data as */*
+Completed 200 OK in 985ms (Views: 2.3ms | Allocations: 6398)
+
+
+Started GET "/data?game_id=3498" for ::1 at 2022-08-30 08:40:31 +0900
+Processing by TestController#get_price_data as */*
+  Parameters: {"game_id"=>"3498"}
+Completed 200 OK in 1040ms (Views: 2.1ms | Allocations: 6314)
+
+
+Started GET "/data?game_id=3498" for ::1 at 2022-08-30 08:45:21 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+  Parameters: {"game_id"=>"3498"}
+Completed 500 Internal Server Error in 1098ms (ActiveRecord: 0.0ms | Allocations: 9081)
+
+
+  
+NameError (undefined local variable or method `parsed' for #<TestController:0x00000000020918>
+
+        render json: { data: parsed  }, status: :ok
+                             ^^^^^^
+Did you mean?  parse_uri):
+  
+app/controllers/test_controller.rb:20:in `get_price_data'
+Started GET "/data?game_id=3498" for ::1 at 2022-08-30 08:45:33 +0900
+Processing by TestController#get_price_data as */*
+  Parameters: {"game_id"=>"3498"}
+Completed 200 OK in 952ms (Views: 4.3ms | Allocations: 6498)
+
+
+Started GET "/data?game_id=3498" for ::1 at 2022-08-30 08:46:01 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+  Parameters: {"game_id"=>"3498"}
+Completed 200 OK in 1007ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 9822)
+
+
+Started GET "/data?game_id=3498" for ::1 at 2022-08-30 08:46:19 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+  Parameters: {"game_id"=>"3498"}
+Completed 200 OK in 1025ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 9806)
+
+
+Started GET "/data?game_id=3498" for ::1 at 2022-08-30 08:46:52 +0900
+Processing by TestController#get_price_data as */*
+  Parameters: {"game_id"=>"3498"}
+Completed 200 OK in 1082ms (Views: 4.0ms | Allocations: 6424)
+
+
+Started GET "/data?game_id=3498" for ::1 at 2022-08-30 08:47:27 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+  Parameters: {"game_id"=>"3498"}
+Completed 200 OK in 997ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 9811)
+
+
+Started GET "/data?game_id=3498" for ::1 at 2022-08-30 08:47:55 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+  Parameters: {"game_id"=>"3498"}
+Completed 500 Internal Server Error in 1086ms (ActiveRecord: 0.0ms | Allocations: 8810)
+
+
+  
+NoMethodError (undefined method `calculate_details' for #<TestController:0x000000000209e0>
+
+        price = calculate_details(req)
+                ^^^^^^^^^^^^^^^^^
+Did you mean?  calculate_price):
+  
+app/controllers/test_controller.rb:17:in `get_price_data'
+Started GET "/data?game_id=3498" for ::1 at 2022-08-30 08:48:21 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+  Parameters: {"game_id"=>"3498"}
+Completed 200 OK in 1160ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 9774)
+
+
+Started GET "/data?game_id=3498" for ::1 at 2022-08-30 08:52:23 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TestController#get_price_data as */*
+  Parameters: {"game_id"=>"3498"}
+Completed 500 Internal Server Error in 802ms (ActiveRecord: 0.0ms | Allocations: 9177)
+
+
+  
+NameError (undefined local variable or method `req' for #<TestController:0x00000000020918>
+
+        render json: { data: req, price: price  }, status: :ok
+                             ^^^
+Did you mean?  redo):
+  
+app/controllers/test_controller.rb:18:in `get_price_data'
+Started GET "/data?game_id=3498" for ::1 at 2022-08-30 08:52:35 +0900
+Processing by TestController#get_price_data as */*
+  Parameters: {"game_id"=>"3498"}
+Completed 200 OK in 363ms (Views: 0.7ms | Allocations: 3346)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePurchasesTable (20220830015641)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePurchasesTable (20220830015641)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "purchases_tables" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "order_id" integer NOT NULL, "total" float NOT NULL, "status" integer DEFAULT 0, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220830015641"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPurchase Load (0.3ms)[0m  [1m[34mSELECT "purchases".* FROM "purchases"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePurchasesTable (20220830015641)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "purchases"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePurchasesTable (20220830015641)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "purchases_tables"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220830015641"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePurchasesTable (20220830015641)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "purchases" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "order_id" integer NOT NULL, "total" float NOT NULL, "status" integer DEFAULT 0, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220830015641"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPurchase Load (0.4ms)[0m  [1m[34mSELECT "purchases".* FROM "purchases"[0m
+Started POST "/users/sign_up" for 127.0.0.1 at 2022-08-30 11:21:14 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_up"):
+  
+Started POST "/create_token" for ::1 at 2022-08-30 12:02:30 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+...oad, headers={generate_headers})
+...                              ^
+/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:22: syntax error, unexpected '}', expecting =>
+...oad, headers={generate_headers})
+...                              ^
+):
+  
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 12:03:22 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+...oad, headers={generate_headers})
+...                              ^
+/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:22: syntax error, unexpected '}', expecting =>
+...oad, headers={generate_headers})
+...                              ^
+):
+  
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 12:03:38 +0900
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+...oad, headers={generate_headers})
+...                              ^
+/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:22: syntax error, unexpected '}', expecting =>
+...oad, headers={generate_headers})
+...                              ^
+):
+  
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 12:04:53 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+...oad, headers={generate_headers})
+...                              ^
+/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:22: syntax error, unexpected '}', expecting =>
+...oad, headers={generate_headers})
+...                              ^
+):
+  
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:22: syntax error, unexpected '}', expecting =>
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 12:05:27 +0900
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+...oad, headers={generate_headers})
+...                              ^
+):
+  
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 12:05:34 +0900
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+...oad, headers={generate_headers})
+...                              ^
+):
+  
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 12:06:11 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+...ad, headers: {generate_headers})
+...                              ^
+):
+  
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 12:06:23 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+...ad, headers: {generate_headers})
+...                              ^
+):
+  
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 12:06:37 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5094)
+
+
+  
+NameError (undefined local variable or method `generate_headers' for Komoju::Token:Module
+
+            token_req = RestClient.post('https://komoju.com/api/v1/tokens', payload, headers: generate_headers)
+                                                                                              ^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:11:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:08:58 +0900
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5096)
+
+
+  
+NameError (undefined local variable or method `generate_headers' for Komoju::Token:Module
+
+            token_req = RestClient.post('https://komoju.com/api/v1/tokens', payload, headers: generate_headers)
+                                                                                              ^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:11:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:09:04 +0900
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+...ad, headers: {generate_headers})
+...                              ^
+):
+  
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/concerns/komoju.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 12:09:27 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4987)
+
+
+  
+NoMethodError (undefined method `generate_headers' for Komoju::Token:Module
+
+            token_req = RestClient.post('https://komoju.com/api/v1/tokens', payload, headers = generate_headers())
+                                                                                               ^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:11:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:10:08 +0900
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 5008)
+
+
+  
+NameError (undefined local variable or method `generate_headers' for Komoju::Token:Module
+
+            puts generate_headers
+                 ^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:11:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:10:31 +0900
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5007)
+
+
+  
+NameError (undefined local variable or method `generate_headers' for Komoju::Token:Module
+
+            puts generate_headers
+                 ^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:11:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:13:04 +0900
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5004)
+
+
+  
+NameError (undefined local variable or method `generate_headers' for Komoju::Token:Module
+
+            puts generate_headers
+                 ^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:14:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:13:44 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4996)
+
+
+  
+NameError (undefined local variable or method `generate_headers' for Komoju::Token:Module
+
+            puts generate_headers
+                 ^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:13:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:16:15 +0900
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5004)
+
+
+  
+NameError (undefined local variable or method `generate_headers' for Komoju::Token:Module
+
+            puts generate_headers
+                 ^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:14:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:16:26 +0900
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4895)
+
+
+  
+NoMethodError (undefined method `generate_headers' for Komoju::Token:Module
+
+            puts generate_headers()
+                 ^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:14:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:16:44 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4898)
+
+
+  
+NoMethodError (undefined method `generate_headers' for Komoju::Token:Module
+
+            puts generate_headers()
+                 ^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:14:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:17:50 +0900
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5019)
+
+
+  
+NoMethodError (undefined method `generate_headers' for Komoju::Token:Module
+
+            token_req = RestClient.post('https://komoju.com/api/v1/tokens', payload, headers = generate_headers())
+                                                                                               ^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:18:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:18:26 +0900
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 0.0ms | Allocations: 6704)
+
+
+  
+RestClient::UnprocessableEntity (422 Unprocessable Entity):
+  
+app/controllers/concerns/komoju.rb:18:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:19:25 +0900
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.0ms | Allocations: 6715)
+
+
+  
+RestClient::UnprocessableEntity (422 Unprocessable Entity):
+  
+app/controllers/concerns/komoju.rb:20:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:19:58 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.0ms | Allocations: 2439)
+
+
+  
+RestClient::UnprocessableEntity (422 Unprocessable Entity):
+  
+app/controllers/concerns/komoju.rb:20:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:20:04 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms | Allocations: 2398)
+
+
+  
+RestClient::UnprocessableEntity (422 Unprocessable Entity):
+  
+app/controllers/concerns/komoju.rb:20:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:20:32 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 204 No Content in 5ms (ActiveRecord: 0.0ms | Allocations: 3306)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 12:20:56 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 0.0ms | Allocations: 6715)
+
+
+  
+RestClient::UnprocessableEntity (422 Unprocessable Entity):
+  
+app/controllers/concerns/komoju.rb:21:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:21:22 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms | Allocations: 6715)
+
+
+  
+RestClient::UnprocessableEntity (422 Unprocessable Entity):
+  
+app/controllers/concerns/komoju.rb:21:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:21:45 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms | Allocations: 6716)
+
+
+  
+RestClient::UnprocessableEntity (422 Unprocessable Entity):
+  
+app/controllers/concerns/komoju.rb:21:in `create'
+app/controllers/payment_controller.rb:10:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:22:41 +0900
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 0.0ms | Allocations: 6712)
+
+
+  
+RestClient::UnprocessableEntity (422 Unprocessable Entity):
+  
+app/controllers/payment_controller.rb:21:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:23:21 +0900
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/payment_controller.rb:21: syntax error, unexpected '}', expecting =>
+...kens', payload, headers={heads})
+...                              ^
+):
+  
+app/controllers/payment_controller.rb:21: syntax error, unexpected '}', expecting =>
+app/controllers/payment_controller.rb:21: syntax error, unexpected '}', expecting =>
+Started POST "/create_token" for ::1 at 2022-08-30 12:23:39 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/payment_controller.rb:21: syntax error, unexpected '}', expecting =>
+...ayload, headers={heads.to_json})
+...                              ^
+):
+  
+app/controllers/payment_controller.rb:21: syntax error, unexpected '}', expecting =>
+app/controllers/payment_controller.rb:21: syntax error, unexpected '}', expecting =>
+Started POST "/create_token" for ::1 at 2022-08-30 12:25:03 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/payment_controller.rb:21: syntax error, unexpected '}', expecting =>
+...kens', payload, headers={heads})
+...                              ^
+):
+  
+app/controllers/payment_controller.rb:21: syntax error, unexpected '}', expecting =>
+app/controllers/payment_controller.rb:21: syntax error, unexpected '}', expecting =>
+Started POST "/create_token" for ::1 at 2022-08-30 12:25:21 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 0.0ms | Allocations: 6692)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/payment_controller.rb:21:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:25:38 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.0ms | Allocations: 6681)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/payment_controller.rb:21:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:29:01 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms | Allocations: 6672)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/payment_controller.rb:23:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:30:24 +0900
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.0ms | Allocations: 6665)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/payment_controller.rb:21:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:30:53 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms | Allocations: 2391)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/payment_controller.rb:21:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 12:31:15 +0900
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms | Allocations: 6665)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/payment_controller.rb:21:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 13:58:43 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 0.0ms | Allocations: 6674)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/payment_controller.rb:21:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 13:59:05 +0900
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.0ms | Allocations: 6669)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/payment_controller.rb:21:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 14:00:18 +0900
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.0ms | Allocations: 6670)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/payment_controller.rb:22:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 14:00:51 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms | Allocations: 6670)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/payment_controller.rb:22:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 14:01:17 +0900
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms | Allocations: 6670)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/payment_controller.rb:22:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 14:02:37 +0900
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 0.0ms | Allocations: 6682)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/payment_controller.rb:23:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 14:03:20 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 204 No Content in 83ms (ActiveRecord: 0.0ms | Allocations: 4504)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 14:03:55 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 204 No Content in 141ms (ActiveRecord: 0.0ms | Allocations: 4513)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 14:04:27 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 204 No Content in 160ms (ActiveRecord: 0.0ms | Allocations: 4535)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 14:04:52 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 204 No Content in 27ms (ActiveRecord: 0.0ms | Allocations: 4003)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 14:05:05 +0900
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 204 No Content in 146ms (ActiveRecord: 0.0ms | Allocations: 4534)
+
+
