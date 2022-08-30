@@ -2152,3 +2152,1202 @@ Processing by PaymentController#create_payment_token as */*
 Completed 204 No Content in 146ms (ActiveRecord: 0.0ms | Allocations: 4534)
 
 
+Started POST "/create_token" for ::1 at 2022-08-30 19:10:57 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:66: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/concerns/komoju.rb:66: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/concerns/komoju.rb:66: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 19:11:23 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4903)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:12:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:13:43 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4891)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:15:00 +0900
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4891)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:19:54 +0900
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4900)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:11:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:20:19 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4893)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:20:50 +0900
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4906)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:11:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:22:59 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/concerns/api_helper.rb:4:in `included'
+app/controllers/concerns/api_helper.rb:4:in `<module:ApiHelper>'
+app/controllers/concerns/api_helper.rb:1:in `<main>'
+app/controllers/concerns/komoju.rb:3:in `<module:Komoju>'
+app/controllers/concerns/komoju.rb:1:in `<main>'
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 19:25:58 +0900
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4893)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:32:25 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5126)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:35:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:32:40 +0900
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 5128)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:37:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:34:00 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4891)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:35:40 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4903)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:12:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:36:23 +0900
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4904)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:12:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:36:43 +0900
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4898)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:11:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:38:14 +0900
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4891)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:40:45 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4891)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:41:07 +0900
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4891)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:41:46 +0900
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4960)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:12:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:41:48 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1714)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:12:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:41:48 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1700)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:12:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:41:49 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 1699)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:12:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 19:45:42 +0900
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4903)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:12:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:01:21 +0900
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4905)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Module
+
+            return self.send_post_request('https://komoju.com/api/v1/tokens', payload)
+                       ^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:01:30 +0900
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:10: syntax error, unexpected ':', expecting `end'
+            return self:send_post_request('https://ko...
+                       ^
+):
+  
+app/controllers/concerns/komoju.rb:10: syntax error, unexpected ':', expecting `end'
+app/controllers/concerns/komoju.rb:10: syntax error, unexpected ':', expecting `end'
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 20:02:43 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4389)
+
+
+  
+NoMethodError (undefined method `send_post_request' for ApiHelper:Module):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:02:57 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4446)
+
+
+  
+NoMethodError (undefined method `send_post_request' for ApiHelper:Module
+
+            return ApiHelper.send_post_request('https://komoju.com/api/v1/tokens', payload)
+                            ^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:03:18 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 4446)
+
+
+  
+NoMethodError (undefined method `send_post_request' for ApiHelper:Module
+
+            return ApiHelper.send_post_request('https://komoju.com/api/v1/tokens', payload)
+                            ^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:06:33 +0900
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4907)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Class
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:08:47 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4907)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Class
+
+            return send_post_request('https://komoju.com/api/v1/tokens', payload)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:08:56 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 5064)
+
+
+  
+NameError (undefined local variable or method `https' for Komoju::Token:Class
+
+            return https.post( uri.path, payload, generate_headers)
+                   ^^^^^):
+  
+app/controllers/concerns/api_helper.rb:13:in `send_post_request'
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:10:05 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 5078)
+
+
+  
+NameError (undefined local variable or method `https' for Komoju::Token:Class
+
+            return https.post( uri.path, payload, generate_headers)
+                   ^^^^^):
+  
+app/controllers/concerns/api_helper.rb:15:in `send_post_request'
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:10:39 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 4145)
+
+
+  
+NoMethodError (undefined method `path' for true:TrueClass
+
+            return uri.post( uri.path, payload, generate_headers)
+                                ^^^^^):
+  
+app/controllers/concerns/api_helper.rb:13:in `send_post_request'
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:11:20 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 5126)
+
+
+  
+NameError (undefined local variable or method `uri' for Komoju::Token:Class
+
+            return https.post( uri.path, payload, generate_headers)
+                               ^^^
+Did you mean?  url
+               URI):
+  
+app/controllers/concerns/api_helper.rb:13:in `send_post_request'
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:13:06 +0900
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 5030)
+
+
+  
+NoMethodError (undefined method `host' for "https://komoju.com/api/v1/tokens":String
+
+            https = Net::HTTP.new(uri.host, uri.port)
+                                     ^^^^^):
+  
+app/controllers/concerns/api_helper.rb:36:in `create_https'
+app/controllers/concerns/api_helper.rb:14:in `send_post_request'
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:14:01 +0900
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5230)
+
+
+  
+NameError (undefined local variable or method `api_secret_key' for Komoju::Token:Class
+
+            auth = Base64.encode64(api_secret_key)
+                                   ^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/api_helper.rb:32:in `generate_headers'
+app/controllers/concerns/api_helper.rb:15:in `send_post_request'
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:14:29 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3354)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/concerns/api_helper.rb:29:in `generate_headers'
+app/controllers/concerns/api_helper.rb:12:in `send_post_request'
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:14:48 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4157)
+
+
+  
+NoMethodError (undefined method `post' for true:TrueClass
+
+            return https.post( uri.path, payload, generate_headers)
+                        ^^^^^):
+  
+app/controllers/concerns/api_helper.rb:12:in `send_post_request'
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:16:32 +0900
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 0.0ms | Allocations: 8138)
+
+
+  
+NoMethodError (undefined method `bytesize' for {:payment_details=>{:name=>"TEST", :email=>"TESTING@test.com", :number=>"4111111111111111", :type=>"credit_card", :month=>4, :year=>2025, :code=>123}}:Hash
+
+    self.content_length = body.bytesize
+                              ^^^^^^^^^):
+  
+app/controllers/concerns/api_helper.rb:12:in `send_post_request'
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:18:28 +0900
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju.rb:65: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/concerns/komoju.rb:65: syntax error, unexpected `end', expecting end-of-input
+app/controllers/concerns/komoju.rb:65: syntax error, unexpected `end', expecting end-of-input
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 20:18:46 +0900
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/api_helper.rb:6: syntax error, unexpected '(', expecting `end'
+            return https[verb]( uri.path, payload, generate_...
+                              ^
+/Users/r/Desktop/komoju/komoju/app/controllers/concerns/api_helper.rb:6: syntax error, unexpected ')', expecting '='
+...ath, payload, generate_headers)
+...                              ^
+/Users/r/Desktop/komoju/komoju/app/controllers/concerns/api_helper.rb:22: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/concerns/api_helper.rb:6: syntax error, unexpected '(', expecting `end'
+app/controllers/concerns/api_helper.rb:6: syntax error, unexpected ')', expecting '='
+app/controllers/concerns/api_helper.rb:22: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/concerns/api_helper.rb:6: syntax error, unexpected '(', expecting `end'
+app/controllers/concerns/api_helper.rb:6: syntax error, unexpected ')', expecting '='
+app/controllers/concerns/api_helper.rb:22: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/concerns/komoju.rb:5:in `<class:Token>'
+app/controllers/concerns/komoju.rb:4:in `<module:Komoju>'
+app/controllers/concerns/komoju.rb:1:in `<main>'
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 20:19:16 +0900
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komoju/komoju/app/controllers/concerns/api_helper.rb:6: syntax error, unexpected '(', expecting `end'
+...       return https["#{verb}"]( uri.path, payload, generate_...
+...                              ^
+/Users/r/Desktop/komoju/komoju/app/controllers/concerns/api_helper.rb:6: syntax error, unexpected ')', expecting '='
+...ath, payload, generate_headers)
+...                              ^
+/Users/r/Desktop/komoju/komoju/app/controllers/concerns/api_helper.rb:22: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/concerns/api_helper.rb:6: syntax error, unexpected '(', expecting `end'
+app/controllers/concerns/api_helper.rb:6: syntax error, unexpected ')', expecting '='
+app/controllers/concerns/api_helper.rb:22: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/concerns/api_helper.rb:6: syntax error, unexpected '(', expecting `end'
+app/controllers/concerns/api_helper.rb:6: syntax error, unexpected ')', expecting '='
+app/controllers/concerns/api_helper.rb:22: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/concerns/komoju.rb:5:in `<class:Token>'
+app/controllers/concerns/komoju.rb:4:in `<module:Komoju>'
+app/controllers/concerns/komoju.rb:1:in `<main>'
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 20:20:24 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 0.0ms | Allocations: 8136)
+
+
+  
+NoMethodError (undefined method `bytesize' for {:payment_details=>{:name=>"TEST", :email=>"TESTING@test.com", :number=>"4111111111111111", :type=>"credit_card", :month=>4, :year=>2025, :code=>123}}:Hash
+
+    self.content_length = body.bytesize
+                              ^^^^^^^^^):
+  
+app/controllers/concerns/api_helper.rb:12:in `send_post_request'
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:21:04 +0900
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 67ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4891)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 20:22:48 +0900
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 129ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4887)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 20:23:52 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 78ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4887)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 20:24:52 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 159ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 4904)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 20:25:23 +0900
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 64ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4894)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 20:25:55 +0900
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 81ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4884)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 20:26:37 +0900
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 248ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 4985)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 20:27:21 +0900
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 180ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 4984)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 20:27:40 +0900
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 162ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 4978)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 20:28:08 +0900
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 295ms (ActiveRecord: 0.0ms | Allocations: 6088)
+
+
+  
+NoMethodError (undefined method `token' for {"id"=>"tok_1x09hpsbbr9ds4chkpi4cioei", "resource"=>"token", "created_at"=>"2022-08-30T11:28:08Z", "payment_details"=>{"email"=>"TESTING@test.com", "type"=>"credit_card"}}:Hash
+
+        render json: {token: token.token}, status: :ok
+                                  ^^^^^^):
+  
+app/controllers/payment_controller.rb:11:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:28:20 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 196ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 4819)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 20:29:01 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4966)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Class
+
+            return send_post_request('https://komoju.com/api/v1/tokens', data)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:29:09 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 4965)
+
+
+  
+NoMethodError (undefined method `send_post_request' for Komoju::Token:Class
+
+            return send_post_request('https://komoju.com/api/v1/tokens', data)
+                   ^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:29:19 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4504)
+
+
+  
+NoMethodError (undefined method `send_post_request' for ApiHelper:Module
+
+            return ApiHelper.send_post_request('https://komoju.com/api/v1/tokens', data)
+                            ^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:29:28 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 4505)
+
+
+  
+NoMethodError (undefined method `send_post_request' for ApiHelper:Module
+
+            return ApiHelper.send_post_request('https://komoju.com/api/v1/tokens', data)
+                            ^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:33:57 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 1163)
+
+
+  
+Zeitwerk::NameError (expected file /Users/r/Desktop/komoju/komoju/app/controllers/concerns/komoju/komoju.rb to define constant Komoju::Komoju, but didn't
+
+      raise Zeitwerk::NameError.new("expected file #{file} to define constant #{cpath}, but didn't", cref.last)
+      ^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:34:17 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 4503)
+
+
+  
+NoMethodError (undefined method `send_post_request' for ApiHelper:Module
+
+            return ApiHelper.send_post_request('https://komoju.com/api/v1/tokens', data)
+                            ^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:34:32 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4504)
+
+
+  
+NoMethodError (undefined method `send_post_request' for ApiHelper:Module
+
+            return ApiHelper.send_post_request('https://komoju.com/api/v1/tokens', data)
+                            ^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju.rb:10:in `create'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 20:34:58 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 313ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4798)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 21:09:51 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 234ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4797)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 21:12:20 +0900
+  
+LoadError (cannot load such file -- /Users/r/Desktop/komojuapp/komoju_token.rb):
+  
+app/controllers/concerns/komoju.rb:3:in `<module:Komoju>'
+app/controllers/concerns/komoju.rb:1:in `<main>'
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 21:12:35 +0900
+  
+Zeitwerk::NameError (expected file /Users/r/Desktop/komojuapp/app/controllers/concerns/komoju_token.rb to define constant KomojuToken, but didn't
+
+      raise Zeitwerk::NameError.new("expected file #{file} to define constant #{cpath}, but didn't", cref.last)
+      ^^^^^):
+  
+app/controllers/concerns/komoju.rb:3:in `<module:Komoju>'
+app/controllers/concerns/komoju.rb:1:in `<main>'
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 21:13:04 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2343)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:13:34 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2291)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:13:49 +0900
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 5125)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:14:12 +0900
+  
+TypeError (wrong argument type Class (expected Module)):
+  
+app/controllers/concerns/komoju.rb:3:in `include'
+app/controllers/concerns/komoju.rb:3:in `<module:Komoju>'
+app/controllers/concerns/komoju.rb:1:in `<main>'
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 21:14:32 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2301)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:14:51 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2296)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:15:05 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2289)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:15:10 +0900
+  
+TypeError (no implicit conversion of Module into String):
+  
+app/controllers/concerns/komoju.rb:3:in `<module:Komoju>'
+app/controllers/concerns/komoju.rb:1:in `<main>'
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 21:15:41 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 1521)
+
+
+  
+NoMethodError (undefined method `Token' for Komoju:Module
+
+        req = Komoju.Token.create(token_data)
+                    ^^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:15:54 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 5127)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:16:10 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 203ms (Views: 0.7ms | Allocations: 2000)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 21:16:36 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2291)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:18:36 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2298)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:19:26 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 3ms (Allocations: 2607)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:5:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:19:33 +0900
+  
+TypeError (wrong argument type Class (expected Module)):
+  
+app/controllers/payment_controller.rb:2:in `include'
+app/controllers/payment_controller.rb:2:in `<class:PaymentController>'
+app/controllers/payment_controller.rb:1:in `<main>'
+Started POST "/create_token" for ::1 at 2022-08-30 21:20:10 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2303)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:20:28 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2301)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:7:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:21:42 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2292)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:7:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:22:02 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2301)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:7:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:22:09 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2290)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:22:23 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 289ms (Views: 0.6ms | Allocations: 1642)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 21:23:34 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 186ms (Views: 0.2ms | Allocations: 1621)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 21:24:29 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 2294)
+
+
+  
+NameError (uninitialized constant Komoju::Token
+
+        req = Komoju::Token.create(token_data)
+                    ^^^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:27:37 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 3ms (Allocations: 2491)
+
+
+  
+NameError (uninitialized constant Komoju::KomojuToken
+
+    include KomojuToken
+            ^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju/komoju.rb:3:in `<module:Komoju>'
+app/controllers/concerns/komoju/komoju.rb:1:in `<main>'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:27:53 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 7ms (Allocations: 2023)
+
+
+  
+NameError (uninitialized constant Komoju::KomojuToken
+
+    include KomojuToken
+            ^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju/komoju.rb:3:in `<module:Komoju>'
+app/controllers/concerns/komoju/komoju.rb:1:in `<main>'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:28:31 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 1272)
+
+
+  
+Zeitwerk::NameError (expected file /Users/r/Desktop/komojuapp/app/controllers/concerns/komoju/v1/api_helper.rb to define constant Komoju::V1::ApiHelper, but didn't
+
+      raise Zeitwerk::NameError.new("expected file #{file} to define constant #{cpath}, but didn't", cref.last)
+      ^^^^^):
+  
+app/controllers/concerns/komoju/v1/token.rb:5:in `<module:KomojuToken>'
+app/controllers/concerns/komoju/v1/token.rb:3:in `<module:V1>'
+app/controllers/concerns/komoju/v1/token.rb:2:in `<module:Komoju>'
+app/controllers/concerns/komoju/v1/token.rb:1:in `<main>'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:28:44 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 582)
+
+
+  
+Zeitwerk::NameError (expected file /Users/r/Desktop/komojuapp/app/controllers/concerns/komoju/v1/token.rb to define constant Komoju::V1::Token, but didn't
+
+      raise Zeitwerk::NameError.new("expected file #{file} to define constant #{cpath}, but didn't", cref.last)
+      ^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:29:08 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 208ms (Views: 0.5ms | Allocations: 1819)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 21:32:43 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 216ms (Views: 0.2ms | Allocations: 1845)
+
+
+Started POST "/create_token" for ::1 at 2022-08-30 21:33:09 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 997)
+
+
+  
+Zeitwerk::NameError (expected file /Users/r/Desktop/komojuapp/app/controllers/concerns/komoju/token.rb to define constant Komoju::Token, but didn't
+
+      raise Zeitwerk::NameError.new("expected file #{file} to define constant #{cpath}, but didn't", cref.last)
+      ^^^^^):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-30 21:33:30 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 154ms (Views: 0.2ms | Allocations: 1773)
+
+
