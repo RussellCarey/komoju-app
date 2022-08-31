@@ -8,9 +8,9 @@ class CartController < ApplicationController
 
     # end
 
-    def show
-        cart_item = Cart.where(user_id: current_user.id)
-        render json: { data: cart_item }, status: :ok
+    def show_all
+        cart_items = Cart.where(user_id: current_user.id)
+        render json: { data: cart_items }, status: :ok
     end
 
     def create 

@@ -8,7 +8,7 @@ class FavouritesController < ApplicationController
 
     # end
 
-    def show
+    def show_all
         favourites = Favourite.where(user_id: current_user.id)
         render json: { data: favourites }, status: :ok
     end

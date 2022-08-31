@@ -37663,3 +37663,18 @@ Processing by Komoju::TokenController#create_payment_token as */*
 Completed 200 OK in 156ms (Views: 0.4ms | Allocations: 1448)
 
 
+Started GET "/purchases" for ::1 at 2022-08-31 13:20:43 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/purchases"):
+  
+Started GET "/purchases/" for ::1 at 2022-08-31 13:20:51 +0900
+Processing by GamePurchaseController#show_all as */*
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGamePurchase Load (0.0ms)[0m  [1m[34mSELECT "game_purchases".* FROM "game_purchases" WHERE "game_purchases"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/game_purchase_controller.rb:9:in `show_all'
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 15079)
+
+
