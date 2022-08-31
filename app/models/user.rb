@@ -1,5 +1,6 @@
 #Notes : https://egghead.io/lessons/ruby-on-rails-add-custom-fields-to-a-devise-user-model-with-a-ruby-on-rails-migration
 # https://btihen.me/post_ruby_rails/rails_devise_users_namespaced/
+
 class User < ApplicationRecord
   validates :email, presence: true
   validates :username, presence: true, length: { minimum: 6, maximum: 12 }
@@ -14,6 +15,8 @@ class User < ApplicationRecord
   jwt_revocation_strategy: JwtDenylist
         #  :recoverable, :rememberable, :validatable
 
-  has_many :categories
-  has_many :todos, through: :categories
+  has_many :favourites
+  has_many :carts
+  has_many :token_purchases
+  has_many :game_purchases
 end

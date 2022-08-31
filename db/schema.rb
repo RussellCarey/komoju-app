@@ -10,13 +10,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_02_111520) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_31_025046) do
+  create_table "carts", force: :cascade do |t|
+    t.string "game_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_carts_on_user_id"
+  end
+
+  create_table "favourites", force: :cascade do |t|
+    t.string "game_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_favourites_on_user_id"
+  end
+
+  create_table "game_purchases", force: :cascade do |t|
+    t.string "game_id", null: false
+    t.integer "discount", default: 0
+    t.float "total", null: false
+    t.integer "status", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_game_purchases_on_user_id"
+  end
+
   create_table "jwt_denylist", force: :cascade do |t|
     t.string "jti", null: false
     t.datetime "exp", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["jti"], name: "index_jwt_denylist_on_jti"
+  end
+
+  create_table "token_purchases", force: :cascade do |t|
+    t.float "amount", null: false
+    t.integer "discount", default: 0
+    t.float "total", null: false
+    t.integer "status", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_token_purchases_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -34,4 +72,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_02_111520) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "carts", "users"
+  add_foreign_key "favourites", "users"
+  add_foreign_key "game_purchases", "users"
+  add_foreign_key "token_purchases", "users"
 end
