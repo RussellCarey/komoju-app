@@ -10,11 +10,14 @@ module Twillo
 
             message = @client.messages.create(
             body: "#{message}",
-            to: "+817084771532",    # Replace with your phone number
-            from: "+16187624770")  # Use this Magic Number for creating SMS
+            to: "+817084771532",   
+            from: "+16187624770")
 
-            # If you get a message SID in the output, you know you've successfully created a message with your test credentials.
-            puts message.sid
+            if message.sid?
+                # messge sent okay!
+            else 
+                # A big no no
+            end
         end
     end
 end

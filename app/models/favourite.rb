@@ -3,4 +3,10 @@ class Favourite < ApplicationRecord
     validates :game_id, presence: true
 
     belongs_to :user
+
+    # Get list of items in favourites currently
+
+    # Get total value of items in favourites currently
 end
+
+

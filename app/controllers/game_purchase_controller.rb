@@ -5,6 +5,7 @@ class GamePurchaseController < ApplicationController
     before_action :get_game_purchase, only: %i[ destroy]
     
     def show_all
+        GamePurchase.get_total_sales
         purchases = GamePurchase.where(user_id: current_user.id)
         render json: { data: purchases }, status: :ok
     end

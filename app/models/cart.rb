@@ -3,4 +3,8 @@ class Cart < ApplicationRecord
     validates :game_id, presence: true
 
     belongs_to :user
+
+    # Get list of items in cart currently
+
+    # Get total value of items in cart currently
 end
