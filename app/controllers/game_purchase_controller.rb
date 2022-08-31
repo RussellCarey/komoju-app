@@ -1,5 +1,6 @@
 class GamePurchaseController < ApplicationController
 
+    before_action :authenticate_user!
     before_action :check_owner, only: %i[]
     
     def index
