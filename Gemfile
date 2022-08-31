@@ -40,6 +40,7 @@ gem "devise", "~> 4.8"
 gem "devise-jwt", "~> 0.9.0"
 gem "rack-cors", "~> 1.1"
 gem 'rest-client'
+gem 'twilio-ruby'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

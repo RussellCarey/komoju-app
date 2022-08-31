@@ -97,6 +97,10 @@ GEM
     dry-core (0.8.1)
       concurrent-ruby (~> 1.0)
     erubi (1.10.0)
+    faraday (2.5.2)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     http-accept (1.7.0)
@@ -185,10 +189,15 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    ruby2_keywords (0.0.5)
     sqlite3 (1.4.4)
     strscan (3.0.4)
     thor (1.2.1)
     timeout (0.3.0)
+    twilio-ruby (5.71.0)
+      faraday (>= 0.9, < 3.0)
+      jwt (>= 1.5, <= 2.5)
+      nokogiri (>= 1.6, < 2.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     unf (0.1.4)
@@ -219,6 +228,7 @@ DEPENDENCIES
   rails (~> 7.0.3, >= 7.0.3.1)
   rest-client
   sqlite3 (~> 1.4)
+  twilio-ruby
   tzinfo-data
 
 RUBY VERSION

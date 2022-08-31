@@ -10,10 +10,17 @@ class Users::RegistrationsController < Devise::RegistrationsController
         # Returns true if the record is persisted, i.e. it's not a new record and it was not destroyed, otherwise returns false.
         # https://api.rubyonrails.org/classes/ActiveRecord/Persistence.html
         # Will return an Auth header wit hthe jwt. Set on the front end as a cookie.
-        resource.persisted? ? register_success() : register_failed()
+        if resource.persisted?
+            register_success()
+        else 
+            register_failed()
+        end
     end
 
     def register_success
+        twillo_code = Twillo::Message.send(123123123, "Your registration code for Gamey is 12345")
+        puts twillo_code
+
         render json: {
             message: "Signed up",
             # current_user works by storing id of current user in the application session.
