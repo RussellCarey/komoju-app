@@ -1,11 +1,11 @@
 # Gamey
 
-This read me is in progress..
-A ruby on rails / vue? game purchasing site.
+This read me, app and images below are in progress...  
+A ruby on rails / vue? game purchasing site.  
 Users can purchase tokens using the KOMOJU payment platform.
 
-![alt text](https://github.com/RussellCarey/komoju/raw/master/Design/db.png)
-![alt text](https://github.com/RussellCarey/komoju/raw/master/Design/front.png)
+![alt text](https://github.com/RussellCarey/komoju-app/raw/master/design/db.png)
+![alt text](https://github.com/RussellCarey/komoju-app/raw/master/design/front.png)
 
 ## Table of contents
 

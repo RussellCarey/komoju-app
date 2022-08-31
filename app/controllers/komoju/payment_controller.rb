@@ -9,27 +9,36 @@ module Komoju
             parse_return(req)
         end
 
+        def make_payment_no_token
+            req = Komoju::Payment.charge(payment_params_no_token)
+            parse_return(req)
+        end
+
         def get_all_user_payment_data
             req = Komoju::Payment.get_all
             parse_return(req)
         end
 
         def get_payment_data
-            req = Komoju::Payment.get_one(payment_params['payment_id'])
+            req = Komoju::Payment.get_one(payment_params['id'])
             parse_return(req)
         end
 
-        def get_users_data
-            #! Filter results for the users items only?
-            req = Komoju::Payment.get_one(payment_params['payment_id'])
+        def cancel_payment
+            req = Komoju::Payment.cancel(payment_params['id'])
             parse_return(req)
         end
 
         private 
         # https://docs.komoju.com/en/api/resources/payments/
         def payment_params
-            params.permit(:payment_id, :amount, :currency, :order_number, :metadata, payment_details: [:email, :name, :type, :number, :verification_value, :month, :year])
+            params.permit(:id, :amount, :currency, :order_number, :metadata, payment_details: [:email, :name, :type, :number, :verification_value, :month, :year])
         end
+
+        def payment_params_no_token
+            params.permit(:id, :amount, :currency, :order_number, :metadata, :payment_details)
+        end
+
 
         def parse_return(req)
             data = JSON.parse(req.body)

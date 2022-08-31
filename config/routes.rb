@@ -15,13 +15,27 @@ Rails.application.routes.draw do
     post '/create_token', to: 'komoju/token#create_payment_token'
 
     # KOMOJU Payment
-    get '/get_all_payments', to: "payment#get_all_user_payment_data"
-    get '/get_payment_data/:payment_id', to: 'payment#get_payment_data'
+    post '/make_payment', to: "komoju/payment#make_payment"
+    post '/make_payment_no_token', to: "komoju/payment#make_payment_no_token"
+    get '/get_all_payments', to: "komoju/payment#get_all_user_payment_data"
+    get '/get_payment_data/:id', to: 'komoju/payment#get_payment_data'
+    post '/cancel/:id', to: 'komoju/payment#cancel_payment'
+
+    # KOMOJU Subscriptions
+    post '/subscriptions', to: 'komoju/subscription#create'
+    get '/subscriptions/:id', to: 'komoju/subscription#get_one'
+    delete '/subscriptions/:id', to: 'komoju/subscription#stop' # NOT FOUND?! CHECK
+
+    # KOMOJU Customers
+    post '/customers', to: 'komoju/customer#create'
+    patch '/customers/:id', to: 'komoju/customer#update_payment_details'
+    delete '/customers/:id', to: 'komoju/customer#destroy'
 
     # Purchase
     get '/purchases', to: 'game_purchase#show_all'
-    # get './purchases', to: 'game_purchase#show_all'
-    # get './purchases', to: 'game_purchase#show_all'
+    post '/purchases', to: 'game_purchase#create'
+    delete '/purchases/:id', to: 'game_purchase#destroy'
+    patch '/purchases/:id', to: 'game_purchase#update'
 
     # Favourites
     get '/favourites', to: 'favourites#show_all'

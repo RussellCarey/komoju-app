@@ -4,14 +4,14 @@ module Komoju
         extend ApiHelper
         
         def self.create(payload)
-            data = payment_data.to_json
+            data = payload.to_json
             return send_post_request('https://komoju.com/api/v1/customers', data)
         end
 
-        def self.update_payment(customer_id, payload)
+        def self.update_payment(payload)
             # payment_details
-            data = payment_data.to_json
-            return send_patch_request("https://komoju.com/api/v1/customers/#{customer_id}", data)
+            data = payload.to_json
+            return send_patch_request("https://komoju.com/api/v1/customers/#{payload['id']}", data)
         end
 
         def self.delete(customer_id)

@@ -37678,3 +37678,673 @@ Processing by GamePurchaseController#show_all as */*
 Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 15079)
 
 
+Started GET "/get_all_payments" for ::1 at 2022-08-31 13:47:04 +0900
+  
+ActionController::RoutingError (uninitialized constant PaymentController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/get_all_payments" for ::1 at 2022-08-31 13:47:23 +0900
+Processing by Komoju::PaymentController#get_all_user_payment_data as */*
+Completed 200 OK in 245ms (Views: 2.9ms | Allocations: 3977)
+
+
+Started GET "/get_payment_data/1" for ::1 at 2022-08-31 13:47:29 +0900
+Processing by Komoju::PaymentController#get_payment_data as */*
+  Parameters: {"payment_id"=>"1"}
+Completed 200 OK in 44ms (Views: 0.3ms | Allocations: 1076)
+
+
+Started GET "/get_payment_data/65yk42d71sydunce478x87053" for ::1 at 2022-08-31 13:48:12 +0900
+Processing by Komoju::PaymentController#get_payment_data as */*
+  Parameters: {"id"=>"65yk42d71sydunce478x87053"}
+Completed 200 OK in 76ms (Views: 0.3ms | Allocations: 1887)
+
+
+Started POST "/make_payment" for ::1 at 2022-08-31 13:49:59 +0900
+Processing by Komoju::PaymentController#make_payment as */*
+  Parameters: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}}
+[31mUnpermitted parameter: :code. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x000000010a019f18>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+[31mUnpermitted parameter: :payment. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x000000010a019f18>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+Completed 200 OK in 98ms (Views: 0.4ms | Allocations: 2141)
+
+
+Started POST "/make_payment" for ::1 at 2022-08-31 13:50:25 +0900
+Processing by Komoju::PaymentController#make_payment as */*
+  Parameters: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111, "amount"=>1000000}, "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111, "amount"=>1000000}}}
+[31mUnpermitted parameters: :code, :amount. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x000000010a0f2e58>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111, "amount"=>1000000}, "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111, "amount"=>1000000}}} }[0m
+[31mUnpermitted parameter: :payment. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x000000010a0f2e58>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111, "amount"=>1000000}, "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111, "amount"=>1000000}}} }[0m
+Completed 200 OK in 62ms (Views: 0.4ms | Allocations: 1509)
+
+
+Started POST "/make_payment" for ::1 at 2022-08-31 13:50:35 +0900
+Processing by Komoju::PaymentController#make_payment as */*
+  Parameters: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111, "amount"=>1000000}, "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111, "amount"=>1000000}}}
+[31mUnpermitted parameters: :code, :amount. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x000000010a173238>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111, "amount"=>1000000}, "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111, "amount"=>1000000}}} }[0m
+[31mUnpermitted parameter: :payment. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x000000010a173238>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111, "amount"=>1000000}, "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111, "amount"=>1000000}}} }[0m
+Completed 200 OK in 372ms (Views: 0.3ms | Allocations: 1509)
+
+
+Started POST "/make_payment" for ::1 at 2022-08-31 13:51:21 +0900
+Error occurred while parsing request parameters.
+Contents:
+
+{ 
+    "amount": 1000000,
+    "currency": "JPY",
+    "payment_details":
+    {
+        "name": "Russell Carey",
+        "email": "idsnfidnf@sdfsdf.dsf",
+        "number": "4111111111111111",
+        "type": "credit_card",
+        "month": "05",
+        "year": "2025",
+        "code": 111,
+    }
+}
+Processing by Komoju::PaymentController#make_payment as */*
+Completed 400 Bad Request in 1ms (Allocations: 156)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/komoju/payment_controller.rb:25:in `payment_params'
+app/controllers/komoju/payment_controller.rb:8:in `make_payment'
+Started POST "/make_payment" for ::1 at 2022-08-31 13:51:32 +0900
+Processing by Komoju::PaymentController#make_payment as */*
+  Parameters: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}}
+[31mUnpermitted parameter: :code. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x000000010a36a1e0>, params: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+[31mUnpermitted parameter: :payment. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x000000010a36a1e0>, params: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+Completed 200 OK in 304ms (Views: 0.4ms | Allocations: 1736)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 13:51:59 +0900
+Processing by Komoju::TokenController#create_payment_token as */*
+  Parameters: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "token"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}}
+[31mUnpermitted parameter: :token. Context: { controller: Komoju::TokenController, action: create_payment_token, request: #<ActionDispatch::Request:0x000000010a3f2248>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"komoju/token", "action"=>"create_payment_token", "token"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+Completed 200 OK in 130ms (Views: 0.3ms | Allocations: 1610)
+
+
+Started POST "/make_payment" for ::1 at 2022-08-31 13:52:52 +0900
+Processing by Komoju::PaymentController#make_payment as */*
+  Parameters: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}}
+[31mUnpermitted parameters: :payment_details, :payment. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x000000010a449340>, params: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}} }[0m
+Completed 200 OK in 119ms (Views: 0.5ms | Allocations: 1191)
+
+
+Started POST "/make_payment" for ::1 at 2022-08-31 13:54:19 +0900
+  
+SyntaxError (/Users/r/Desktop/komojuapp/app/controllers/komoju/payment_controller.rb:25: syntax error, unexpected ')', expecting =>
+...onth, :year], :payment_details)
+...                              ^
+/Users/r/Desktop/komojuapp/app/controllers/komoju/payment_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/komoju/payment_controller.rb:25: syntax error, unexpected ')', expecting =>
+app/controllers/komoju/payment_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/komoju/payment_controller.rb:25: syntax error, unexpected ')', expecting =>
+app/controllers/komoju/payment_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/make_payment" for ::1 at 2022-08-31 13:54:28 +0900
+Processing by Komoju::PaymentController#make_payment as */*
+  Parameters: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}}
+[31mUnpermitted parameter: :payment. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x000000010a0d1e10>, params: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}} }[0m
+Completed 200 OK in 594ms (Views: 0.5ms | Allocations: 1961)
+
+
+Started POST "/make_payment" for ::1 at 2022-08-31 13:54:33 +0900
+Processing by Komoju::PaymentController#make_payment as */*
+  Parameters: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}}
+[31mUnpermitted parameters: :payment_details, :payment. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x000000010a199578>, params: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+Completed 200 OK in 54ms (Views: 0.4ms | Allocations: 1236)
+
+
+Started POST "/make_payment" for ::1 at 2022-08-31 13:55:29 +0900
+  
+SyntaxError (/Users/r/Desktop/komojuapp/app/controllers/komoju/payment_controller.rb:25: syntax error, unexpected ')', expecting =>
+...onth, :year], :payment_details)
+...                              ^
+/Users/r/Desktop/komojuapp/app/controllers/komoju/payment_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/komoju/payment_controller.rb:25: syntax error, unexpected ')', expecting =>
+app/controllers/komoju/payment_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/komoju/payment_controller.rb:25: syntax error, unexpected ')', expecting =>
+app/controllers/komoju/payment_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/make_payment" for ::1 at 2022-08-31 13:55:32 +0900
+  
+SyntaxError (/Users/r/Desktop/komojuapp/app/controllers/komoju/payment_controller.rb:25: syntax error, unexpected ')', expecting =>
+...onth, :year], :payment_details)
+...                              ^
+/Users/r/Desktop/komojuapp/app/controllers/komoju/payment_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/komoju/payment_controller.rb:25: syntax error, unexpected ')', expecting =>
+app/controllers/komoju/payment_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/komoju/payment_controller.rb:25: syntax error, unexpected ')', expecting =>
+app/controllers/komoju/payment_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/make_payment" for ::1 at 2022-08-31 13:56:45 +0900
+Processing by Komoju::PaymentController#make_payment as */*
+  Parameters: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}}
+[31mUnpermitted parameters: :payment_details, :payment. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x0000000109f41b40>, params: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}} }[0m
+Completed 200 OK in 118ms (Views: 0.4ms | Allocations: 1767)
+
+
+Started POST "/make_payment_no_token" for ::1 at 2022-08-31 13:56:53 +0900
+Processing by Komoju::PaymentController#make_payment_no_token as */*
+  Parameters: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}}
+[31mUnpermitted parameter: :payment. Context: { controller: Komoju::PaymentController, action: make_payment_no_token, request: #<ActionDispatch::Request:0x000000010a073a68>, params: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "controller"=>"komoju/payment", "action"=>"make_payment_no_token", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}} }[0m
+Completed 200 OK in 84ms (Views: 0.3ms | Allocations: 1181)
+
+
+Started POST "/make_payment" for ::1 at 2022-08-31 13:56:57 +0900
+Processing by Komoju::PaymentController#make_payment as */*
+  Parameters: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}}
+[31mUnpermitted parameter: :code. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x000000010a0a24a8>, params: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+[31mUnpermitted parameter: :payment. Context: { controller: Komoju::PaymentController, action: make_payment, request: #<ActionDispatch::Request:0x000000010a0a24a8>, params: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"komoju/payment", "action"=>"make_payment", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+Completed 200 OK in 266ms (Views: 0.4ms | Allocations: 1754)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 13:57:01 +0900
+Processing by Komoju::TokenController#create_payment_token as */*
+  Parameters: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "token"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}}
+[31mUnpermitted parameter: :token. Context: { controller: Komoju::TokenController, action: create_payment_token, request: #<ActionDispatch::Request:0x000000010a131f90>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"komoju/token", "action"=>"create_payment_token", "token"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+Completed 200 OK in 185ms (Views: 0.3ms | Allocations: 1626)
+
+
+Started POST "/make_payment_no_token" for ::1 at 2022-08-31 13:57:06 +0900
+Processing by Komoju::PaymentController#make_payment_no_token as */*
+  Parameters: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_7gdvzr44f9f91x5nmjlbsjojv", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_7gdvzr44f9f91x5nmjlbsjojv"}}
+[31mUnpermitted parameter: :payment. Context: { controller: Komoju::PaymentController, action: make_payment_no_token, request: #<ActionDispatch::Request:0x000000010a1992a8>, params: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_7gdvzr44f9f91x5nmjlbsjojv", "controller"=>"komoju/payment", "action"=>"make_payment_no_token", "payment"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_7gdvzr44f9f91x5nmjlbsjojv"}} }[0m
+Completed 200 OK in 432ms (Views: 0.6ms | Allocations: 1396)
+
+
+Started POST "/create_subscription" for ::1 at 2022-08-31 15:35:44 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/create_subscription"):
+  
+Started POST "/create_subscription" for ::1 at 2022-08-31 15:36:19 +0900
+Processing by Komoju::SubscriptionController#create as */*
+  Parameters: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "subscription"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}}
+[31mUnpermitted parameters: :payment_details, :subscription. Context: { controller: Komoju::SubscriptionController, action: create, request: #<ActionDispatch::Request:0x0000000109e700e0>, params: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "controller"=>"komoju/subscription", "action"=>"create", "subscription"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}} }[0m
+Completed 500 Internal Server Error in 1ms (Allocations: 667)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/concerns/komoju/subscription.rb:6:in `create'
+app/controllers/komoju/subscription_controller.rb:6:in `create'
+Started POST "/create_token" for ::1 at 2022-08-31 15:38:31 +0900
+Processing by Komoju::TokenController#create_payment_token as */*
+  Parameters: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "token"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}}
+[31mUnpermitted parameter: :token. Context: { controller: Komoju::TokenController, action: create_payment_token, request: #<ActionDispatch::Request:0x000000010a3d06e8>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"komoju/token", "action"=>"create_payment_token", "token"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+Completed 200 OK in 294ms (Views: 0.5ms | Allocations: 1964)
+
+
+Started POST "/create_customer" for ::1 at 2022-08-31 15:38:56 +0900
+Processing by Komoju::CustomerController#create as */*
+  Parameters: {"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_ew37fq9hio4iojwrav02v2zch", "customer"=>{"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_ew37fq9hio4iojwrav02v2zch"}}
+[31mUnpermitted parameter: :customer. Context: { controller: Komoju::CustomerController, action: create, request: #<ActionDispatch::Request:0x0000000109cda2f8>, params: {"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_ew37fq9hio4iojwrav02v2zch", "controller"=>"komoju/customer", "action"=>"create", "customer"=>{"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_ew37fq9hio4iojwrav02v2zch"}} }[0m
+Completed 500 Internal Server Error in 4ms (Allocations: 2227)
+
+
+  
+NameError (undefined local variable or method `payment_data' for Komoju::Customer:Module
+
+            data = payment_data.to_json
+                   ^^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju/customer.rb:7:in `create'
+app/controllers/komoju/customer_controller.rb:7:in `create'
+Started POST "/create_customer" for ::1 at 2022-08-31 15:39:37 +0900
+Processing by Komoju::CustomerController#create as */*
+  Parameters: {"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_ew37fq9hio4iojwrav02v2zch", "customer"=>{"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_ew37fq9hio4iojwrav02v2zch"}}
+[31mUnpermitted parameter: :customer. Context: { controller: Komoju::CustomerController, action: create, request: #<ActionDispatch::Request:0x000000010a2e8e60>, params: {"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_ew37fq9hio4iojwrav02v2zch", "controller"=>"komoju/customer", "action"=>"create", "customer"=>{"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_ew37fq9hio4iojwrav02v2zch"}} }[0m
+Completed 200 OK in 224ms (Views: 0.4ms | Allocations: 1788)
+
+
+Started POST "/create_subscription" for ::1 at 2022-08-31 15:40:31 +0900
+Processing by Komoju::SubscriptionController#create as */*
+  Parameters: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}}
+[31mUnpermitted parameters: :customer, :subscription. Context: { controller: Komoju::SubscriptionController, action: create, request: #<ActionDispatch::Request:0x000000010a42b610>, params: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "controller"=>"komoju/subscription", "action"=>"create", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}} }[0m
+Completed 500 Internal Server Error in 0ms (Allocations: 345)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/concerns/komoju/subscription.rb:6:in `create'
+app/controllers/komoju/subscription_controller.rb:7:in `create'
+Started POST "/create_subscription" for ::1 at 2022-08-31 15:40:54 +0900
+Processing by Komoju::SubscriptionController#create as */*
+  Parameters: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}}
+[31mUnpermitted parameters: :customer, :subscription. Context: { controller: Komoju::SubscriptionController, action: create, request: #<ActionDispatch::Request:0x0000000109ea1410>, params: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "controller"=>"komoju/subscription", "action"=>"create", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}} }[0m
+Completed 200 OK in 126ms (Views: 0.2ms | Allocations: 1760)
+
+
+Started POST "/create_subscription" for ::1 at 2022-08-31 15:41:08 +0900
+Processing by Komoju::SubscriptionController#create as */*
+  Parameters: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}}
+[31mUnpermitted parameter: :subscription. Context: { controller: Komoju::SubscriptionController, action: create, request: #<ActionDispatch::Request:0x000000010a361ef0>, params: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "controller"=>"komoju/subscription", "action"=>"create", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}} }[0m
+Completed 200 OK in 949ms (Views: 0.6ms | Allocations: 1969)
+
+
+Started GET "/subscriptions/co0topacd5wrjxrv80cemlewr" for ::1 at 2022-08-31 15:43:00 +0900
+Processing by Komoju::SubscriptionController#get_one as */*
+  Parameters: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "id"=>"co0topacd5wrjxrv80cemlewr", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}}
+[31mUnpermitted parameters: :id, :subscription. Context: { controller: Komoju::SubscriptionController, action: get_one, request: #<ActionDispatch::Request:0x0000000109cf9d10>, params: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "controller"=>"komoju/subscription", "action"=>"get_one", "id"=>"co0topacd5wrjxrv80cemlewr", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}} }[0m
+Completed 200 OK in 262ms (Views: 0.5ms | Allocations: 1923)
+
+
+Started DELETE "/subscriptions/co0topacd5wrjxrv80cemlewr" for ::1 at 2022-08-31 15:43:16 +0900
+Processing by Komoju::SubscriptionController#stop as */*
+  Parameters: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "id"=>"co0topacd5wrjxrv80cemlewr", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}}
+[31mUnpermitted parameters: :id, :subscription. Context: { controller: Komoju::SubscriptionController, action: stop, request: #<ActionDispatch::Request:0x0000000109e03ad0>, params: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "controller"=>"komoju/subscription", "action"=>"stop", "id"=>"co0topacd5wrjxrv80cemlewr", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}} }[0m
+Completed 500 Internal Server Error in 1ms (Allocations: 318)
+
+
+  
+ArgumentError (wrong number of arguments (given 3, expected 1..2)):
+  
+app/controllers/concerns/api_helper.rb:19:in `send_delete_request'
+app/controllers/concerns/komoju/subscription.rb:17:in `stop'
+app/controllers/komoju/subscription_controller.rb:17:in `stop'
+Started DELETE "/subscriptions/co0topacd5wrjxrv80cemlewr" for ::1 at 2022-08-31 15:44:05 +0900
+Processing by Komoju::SubscriptionController#stop as */*
+  Parameters: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "id"=>"co0topacd5wrjxrv80cemlewr", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}}
+[31mUnpermitted parameters: :id, :subscription. Context: { controller: Komoju::SubscriptionController, action: stop, request: #<ActionDispatch::Request:0x00000001096cd7c0>, params: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "controller"=>"komoju/subscription", "action"=>"stop", "id"=>"co0topacd5wrjxrv80cemlewr", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}} }[0m
+Completed 200 OK in 48ms (Views: 0.1ms | Allocations: 1679)
+
+
+Started DELETE "/subscriptions/co0topacd5wrjxrv80cemlewr" for ::1 at 2022-08-31 15:45:00 +0900
+Processing by Komoju::SubscriptionController#stop as */*
+  Parameters: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "id"=>"co0topacd5wrjxrv80cemlewr", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}}
+[31mUnpermitted parameters: :id, :subscription. Context: { controller: Komoju::SubscriptionController, action: stop, request: #<ActionDispatch::Request:0x0000000109e82588>, params: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "controller"=>"komoju/subscription", "action"=>"stop", "id"=>"co0topacd5wrjxrv80cemlewr", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}} }[0m
+Completed 200 OK in 471ms (Views: 0.4ms | Allocations: 1655)
+
+
+Started DELETE "/subscriptions/05saonn3qkpojyfwz2fnckt40" for ::1 at 2022-08-31 15:45:33 +0900
+Processing by Komoju::SubscriptionController#stop as */*
+  Parameters: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "id"=>"05saonn3qkpojyfwz2fnckt40", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}}
+[31mUnpermitted parameters: :id, :subscription. Context: { controller: Komoju::SubscriptionController, action: stop, request: #<ActionDispatch::Request:0x0000000109fd20f0>, params: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "controller"=>"komoju/subscription", "action"=>"stop", "id"=>"05saonn3qkpojyfwz2fnckt40", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}} }[0m
+Completed 200 OK in 45ms (Views: 0.3ms | Allocations: 1084)
+
+
+Started GET "/subscriptions/co0topacd5wrjxrv80cemlewr" for ::1 at 2022-08-31 15:45:37 +0900
+Processing by Komoju::SubscriptionController#get_one as */*
+  Parameters: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "id"=>"co0topacd5wrjxrv80cemlewr", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}}
+[31mUnpermitted parameters: :id, :subscription. Context: { controller: Komoju::SubscriptionController, action: get_one, request: #<ActionDispatch::Request:0x000000010a0d11e0>, params: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "controller"=>"komoju/subscription", "action"=>"get_one", "id"=>"co0topacd5wrjxrv80cemlewr", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}} }[0m
+Completed 200 OK in 187ms (Views: 0.7ms | Allocations: 1359)
+
+
+Started DELETE "/subscriptions/co0topacd5wrjxrv80cemlewr" for ::1 at 2022-08-31 15:45:42 +0900
+Processing by Komoju::SubscriptionController#stop as */*
+  Parameters: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "id"=>"co0topacd5wrjxrv80cemlewr", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}}
+[31mUnpermitted parameters: :id, :subscription. Context: { controller: Komoju::SubscriptionController, action: stop, request: #<ActionDispatch::Request:0x000000010a1120f0>, params: {"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly", "controller"=>"komoju/subscription", "action"=>"stop", "id"=>"co0topacd5wrjxrv80cemlewr", "subscription"=>{"amount"=>1000000, "customer"=>"05saonn3qkpojyfwz2fnckt40", "currency"=>"JPY", "period"=>"monthly"}} }[0m
+Completed 200 OK in 55ms (Views: 0.4ms | Allocations: 1087)
+
+
+Started DELETE "/customers/05saonn3qkpojyfwz2fnckt40" for ::1 at 2022-08-31 15:51:01 +0900
+Processing by Komoju::CustomerController#destroy as */*
+  Parameters: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "id"=>"05saonn3qkpojyfwz2fnckt40", "customer"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}}
+[31mUnpermitted parameters: :amount, :currency, :customer. Context: { controller: Komoju::CustomerController, action: destroy, request: #<ActionDispatch::Request:0x000000010982dfe8>, params: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "controller"=>"komoju/customer", "action"=>"destroy", "id"=>"05saonn3qkpojyfwz2fnckt40", "customer"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}} }[0m
+Completed 200 OK in 332ms (Views: 0.7ms | Allocations: 1676)
+
+
+Started POST "/customers" for ::1 at 2022-08-31 15:51:13 +0900
+Processing by Komoju::CustomerController#create as */*
+  Parameters: {"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_ew37fq9hio4iojwrav02v2zch", "customer"=>{"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_ew37fq9hio4iojwrav02v2zch"}}
+[31mUnpermitted parameter: :customer. Context: { controller: Komoju::CustomerController, action: create, request: #<ActionDispatch::Request:0x0000000109b13848>, params: {"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_ew37fq9hio4iojwrav02v2zch", "controller"=>"komoju/customer", "action"=>"create", "customer"=>{"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_ew37fq9hio4iojwrav02v2zch"}} }[0m
+Completed 200 OK in 107ms (Views: 0.7ms | Allocations: 1166)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 15:51:16 +0900
+Processing by Komoju::TokenController#create_payment_token as */*
+  Parameters: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "token"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}}
+[31mUnpermitted parameter: :token. Context: { controller: Komoju::TokenController, action: create_payment_token, request: #<ActionDispatch::Request:0x0000000109b51eb8>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"komoju/token", "action"=>"create_payment_token", "token"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+Completed 200 OK in 121ms (Views: 0.3ms | Allocations: 1607)
+
+
+Started POST "/customers" for ::1 at 2022-08-31 15:51:21 +0900
+Processing by Komoju::CustomerController#create as */*
+  Parameters: {"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_f36rrv3jyvcx7iiq4r35wkqfu", "customer"=>{"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_f36rrv3jyvcx7iiq4r35wkqfu"}}
+[31mUnpermitted parameter: :customer. Context: { controller: Komoju::CustomerController, action: create, request: #<ActionDispatch::Request:0x0000000109c41b70>, params: {"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_f36rrv3jyvcx7iiq4r35wkqfu", "controller"=>"komoju/customer", "action"=>"create", "customer"=>{"email"=>"russell_carey@hotmail.co.uk", "payment_details"=>"tok_f36rrv3jyvcx7iiq4r35wkqfu"}} }[0m
+Completed 200 OK in 301ms (Views: 0.3ms | Allocations: 1241)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 15:51:59 +0900
+Processing by Komoju::TokenController#create_payment_token as */*
+  Parameters: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "token"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}}
+[31mUnpermitted parameter: :token. Context: { controller: Komoju::TokenController, action: create_payment_token, request: #<ActionDispatch::Request:0x0000000109ca0990>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"komoju/token", "action"=>"create_payment_token", "token"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+Completed 200 OK in 237ms (Views: 0.3ms | Allocations: 1382)
+
+
+Started PATCH "/customers/6sgeyz61hcuwb2dg7f5th8swh" for ::1 at 2022-08-31 15:52:18 +0900
+Processing by Komoju::CustomerController#update_payment_details as */*
+  Parameters: {"payment_details"=>"tok_bodnc0xc88ryw5l9i8oonkjck", "id"=>"6sgeyz61hcuwb2dg7f5th8swh", "customer"=>{"payment_details"=>"tok_bodnc0xc88ryw5l9i8oonkjck"}}
+[31mUnpermitted parameter: :customer. Context: { controller: Komoju::CustomerController, action: update_payment_details, request: #<ActionDispatch::Request:0x0000000109ce8ce0>, params: {"payment_details"=>"tok_bodnc0xc88ryw5l9i8oonkjck", "controller"=>"komoju/customer", "action"=>"update_payment_details", "id"=>"6sgeyz61hcuwb2dg7f5th8swh", "customer"=>{"payment_details"=>"tok_bodnc0xc88ryw5l9i8oonkjck"}} }[0m
+Completed 200 OK in 443ms (Views: 1.1ms | Allocations: 1275)
+
+
+Started DELETE "/customers/6sgeyz61hcuwb2dg7f5th8swh" for ::1 at 2022-08-31 15:52:28 +0900
+Processing by Komoju::CustomerController#destroy as */*
+  Parameters: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "id"=>"6sgeyz61hcuwb2dg7f5th8swh", "customer"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}}
+[31mUnpermitted parameters: :amount, :currency, :customer. Context: { controller: Komoju::CustomerController, action: destroy, request: #<ActionDispatch::Request:0x0000000109d92e48>, params: {"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6", "controller"=>"komoju/customer", "action"=>"destroy", "id"=>"6sgeyz61hcuwb2dg7f5th8swh", "customer"=>{"amount"=>1000000, "currency"=>"JPY", "payment_details"=>"tok_263pa4vxe5p0unrw1kqvfzvz6"}} }[0m
+Completed 200 OK in 240ms (Views: 0.2ms | Allocations: 1107)
+
+
+Started GET "/purchases" for ::1 at 2022-08-31 15:53:00 +0900
+Processing by GamePurchaseController#show_all as */*
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGamePurchase Load (0.1ms)[0m  [1m[34mSELECT "game_purchases".* FROM "game_purchases" WHERE "game_purchases"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/game_purchase_controller.rb:9:in `show_all'
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 7185)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started POST "/purchases" for ::1 at 2022-08-31 15:54:48 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/purchases"):
+  
+Started POST "/purchases" for ::1 at 2022-08-31 15:55:08 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/purchases"):
+  
+Started POST "/purchases" for ::1 at 2022-08-31 15:55:33 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamePurchaseController#create as */*
+  Parameters: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :discount. Context: { controller: GamePurchaseController, action: create, request: #<ActionDispatch::Request:0x000000010e7ed0b0>, params: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "controller"=>"game_purchase", "action"=>"create", "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}} }[0m
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.7ms | Allocations: 20757)
+
+
+  
+NoMethodError (undefined method `amount' for #<GamePurchase id: nil, game_id: "1234", discount: 0, total: 1234.0, status: 0, created_at: nil, updated_at: nil, user_id: 1>):
+  
+app/controllers/game_purchase_controller.rb:16:in `create'
+Started POST "/purchases" for ::1 at 2022-08-31 15:55:57 +0900
+Processing by GamePurchaseController#create as */*
+  Parameters: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :discount. Context: { controller: GamePurchaseController, action: create, request: #<ActionDispatch::Request:0x000000011a0ceef8>, params: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "controller"=>"game_purchase", "action"=>"create", "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}} }[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms | Allocations: 7074)
+
+
+  
+NoMethodError (undefined method `amount' for #<GamePurchase id: nil, game_id: "1234", discount: 0, total: 1234.0, status: 0, created_at: nil, updated_at: nil, user_id: 1>):
+  
+app/controllers/game_purchase_controller.rb:16:in `create'
+Started POST "/purchases" for ::1 at 2022-08-31 15:56:23 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GamePurchaseController#create as */*
+  Parameters: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :discount. Context: { controller: GamePurchaseController, action: create, request: #<ActionDispatch::Request:0x000000010fc4fe18>, params: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "controller"=>"game_purchase", "action"=>"create", "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}} }[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.7ms | Allocations: 12345)
+
+
+  
+NoMethodError (undefined method `amount' for #<GamePurchase id: nil, game_id: "1234", discount: 0, total: 1234.0, status: 0, created_at: nil, updated_at: nil, user_id: 1>):
+  
+app/controllers/game_purchase_controller.rb:16:in `create'
+Started POST "/purchases" for ::1 at 2022-08-31 15:56:57 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamePurchaseController#create as */*
+  Parameters: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :discount. Context: { controller: GamePurchaseController, action: create, request: #<ActionDispatch::Request:0x000000010844f508>, params: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "controller"=>"game_purchase", "action"=>"create", "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}} }[0m
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.7ms | Allocations: 20762)
+
+
+  
+NoMethodError (undefined method `amount' for #<GamePurchase id: nil, game_id: "1234", discount: 0, total: 1234.0, status: 0, created_at: nil, updated_at: nil, user_id: 1>):
+  
+app/controllers/game_purchase_controller.rb:16:in `create'
+Started POST "/purchases" for ::1 at 2022-08-31 15:57:22 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamePurchaseController#create as */*
+  Parameters: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :discount. Context: { controller: GamePurchaseController, action: create, request: #<ActionDispatch::Request:0x0000000105f3c130>, params: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "controller"=>"game_purchase", "action"=>"create", "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/game_purchase_controller.rb:16:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/game_purchase_controller.rb:16:in `create'
+  [1m[36mGamePurchase Create (0.4ms)[0m  [1m[32mINSERT INTO "game_purchases" ("game_id", "discount", "total", "status", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["game_id", "1234"], ["discount", 0], ["total", 1234.0], ["status", 0], ["created_at", "2022-08-31 06:57:22.314262"], ["updated_at", "2022-08-31 06:57:22.314262"], ["user_id", 1]]
+  ↳ app/controllers/game_purchase_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/game_purchase_controller.rb:16:in `create'
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 20238)
+
+
+Started DELETE "/purchases/1" for ::1 at 2022-08-31 15:58:08 +0900
+Processing by GamePurchaseController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGamePurchase Load (0.0ms)[0m  [1m[34mSELECT "game_purchases".* FROM "game_purchases" WHERE "game_purchases"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/game_purchase_controller.rb:45:in `get_game_purchase'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/game_purchase_controller.rb:32:in `destroy'
+  [1m[36mGamePurchase Destroy (0.2ms)[0m  [1m[31mDELETE FROM "game_purchases" WHERE "game_purchases"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/game_purchase_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/game_purchase_controller.rb:32:in `destroy'
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 1.6ms | Allocations: 11605)
+
+
+Started PATCH "/purchases/1" for ::1 at 2022-08-31 15:59:13 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GamePurchaseController#update as */*
+  Parameters: {"game_id"=>"2345", "total"=>1234, "status"=>0, "discount"=>0, "id"=>"1", "game_purchase"=>{"game_id"=>"2345", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :discount. Context: { controller: GamePurchaseController, action: update, request: #<ActionDispatch::Request:0x0000000106b60b00>, params: {"game_id"=>"2345", "total"=>1234, "status"=>0, "discount"=>0, "controller"=>"game_purchase", "action"=>"update", "id"=>"1", "game_purchase"=>{"game_id"=>"2345", "discount"=>0, "total"=>1234, "status"=>0}} }[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms | Allocations: 6042)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass
+
+        if @purchase.update(purchase_params) 
+                    ^^^^^^^):
+  
+app/controllers/game_purchase_controller.rb:24:in `update'
+Started PATCH "/purchases/1" for ::1 at 2022-08-31 15:59:32 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GamePurchaseController#update as */*
+  Parameters: {"game_id"=>"2345", "total"=>1234, "status"=>0, "discount"=>0, "id"=>"1", "game_purchase"=>{"game_id"=>"2345", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :discount. Context: { controller: GamePurchaseController, action: update, request: #<ActionDispatch::Request:0x00000001065b2fc8>, params: {"game_id"=>"2345", "total"=>1234, "status"=>0, "discount"=>0, "controller"=>"game_purchase", "action"=>"update", "id"=>"1", "game_purchase"=>{"game_id"=>"2345", "discount"=>0, "total"=>1234, "status"=>0}} }[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.8ms | Allocations: 6026)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass
+
+        if @purchase.update(purchase_params) 
+                    ^^^^^^^):
+  
+app/controllers/game_purchase_controller.rb:24:in `update'
+Started POST "/purchases" for ::1 at 2022-08-31 15:59:50 +0900
+Processing by GamePurchaseController#create as */*
+  Parameters: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :discount. Context: { controller: GamePurchaseController, action: create, request: #<ActionDispatch::Request:0x00000001068b3880>, params: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "controller"=>"game_purchase", "action"=>"create", "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/game_purchase_controller.rb:16:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/game_purchase_controller.rb:16:in `create'
+  [1m[36mGamePurchase Create (0.7ms)[0m  [1m[32mINSERT INTO "game_purchases" ("game_id", "discount", "total", "status", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["game_id", "1234"], ["discount", 0], ["total", 1234.0], ["status", 0], ["created_at", "2022-08-31 06:59:50.882809"], ["updated_at", "2022-08-31 06:59:50.882809"], ["user_id", 1]]
+  ↳ app/controllers/game_purchase_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/game_purchase_controller.rb:16:in `create'
+Completed 200 OK in 19ms (Views: 0.9ms | ActiveRecord: 2.7ms | Allocations: 6591)
+
+
+Started POST "/purchases" for ::1 at 2022-08-31 15:59:54 +0900
+Processing by GamePurchaseController#create as */*
+  Parameters: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :discount. Context: { controller: GamePurchaseController, action: create, request: #<ActionDispatch::Request:0x000000010692b718>, params: {"game_id"=>"1234", "total"=>1234, "status"=>0, "discount"=>0, "controller"=>"game_purchase", "action"=>"create", "game_purchase"=>{"game_id"=>"1234", "discount"=>0, "total"=>1234, "status"=>0}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/game_purchase_controller.rb:16:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/game_purchase_controller.rb:16:in `create'
+  [1m[36mGamePurchase Create (0.7ms)[0m  [1m[32mINSERT INTO "game_purchases" ("game_id", "discount", "total", "status", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["game_id", "1234"], ["discount", 0], ["total", 1234.0], ["status", 0], ["created_at", "2022-08-31 06:59:54.484226"], ["updated_at", "2022-08-31 06:59:54.484226"], ["user_id", 1]]
+  ↳ app/controllers/game_purchase_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/game_purchase_controller.rb:16:in `create'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 2.1ms | Allocations: 4268)
+
+
+Started PATCH "/purchases/1" for ::1 at 2022-08-31 15:59:59 +0900
+Processing by GamePurchaseController#update as */*
+  Parameters: {"game_id"=>"2345", "total"=>1234, "status"=>0, "discount"=>0, "id"=>"1", "game_purchase"=>{"game_id"=>"2345", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :discount. Context: { controller: GamePurchaseController, action: update, request: #<ActionDispatch::Request:0x00000001069dbf28>, params: {"game_id"=>"2345", "total"=>1234, "status"=>0, "discount"=>0, "controller"=>"game_purchase", "action"=>"update", "id"=>"1", "game_purchase"=>{"game_id"=>"2345", "discount"=>0, "total"=>1234, "status"=>0}} }[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms | Allocations: 2353)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass
+
+        if @purchase.update(purchase_params) 
+                    ^^^^^^^):
+  
+app/controllers/game_purchase_controller.rb:24:in `update'
+Started DELETE "/purchases/2" for ::1 at 2022-08-31 16:00:31 +0900
+Processing by GamePurchaseController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGamePurchase Load (0.0ms)[0m  [1m[34mSELECT "game_purchases".* FROM "game_purchases" WHERE "game_purchases"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/game_purchase_controller.rb:45:in `get_game_purchase'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/game_purchase_controller.rb:32:in `destroy'
+  [1m[36mGamePurchase Destroy (0.2ms)[0m  [1m[31mDELETE FROM "game_purchases" WHERE "game_purchases"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/game_purchase_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/game_purchase_controller.rb:32:in `destroy'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 11495)
+
+
+Started PATCH "/purchases/1" for ::1 at 2022-08-31 16:00:37 +0900
+Processing by GamePurchaseController#update as */*
+  Parameters: {"game_id"=>"2345", "total"=>1234, "status"=>0, "discount"=>0, "id"=>"1", "game_purchase"=>{"game_id"=>"2345", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :discount. Context: { controller: GamePurchaseController, action: update, request: #<ActionDispatch::Request:0x0000000106550be8>, params: {"game_id"=>"2345", "total"=>1234, "status"=>0, "discount"=>0, "controller"=>"game_purchase", "action"=>"update", "id"=>"1", "game_purchase"=>{"game_id"=>"2345", "discount"=>0, "total"=>1234, "status"=>0}} }[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 2440)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass
+
+        if @purchase.update(purchase_params) 
+                    ^^^^^^^):
+  
+app/controllers/game_purchase_controller.rb:24:in `update'
+Started PATCH "/purchases/1" for ::1 at 2022-08-31 16:00:57 +0900
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamePurchaseController#update as */*
+  Parameters: {"game_id"=>"2345", "total"=>1234, "status"=>0, "discount"=>0, "id"=>"1", "game_purchase"=>{"game_id"=>"2345", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :discount. Context: { controller: GamePurchaseController, action: update, request: #<ActionDispatch::Request:0x000000010b5986c8>, params: {"game_id"=>"2345", "total"=>1234, "status"=>0, "discount"=>0, "controller"=>"game_purchase", "action"=>"update", "id"=>"1", "game_purchase"=>{"game_id"=>"2345", "discount"=>0, "total"=>1234, "status"=>0}} }[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.6ms | Allocations: 12852)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass
+
+        if @purchase.update(purchase_params) 
+                    ^^^^^^^):
+  
+app/controllers/game_purchase_controller.rb:26:in `update'
+Started PATCH "/purchases/1" for ::1 at 2022-08-31 16:01:30 +0900
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamePurchaseController#update as */*
+  Parameters: {"game_id"=>"2345", "total"=>1234, "status"=>0, "discount"=>0, "id"=>"1", "game_purchase"=>{"game_id"=>"2345", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms | Allocations: 12721)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass
+
+        if @purchase.update(purchase_params) 
+                    ^^^^^^^):
+  
+app/controllers/game_purchase_controller.rb:26:in `update'
+Started PATCH "/purchases/1" for ::1 at 2022-08-31 16:02:31 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamePurchaseController#update as */*
+  Parameters: {"game_id"=>"2345", "total"=>1234, "status"=>0, "discount"=>0, "id"=>"1", "game_purchase"=>{"game_id"=>"2345", "discount"=>0, "total"=>1234, "status"=>0}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms | Allocations: 12723)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass
+
+        if @purchase.update(purchase_params) 
+                    ^^^^^^^):
+  
+app/controllers/game_purchase_controller.rb:26:in `update'
+Started POST "/users/sign_up" for ::1 at 2022-08-31 16:04:28 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_up"):
+  
+Started POST "/users/sign_up" for ::1 at 2022-08-31 16:05:31 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_up"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-08-31 16:06:15 +0900
+Processing by Users::RegistrationsController#new as JSON
+  Parameters: {"user"=>{"email"=>"test2@test.com", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]", "first_name"=>"Jesus", "last_name"=>"HellO!"}, "registration"=>{"user"=>{"email"=>"test2@test.com", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]", "first_name"=>"Jesus", "last_name"=>"HellO!"}}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Completed 500 Internal Server Error in 18ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 4526)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-08-31 16:06:29 +0900
+Processing by Users::RegistrationsController#new as JSON
+  Parameters: {"user"=>{"username"=>"USERNAMEE", "email"=>"test2@test.com", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]", "first_name"=>"Jesus", "last_name"=>"HellO!"}, "registration"=>{"user"=>{"username"=>"USERNAMEE", "email"=>"test2@test.com", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]", "first_name"=>"Jesus", "last_name"=>"HellO!"}}}
+Completed 500 Internal Server Error in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 153)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users/sign_up" for ::1 at 2022-08-31 16:06:57 +0900
+Processing by Users::RegistrationsController#new as JSON
+  Parameters: {"user"=>{"username"=>"USERNAMEE", "email"=>"test2@test.com", "password"=>"[FILTERED]", "first_name"=>"Jesus", "last_name"=>"HellO!"}, "registration"=>{"user"=>{"username"=>"USERNAMEE", "email"=>"test2@test.com", "password"=>"[FILTERED]", "first_name"=>"Jesus", "last_name"=>"HellO!"}}}
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-08-31 16:07:03 +0900
+Processing by Users::RegistrationsController#new as JSON
+  Parameters: {"username"=>"USERNAMEE", "email"=>"test2@test.com", "password"=>"[FILTERED]", "first_name"=>"Jesus", "last_name"=>"HellO!", "registration"=>{"username"=>"USERNAMEE", "email"=>"test2@test.com", "password"=>"[FILTERED]", "first_name"=>"Jesus", "last_name"=>"HellO!"}}
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 149)
+
+
+Started POST "/users" for ::1 at 2022-08-31 16:07:50 +0900
+Processing by Users::RegistrationsController#create as JSON
+  Parameters: {"user"=>{"username"=>"USERNAMEE", "email"=>"test2@test.com", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]", "first_name"=>"Jesus", "last_name"=>"HellO!"}, "registration"=>{"user"=>{"username"=>"USERNAMEE", "email"=>"test2@test.com", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]", "first_name"=>"Jesus", "last_name"=>"HellO!"}}}
+[31mUnpermitted parameter: :password_confirm. Context: { controller: Users::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x000000010994ebc0>, params: {"user"=>{"username"=>"USERNAMEE", "email"=>"test2@test.com", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]", "first_name"=>"Jesus", "last_name"=>"HellO!"}, "format"=>:json, "controller"=>"users/registrations", "action"=>"create", "registration"=>{"user"=>{"username"=>"USERNAMEE", "email"=>"test2@test.com", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]", "first_name"=>"Jesus", "last_name"=>"HellO!"}}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "first_name", "last_name", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "test2@test.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-08-31 07:07:51.257299"], ["updated_at", "2022-08-31 07:07:51.257299"], ["first_name", "Jesus"], ["last_name", "HellO!"], ["username", "USERNAMEE"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 284ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 8446)
+
+

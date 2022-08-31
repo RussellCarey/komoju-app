@@ -2,25 +2,26 @@ module Komoju
     class SubscriptionController < ApplicationController
         include Komoju
 
+        # amount, currency, customer_id, monthly
         def create
             req = Komoju::Subscription.create(subscription_params)
             parse_return(req)
         end
 
         def get_one
-            req = Komoju::Subscription.get(subscription_params['subscription_id'])
+            req = Komoju::Subscription.get(subscription_params['id'])
             parse_return(req)
         end
 
         def stop
-            req = Komoju::Subscription.stop(subscription_params['subscription_id'])
+            req = Komoju::Subscription.stop(subscription_params['id'])
             parse_return(req)
         end
 
         private
         # https://docs.komoju.com/en/api/resources/subscriptions/
         def subscription_params
-            params.permit( :subscription_id, :amount, :currency, :customer_id, :period )
+            params.permit( :subscription_id, :amount, :currency, :customer, :period )
         end
 
         def parse_return(req)

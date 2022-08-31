@@ -1,7 +1,7 @@
 module ApiHelper
     extend ActiveSupport::Concern
     
-        def send_get_request(url, payload = nil)
+        def send_get_request(url)
             uri = URI.parse(url)
             https = create_https(uri)
             return https.get( uri.path, generate_headers )
@@ -13,10 +13,10 @@ module ApiHelper
             return https.post( uri.path, payload, generate_headers )
         end
 
-        def send_delete_request(url, payload = nil)
+        def send_delete_request(url)
             uri = URI.parse(url)
             https = create_https(uri)
-            return https.delete( uri.path, payload, generate_headers )
+            return https.delete( uri.path, generate_headers )
         end
 
         def send_patch_request(url, payload = nil)
