@@ -11,7 +11,6 @@ module Server
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
-
     config.session_store(:cookie_store, key: '_interslice_session')
     
     # Cookies are read and written through ActionController#cookies. The cookies being read are the ones received along with the request, 

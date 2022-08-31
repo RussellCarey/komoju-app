@@ -11,10 +11,10 @@ Rails.application.routes.draw do
   }
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-    # post '/komoju', to: "test#webhook"
-    # get '/data', to: 'payment#get_price_data'
+    # KOMOJU Token
+    post '/create_token', to: 'token#create_payment_token'
 
-     resources :purchases
-
-     post '/create_token', to: 'payment#create_payment_token'
+    # KOMOJU Payment
+    get '/get_all_payments', to: "payment#get_all_user_payment_data"
+    get '/get_payment_data/:payment_id', to: 'payment#get_payment_data'
 end

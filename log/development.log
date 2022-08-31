@@ -3351,3 +3351,371 @@ Processing by PaymentController#create_payment_token as */*
 Completed 200 OK in 154ms (Views: 0.2ms | Allocations: 1773)
 
 
+Started POST "/create_token" for ::1 at 2022-08-30 21:38:02 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 243ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 5081)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:04:12 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 1797)
+
+
+  
+NoMethodError (undefined method `get' for Komoju::Token:Module
+
+        req = Komoju::Token.get('d2mkzb1tun1hjwpu75385rlac')
+                           ^^^^
+Did you mean?  gem):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-31 08:04:32 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 4ms (Allocations: 2433)
+
+
+  
+NameError (undefined local variable or method `purchase_id' for Komoju::Payment:Module
+
+                return send_get_request("https://komoju.com/api/v1/payments/#{purchase_id}")
+                                                                              ^^^^^^^^^^^):
+  
+app/controllers/concerns/komoju/payment.rb:20:in `get'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-31 08:04:48 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 152ms (Allocations: 5825)
+
+
+  
+NoMethodError (undefined method `<<' for {"Content-Type"=>"application/json", "Authorization"=>"Basic c2tfdGVzdF8zNGp2bWtrY3kwcmZweDMxbTZlNmNyZzc=\n"}:Hash
+
+        dest << s
+             ^^
+Did you mean?  <):
+  
+app/controllers/concerns/api_helper.rb:7:in `send_get_request'
+app/controllers/concerns/komoju/payment.rb:20:in `get'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-31 08:05:03 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 35ms (Allocations: 5705)
+
+
+  
+NoMethodError (undefined method `<<' for {"Content-Type"=>"application/json", "Authorization"=>"Basic c2tfdGVzdF8zNGp2bWtrY3kwcmZweDMxbTZlNmNyZzc=\n"}:Hash
+
+        dest << s
+             ^^
+Did you mean?  <):
+  
+app/controllers/concerns/api_helper.rb:7:in `send_get_request'
+app/controllers/concerns/komoju/payment.rb:20:in `get'
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-31 08:07:30 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 109ms (Views: 0.2ms | Allocations: 1901)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:08:07 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 54ms (Views: 0.2ms | Allocations: 1875)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:17:38 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 1685)
+
+
+  
+NoMethodError (undefined method `get' for Komoju::Token:Module
+
+        req = Komoju::Token.get(token_data)
+                           ^^^^
+Did you mean?  gem):
+  
+app/controllers/payment_controller.rb:6:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-31 08:18:01 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 201ms (Views: 0.5ms | Allocations: 1807)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:28:15 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 658)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1+)):
+  
+app/controllers/payment_controller.rb:35:in `token_params'
+app/controllers/payment_controller.rb:13:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-31 08:29:50 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 0ms (Allocations: 128)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1+)):
+  
+app/controllers/payment_controller.rb:35:in `token_params'
+app/controllers/payment_controller.rb:13:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-31 08:30:59 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 400 Bad Request in 1ms (Allocations: 711)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: token):
+  
+app/controllers/payment_controller.rb:35:in `token_params'
+app/controllers/payment_controller.rb:13:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-31 08:32:26 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 202ms (Views: 0.5ms | Allocations: 1806)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:33:24 +0900
+  
+SyntaxError (/Users/r/Desktop/komojuapp/app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+...ermit( payment_details: {:name, :email, :number, :type, :mon...
+...                              ^
+):
+  
+app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+Started POST "/create_token" for ::1 at 2022-08-31 08:33:36 +0900
+  
+SyntaxError (/Users/r/Desktop/komojuapp/app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+...mit( payment_details => {:name, :email, :number, :type, :mon...
+...                              ^
+):
+  
+app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+Started POST "/create_token" for ::1 at 2022-08-31 08:33:45 +0900
+  
+SyntaxError (/Users/r/Desktop/komojuapp/app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+...it( :payment_details => {:name, :email, :number, :type, :mon...
+...                              ^
+):
+  
+app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+Started POST "/create_token" for ::1 at 2022-08-31 08:33:46 +0900
+  
+SyntaxError (/Users/r/Desktop/komojuapp/app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+...it( :payment_details => {:name, :email, :number, :type, :mon...
+...                              ^
+):
+  
+app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+Started POST "/create_token" for ::1 at 2022-08-31 08:34:01 +0900
+  
+SyntaxError (/Users/r/Desktop/komojuapp/app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+...t( {:payment_details => {:name, :email, :number, :type, :mon...
+...                              ^
+):
+  
+app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+app/controllers/payment_controller.rb:35: syntax error, unexpected ',', expecting =>
+Started POST "/create_token" for ::1 at 2022-08-31 08:35:01 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 500 Internal Server Error in 84ms (Allocations: 5328)
+
+
+  
+NoMethodError (undefined method `bytesize' for {:payment_details=>#<ActionController::Parameters {} permitted: true>}:Hash
+
+    self.content_length = body.bytesize
+                              ^^^^^^^^^):
+  
+app/controllers/concerns/api_helper.rb:13:in `send_post_request'
+app/controllers/concerns/komoju/token.rb:10:in `create'
+app/controllers/payment_controller.rb:13:in `create_payment_token'
+Started POST "/create_token" for ::1 at 2022-08-31 08:35:46 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 47ms (Views: 0.1ms | Allocations: 1811)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:36:19 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 100ms (Views: 0.1ms | Allocations: 1839)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:36:39 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 37ms (Views: 0.1ms | Allocations: 1893)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:37:50 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 113ms (Views: 0.2ms | Allocations: 1892)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:38:06 +0900
+Processing by PaymentController#create_payment_token as */*
+Completed 200 OK in 51ms (Views: 0.1ms | Allocations: 1995)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:40:24 +0900
+Processing by PaymentController#create_payment_token as */*
+  Parameters: {"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111, "payment"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}}
+[31mUnpermitted parameter: :payment. Context: { controller: PaymentController, action: create_payment_token, request: #<ActionDispatch::Request:0x00000001069eb040>, params: {"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111, "controller"=>"payment", "action"=>"create_payment_token", "payment"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}} }[0m
+[31mUnpermitted parameter: :payment. Context: { controller: PaymentController, action: create_payment_token, request: #<ActionDispatch::Request:0x00000001069eb040>, params: {"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111, "controller"=>"payment", "action"=>"create_payment_token", "payment"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}} }[0m
+[31mUnpermitted parameter: :payment. Context: { controller: PaymentController, action: create_payment_token, request: #<ActionDispatch::Request:0x00000001069eb040>, params: {"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111, "controller"=>"payment", "action"=>"create_payment_token", "payment"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}} }[0m
+Completed 200 OK in 159ms (Views: 0.3ms | Allocations: 2049)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:40:50 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+  Parameters: {"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111, "payment"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}}
+[31mUnpermitted parameter: :payment. Context: { controller: PaymentController, action: create_payment_token, request: #<ActionDispatch::Request:0x0000000108685868>, params: {"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111, "controller"=>"payment", "action"=>"create_payment_token", "payment"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}} }[0m
+[31mUnpermitted parameter: :payment. Context: { controller: PaymentController, action: create_payment_token, request: #<ActionDispatch::Request:0x0000000108685868>, params: {"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111, "controller"=>"payment", "action"=>"create_payment_token", "payment"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}} }[0m
+[31mUnpermitted parameter: :payment. Context: { controller: PaymentController, action: create_payment_token, request: #<ActionDispatch::Request:0x0000000108685868>, params: {"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111, "controller"=>"payment", "action"=>"create_payment_token", "payment"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}} }[0m
+Completed 200 OK in 53ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 5789)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:42:18 +0900
+Processing by PaymentController#create_payment_token as */*
+  Parameters: {"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111, "payment"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}}
+[31mUnpermitted parameter: :payment. Context: { controller: PaymentController, action: create_payment_token, request: #<ActionDispatch::Request:0x000000010a026330>, params: {"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111, "controller"=>"payment", "action"=>"create_payment_token", "payment"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}} }[0m
+Completed 200 OK in 109ms (Views: 0.2ms | Allocations: 2048)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:43:15 +0900
+  
+SyntaxError (/Users/r/Desktop/komojuapp/app/controllers/payment_controller.rb:38: syntax error, unexpected ',', expecting =>
+...mit(:payment_details => {:name, :email, :number, :type, :mon...
+...                              ^
+):
+  
+app/controllers/payment_controller.rb:38: syntax error, unexpected ',', expecting =>
+app/controllers/payment_controller.rb:38: syntax error, unexpected ',', expecting =>
+Started POST "/create_token" for ::1 at 2022-08-31 08:46:58 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komojuapp/app/controllers/payment_controller.rb:38: syntax error, unexpected ':', expecting ']'
+...ermit(payment_details: [:name :email, :number, :type, :month...
+...                              ^
+/Users/r/Desktop/komojuapp/app/controllers/payment_controller.rb:38: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+...etails: [:name :email, :number, :type, :month, :year, :code])
+...                              ^
+):
+  
+app/controllers/payment_controller.rb:38: syntax error, unexpected ':', expecting ']'
+app/controllers/payment_controller.rb:38: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/controllers/payment_controller.rb:38: syntax error, unexpected ':', expecting ']'
+app/controllers/payment_controller.rb:38: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+Started POST "/create_token" for ::1 at 2022-08-31 08:49:32 +0900
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/r/Desktop/komojuapp/app/controllers/payment_controller.rb:38: syntax error, unexpected ':', expecting ']'
+...rmit( payment_details: [:name :email, :number, :type, :month...
+...                              ^
+/Users/r/Desktop/komojuapp/app/controllers/payment_controller.rb:38: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+...etails: [:name :email, :number, :type, :month, :year, :code]...
+...                              ^
+):
+  
+app/controllers/payment_controller.rb:38: syntax error, unexpected ':', expecting ']'
+app/controllers/payment_controller.rb:38: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/controllers/payment_controller.rb:38: syntax error, unexpected ':', expecting ']'
+app/controllers/payment_controller.rb:38: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+Started POST "/create_token" for ::1 at 2022-08-31 08:49:57 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PaymentController#create_payment_token as */*
+  Parameters: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}, "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}}}
+[31mUnpermitted parameter: :payment. Context: { controller: PaymentController, action: create_payment_token, request: #<ActionDispatch::Request:0x00000001061860d0>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"payment", "action"=>"create_payment_token", "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit-card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+Completed 200 OK in 126ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5340)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:50:17 +0900
+Processing by PaymentController#create_payment_token as */*
+  Parameters: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}}
+[31mUnpermitted parameter: :payment. Context: { controller: PaymentController, action: create_payment_token, request: #<ActionDispatch::Request:0x00000001067cb4b8>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"payment", "action"=>"create_payment_token", "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>4111111111111111, "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+Completed 200 OK in 55ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1416)
+
+
+Started POST "/create_token" for ::1 at 2022-08-31 08:50:24 +0900
+Processing by PaymentController#create_payment_token as */*
+  Parameters: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}}
+[31mUnpermitted parameter: :payment. Context: { controller: PaymentController, action: create_payment_token, request: #<ActionDispatch::Request:0x00000001068b0b08>, params: {"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}, "controller"=>"payment", "action"=>"create_payment_token", "payment"=>{"payment_details"=>{"name"=>"Russell Carey", "email"=>"idsnfidnf@sdfsdf.dsf", "number"=>"4111111111111111", "type"=>"credit_card", "month"=>"05", "year"=>"2025", "code"=>111}}} }[0m
+Completed 200 OK in 193ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1455)
+
+
+Started GET "/get_payment_data/d2mkzb1tun1hjwpu75385rlac" for ::1 at 2022-08-31 08:56:16 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/get_payment_data/d2mkzb1tun1hjwpu75385rlac"):
+  
+Started GET "/get_payment_data/d2mkzb1tun1hjwpu75385rlac" for ::1 at 2022-08-31 09:00:16 +0900
+Processing by PaymentController#get_payment_data as */*
+  Parameters: {"id"=>"d2mkzb1tun1hjwpu75385rlac"}
+[31mUnpermitted parameter: :id. Context: { controller: PaymentController, action: get_payment_data, request: #<ActionDispatch::Request:0x00000001065ab638>, params: {"controller"=>"payment", "action"=>"get_payment_data", "id"=>"d2mkzb1tun1hjwpu75385rlac"} }[0m
+Completed 200 OK in 228ms (Views: 1.4ms | Allocations: 3898)
+
+
+Started GET "/get_payment_data/d2mkzb1tun1hjwpu75385rlac" for ::1 at 2022-08-31 09:00:59 +0900
+Processing by PaymentController#get_payment_data as */*
+  Parameters: {"payment_id"=>"d2mkzb1tun1hjwpu75385rlac"}
+Completed 200 OK in 67ms (Views: 0.1ms | Allocations: 1845)
+
+
+Started GET "/get_payment_data/d2mkzb1tun1hjwpu75385rlac" for ::1 at 2022-08-31 09:01:56 +0900
+Processing by PaymentController#get_payment_data as */*
+  Parameters: {"payment_id"=>"d2mkzb1tun1hjwpu75385rlac"}
+Completed 500 Internal Server Error in 1ms (Allocations: 759)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://komoju.com/api/v1/payments/{\"payment_id\"=>\"d2mkzb1tun1hjwpu75385rlac\"}"):
+  
+app/controllers/concerns/api_helper.rb:5:in `send_get_request'
+app/controllers/concerns/komoju/payment.rb:17:in `get_one'
+app/controllers/payment_controller.rb:17:in `get_payment_data'
+Started GET "/get_payment_data/d2mkzb1tun1hjwpu75385rlac" for ::1 at 2022-08-31 09:02:03 +0900
+Processing by PaymentController#get_payment_data as */*
+  Parameters: {"payment_id"=>"d2mkzb1tun1hjwpu75385rlac"}
+Completed 200 OK in 120ms (Views: 0.2ms | Allocations: 1858)
+
+
+Started GET "/get_payment_data/d2mkzb1tun1hjwpu75385rlac" for ::1 at 2022-08-31 09:02:19 +0900
+Processing by PaymentController#get_payment_data as */*
+  Parameters: {"payment_id"=>"d2mkzb1tun1hjwpu75385rlac"}
+Completed 200 OK in 60ms (Views: 0.2ms | Allocations: 1816)
+
+
+Started GET "/get_all_payments" for ::1 at 2022-08-31 09:03:01 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/get_all_payments"):
+  
+Started GET "/get_all_payments" for ::1 at 2022-08-31 09:03:08 +0900
+Processing by PaymentController#get_all_user_payment_data as */*
+Completed 204 No Content in 148ms (Allocations: 1438)
+
+
+Started GET "/get_all_payments" for ::1 at 2022-08-31 09:05:03 +0900
+Processing by PaymentController#get_all_user_payment_data as */*
+Completed 200 OK in 252ms (Views: 2.8ms | Allocations: 3587)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePurchasesTable (20220830015641)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE "purchases"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220830015641"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

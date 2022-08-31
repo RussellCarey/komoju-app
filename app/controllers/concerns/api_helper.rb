@@ -4,7 +4,7 @@ module ApiHelper
         def send_get_request(url, payload = nil)
             uri = URI.parse(url)
             https = create_https(uri)
-            return https.get( uri.path, payload, generate_headers )
+            return https.get( uri.path, generate_headers )
         end
 
         def send_post_request(url, payload = nil)
