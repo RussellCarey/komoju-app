@@ -1,11 +1,10 @@
 class GamePurchaseController < ApplicationController
 
     before_action :authenticate_user!
-    before_action :check_owner, only: %i[]
     before_action :get_game_purchase, only: %i[ destroy]
+    before_action :check_owner, only: %i[ destroy, check_owner ]
     
     def show_all
-        GamePurchase.get_total_sales
         purchases = GamePurchase.where(user_id: current_user.id)
         render json: { data: purchases }, status: :ok
     end
@@ -29,9 +28,19 @@ class GamePurchaseController < ApplicationController
         end
     end
 
+    def aggregate
+        f = params['func']
+        data = GamePurchase.send("#{f}", aggregate_params)
+        render json: { data:  data}, status: :ok
+    end
+
     private
     def purchase_params
-        params.fetch(:game_purchase, {}).permit(:id, :user_id, :game_id, :total, :status, :discount)
+        params.fetch(:game_purchase, {}).permit(:id, :user_id, :game_id, :total, :status, :discount, :name, :image)
+    end
+
+    def aggregate_params
+        params.permit(:func, :min, :max, :min_date, :max_date, :column, :value)
     end
 
     def get_game_purchase
@@ -39,6 +48,7 @@ class GamePurchaseController < ApplicationController
     end
 
     def check_owner
-        ##
+        m = "You dont not own this resource"
+        return render json: { message: m}, status: :unauthorized unless @purchase.user_id == current_user.id
     end
 end

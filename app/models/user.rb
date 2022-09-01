@@ -2,7 +2,8 @@
 # https://btihen.me/post_ruby_rails/rails_devise_users_namespaced/
 
 class User < ApplicationRecord
-  validates :email, presence: true
+  validates :email, presence: true, uniqueness: true
+  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
   validates :username, presence: true, length: { minimum: 6, maximum: 12 }
   validates :first_name, presence: true, length: { minimum: 2 }
   validates :last_name, presence: true, length: { minimum: 2}
@@ -13,7 +14,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
   :jwt_authenticatable,
   jwt_revocation_strategy: JwtDenylist
-        #  :recoverable, :rememberable, :validatable
+  #  :recoverable, :rememberable, :validatable
 
   has_many :favourites
   has_many :carts

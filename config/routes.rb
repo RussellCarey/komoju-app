@@ -36,6 +36,7 @@ Rails.application.routes.draw do
     post '/purchases', to: 'game_purchase#create'
     delete '/purchases/:id', to: 'game_purchase#destroy'
     patch '/purchases/:id', to: 'game_purchase#update'
+    get '/purchases/aggregate/:func', to: 'game_purchase#aggregate'
 
     # Favourites
     get '/favourites', to: 'favourites#show_all'

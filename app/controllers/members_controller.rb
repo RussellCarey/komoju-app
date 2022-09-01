@@ -1,7 +1,6 @@
 class MembersController < ApplicationController
     # Checks if the user is logged in.
     before_action :authenticate_user!
-    before_action :authenticate_user!
 
     # Get the logged in user and send back a token.
     def show
