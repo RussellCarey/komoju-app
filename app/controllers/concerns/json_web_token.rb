@@ -1,7 +1,7 @@
 require 'jwt'
 
-class JsonWebToken
-  SECRET_KEY = Rails.application.credentials.devise[:jwt_secret_key];
+module JsonWebToken
+  SECRET_KEY = Rails.application.credentials.devise[:jwt_secret];
 
   def self.encode(payload, exp = 24.hours.from_now)
     payload[:exp] = exp.to_i

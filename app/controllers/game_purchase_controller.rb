@@ -1,8 +1,9 @@
 class GamePurchaseController < ApplicationController
 
-    before_action :authenticate_user!
+    before_action :authorize_request # Custom for JWT
     before_action :get_game_purchase, only: %i[ destroy]
     before_action :check_owner, only: %i[ destroy, check_owner ]
+
     
     def show_all
         purchases = GamePurchase.where(user_id: current_user.id)

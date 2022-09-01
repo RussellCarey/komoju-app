@@ -6,10 +6,11 @@ Rails.application.routes.draw do
   defaults: { format: :json },
   # Usually point to devise controllers. Custom. You can remove _controller.
   controllers: {
-    sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
+    # JWT Custom Auth
+    post '/users/login', to: "users/authentication#login"
 
     # KOMOJU Token
     post '/create_token', to: 'komoju/token#create_payment_token'

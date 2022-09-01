@@ -2,6 +2,10 @@
 # https://btihen.me/post_ruby_rails/rails_devise_users_namespaced/
 
 class User < ApplicationRecord
+  attr_accessor :unhashed_password
+  attr_accessor :hased_password
+  attr_accessor :password
+
   validates :email, presence: true, uniqueness: true
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
   validates :username, presence: true, length: { minimum: 6, maximum: 12 }
