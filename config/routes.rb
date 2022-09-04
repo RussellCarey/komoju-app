@@ -9,8 +9,9 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
-    # JWT Custom Auth
+    # Custom Auth
     post '/users/login', to: "users/authentication#login"
+    post '/users/authorize', to: 'users/authenticate#activate_user'
 
     # KOMOJU Token
     post '/create_token', to: 'komoju/token#create_payment_token'
@@ -43,9 +44,11 @@ Rails.application.routes.draw do
     get '/favourites', to: 'favourites#show_all'
     post '/favourites', to: 'favourites#create'
     delete '/favourites/:id', to: 'favourites#destroy'
+    get '/favourites/aggregate/:func', to: 'favourites#aggregate'
 
     # Cart
     get '/cart', to: 'cart#show_all'
     post '/cart', to: 'cart#create'
     delete '/cart/:id', to: 'cart#destroy'
+    get '/cart/aggregate/:func', to: 'cart#aggregate'
 end

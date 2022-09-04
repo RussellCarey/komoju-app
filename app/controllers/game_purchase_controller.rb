@@ -30,9 +30,9 @@ class GamePurchaseController < ApplicationController
     end
 
     def aggregate
-        f = params['func']
+        f = params['func'] 
         data = GamePurchase.send("#{f}", aggregate_params)
-        render json: { data:  data}, status: :ok
+        render json: { data:  data }, status: :ok
     end
 
     private

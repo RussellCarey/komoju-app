@@ -6,11 +6,17 @@ class User < ApplicationRecord
   attr_accessor :hased_password
   attr_accessor :password
 
+  # CHeck
+  enum prefered_contact: [:mobile, :email]
+
+  before_validation :generate_user_reg_number
+
   validates :email, presence: true, uniqueness: true
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
-  validates :username, presence: true, length: { minimum: 6, maximum: 12 }
+  validates :username, presence: true, length: { minimum: 6, maximum: 12 }, uniqueness: true
   validates :first_name, presence: true, length: { minimum: 2 }
   validates :last_name, presence: true, length: { minimum: 2}
+  validates :reg_token, presence: true
   validates_confirmation_of :password
 
   # Include default devise modules. Others available are:
@@ -24,4 +30,12 @@ class User < ApplicationRecord
   has_many :carts
   has_many :token_purchases
   has_many :game_purchases
+
+  def generate_user_reg_number
+    self.reg_token = rand(0..9999999)
+  end
+
+  def activate_user
+    self.authorized_at = DateTime.now
+  end
 end

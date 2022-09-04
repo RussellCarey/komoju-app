@@ -97,6 +97,7 @@ GEM
     dry-core (0.8.1)
       concurrent-ruby (~> 1.0)
     erubi (1.10.0)
+    fabrication (2.30.0)
     faraday (2.5.2)
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
@@ -223,6 +224,7 @@ DEPENDENCIES
   debug
   devise (~> 4.8)
   devise-jwt (~> 0.9.0)
+  fabrication
   puma (~> 5.0)
   rack-cors (~> 1.1)
   rails (~> 7.0.3, >= 7.0.3.1)

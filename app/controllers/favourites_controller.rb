@@ -1,6 +1,6 @@
 class FavouritesController < ApplicationController
 
-    before_action :authenticate_user!
+    before_action :authorize_request
     before_action :check_owner, only: %i[show_users, destroy]
     before_action :set_favourites, only: %i[destroy]
     
@@ -32,9 +32,19 @@ class FavouritesController < ApplicationController
         end
     end
 
+    def aggregate
+        f = params['func']
+        data = Favourite.send("#{f}", aggregate_params)
+        render json: { data:  data }, status: :ok
+    end
+
     private
     def favourite_params
         params.fetch(:favourite, {}).permit(:id, :game_id)
+    end
+
+    def aggregate_params
+        params.permit(:func, :min, :max, :min_date, :max_date, :column, :value)
     end
 
     def check_owner

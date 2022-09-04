@@ -1,0 +1,1183 @@
+{
+	"info": {
+		"_postman_id": "ee3408d8-5b1f-4d55-9319-d5dfebbb6ea4",
+		"name": "Komoju",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12536758"
+	},
+	"item": [
+		{
+			"name": "Games",
+			"item": [
+				{
+					"name": "Get Single Game",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+								"type": "text"
+							},
+							{
+								"key": "Client-ID",
+								"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+								"type": "text"
+							},
+							{
+								"key": "key",
+								"value": "f0411c841de74da1818f464ffe5c0aa5",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://rawg.io/api/games?key=f0411c841de74da1818f464ffe5c0aa5&page_size=1",
+							"protocol": "https",
+							"host": [
+								"rawg",
+								"io"
+							],
+							"path": [
+								"api",
+								"games"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "f0411c841de74da1818f464ffe5c0aa5"
+								},
+								{
+									"key": "page_size",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Genres",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+								"type": "text"
+							},
+							{
+								"key": "Client-ID",
+								"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+								"type": "text"
+							},
+							{
+								"key": "key",
+								"value": "f0411c841de74da1818f464ffe5c0aa5",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://rawg.io/api/games?key=f0411c841de74da1818f464ffe5c0aa5&page_size=1",
+							"protocol": "https",
+							"host": [
+								"rawg",
+								"io"
+							],
+							"path": [
+								"api",
+								"games"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "f0411c841de74da1818f464ffe5c0aa5"
+								},
+								{
+									"key": "page_size",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Platforms",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+								"type": "text"
+							},
+							{
+								"key": "Client-ID",
+								"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+								"type": "text"
+							},
+							{
+								"key": "key",
+								"value": "f0411c841de74da1818f464ffe5c0aa5",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://rawg.io/api/games?key=f0411c841de74da1818f464ffe5c0aa5&page_size=1",
+							"protocol": "https",
+							"host": [
+								"rawg",
+								"io"
+							],
+							"path": [
+								"api",
+								"games"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "f0411c841de74da1818f464ffe5c0aa5"
+								},
+								{
+									"key": "page_size",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tags",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+								"type": "text"
+							},
+							{
+								"key": "Client-ID",
+								"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+								"type": "text"
+							},
+							{
+								"key": "key",
+								"value": "f0411c841de74da1818f464ffe5c0aa5",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://rawg.io/api/games?key=f0411c841de74da1818f464ffe5c0aa5&page_size=1",
+							"protocol": "https",
+							"host": [
+								"rawg",
+								"io"
+							],
+							"path": [
+								"api",
+								"games"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "f0411c841de74da1818f464ffe5c0aa5"
+								},
+								{
+									"key": "page_size",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Developers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+								"type": "text"
+							},
+							{
+								"key": "Client-ID",
+								"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+								"type": "text"
+							},
+							{
+								"key": "key",
+								"value": "f0411c841de74da1818f464ffe5c0aa5",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://rawg.io/api/developers?key=f0411c841de74da1818f464ffe5c0aa5&page_size=100",
+							"protocol": "https",
+							"host": [
+								"rawg",
+								"io"
+							],
+							"path": [
+								"api",
+								"developers"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "f0411c841de74da1818f464ffe5c0aa5"
+								},
+								{
+									"key": "page_size",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 16 Popular Games",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+								"type": "text"
+							},
+							{
+								"key": "Client-ID",
+								"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+								"type": "text"
+							},
+							{
+								"key": "key",
+								"value": "f0411c841de74da1818f464ffe5c0aa5",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://rawg.io/api/games?key=f0411c841de74da1818f464ffe5c0aa5&metacritic=90,100&page_size=16",
+							"protocol": "https",
+							"host": [
+								"rawg",
+								"io"
+							],
+							"path": [
+								"api",
+								"games"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "f0411c841de74da1818f464ffe5c0aa5"
+								},
+								{
+									"key": "metacritic",
+									"value": "90,100"
+								},
+								{
+									"key": "page_size",
+									"value": "16"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "KOMOJU API",
+			"item": [
+				{
+					"name": "Tokens",
+					"item": [
+						{
+							"name": "Create Payment Token",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"content-type": true
+								}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Client-ID",
+										"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"payment_details\":\n    {\n        \"name\": \"Russell Carey\",\n        \"email\": \"idsnfidnf@sdfsdf.dsf\",\n        \"number\": 4111111111111111,\n        \"type\": \"credit-card\",\n        \"month\": \"05\",\n        \"year\": \"2025\",\n        \"code\": 111\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/create_token",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"create_token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Payments",
+					"item": [
+						{
+							"name": "Get all payments for account",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Client-ID",
+										"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/get_all_payments",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"get_all_payments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get single payment",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Client-ID",
+										"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/get_payment_data/65yk42d71sydunce478x87053",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"get_payment_data",
+										"65yk42d71sydunce478x87053"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Make payment - No payment token",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Client-ID",
+										"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n    \"amount\": 1000000,\n    \"currency\": \"JPY\",\n    \"payment_details\":\n    {\n        \"name\": \"Russell Carey\",\n        \"email\": \"idsnfidnf@sdfsdf.dsf\",\n        \"number\": \"4111111111111111\",\n        \"type\": \"credit_card\",\n        \"month\": \"05\",\n        \"year\": \"2025\",\n        \"code\": 111,\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/make_payment",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"make_payment"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Make payment - Pay Token",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Client-ID",
+										"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n    \"amount\": 1000000,\n    \"currency\": \"JPY\",\n    \"payment_details\": \"tok_263pa4vxe5p0unrw1kqvfzvz6\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/make_payment",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"make_payment"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Subscriptions",
+					"item": [
+						{
+							"name": "Create Subscription",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Client-ID",
+										"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n    \"amount\": 1000000,\n    \"customer\": \"05saonn3qkpojyfwz2fnckt40\",\n    \"currency\": \"JPY\",\n    \"period\": \"monthly\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/subscriptions",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"subscriptions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get one subscription",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Client-ID",
+										"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n    \"amount\": 1000000,\n    \"customer\": \"05saonn3qkpojyfwz2fnckt40\",\n    \"currency\": \"JPY\",\n    \"period\": \"monthly\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/subscriptions/co0topacd5wrjxrv80cemlewr",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"subscriptions",
+										"co0topacd5wrjxrv80cemlewr"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Stop Subscriptions",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Client-ID",
+										"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n    \"amount\": 1000000,\n    \"customer\": \"05saonn3qkpojyfwz2fnckt40\",\n    \"currency\": \"JPY\",\n    \"period\": \"monthly\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/subscriptions/co0topacd5wrjxrv80cemlewr",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"subscriptions",
+										"co0topacd5wrjxrv80cemlewr"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Customers",
+					"item": [
+						{
+							"name": "Create Customer",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Client-ID",
+										"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n    \"email\": \"russell_carey@hotmail.co.uk\",\n    \"payment_details\": \"tok_ew37fq9hio4iojwrav02v2zch\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/customers",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remove Customer",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Client-ID",
+										"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n    \"amount\": 1000000,\n    \"currency\": \"JPY\",\n    \"payment_details\": \"tok_263pa4vxe5p0unrw1kqvfzvz6\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/customers/6sgeyz61hcuwb2dg7f5th8swh",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customers",
+										"6sgeyz61hcuwb2dg7f5th8swh"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit customer payment details",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer aqrmnumgpa10kj5q0xgdnojo5ycdym",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Client-ID",
+										"value": "we2vbgf4ul0ymmcpg40exeeyz90bqv",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n    \"payment_details\": \"tok_bodnc0xc88ryw5l9i8oonkjck\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/customers/6sgeyz61hcuwb2dg7f5th8swh",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customers",
+										"6sgeyz61hcuwb2dg7f5th8swh"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Favourites",
+			"item": [
+				{
+					"name": "Get Users Favourites",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjYxOTE2MDE1LCJleHAiOjE2NjE5MTk2MTUsImp0aSI6IjVhMzlkMmQ4LTQ4NGMtNDE0NS1iMDAxLTA1ZGFkZTlmYjU3NiJ9.SKKpwnIVYSiIu4sT24v7UyoqzdzpioCvcisDUim_oHY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/favourites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favourites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add a favourite",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjYxOTE2MDE1LCJleHAiOjE2NjE5MTk2MTUsImp0aSI6IjVhMzlkMmQ4LTQ4NGMtNDE0NS1iMDAxLTA1ZGFkZTlmYjU3NiJ9.SKKpwnIVYSiIu4sT24v7UyoqzdzpioCvcisDUim_oHY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"game_id\": \"9jsd9fsdfgggggggggggg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/favourites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favourites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Favourite",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjYxOTE2MDE1LCJleHAiOjE2NjE5MTk2MTUsImp0aSI6IjVhMzlkMmQ4LTQ4NGMtNDE0NS1iMDAxLTA1ZGFkZTlmYjU3NiJ9.SKKpwnIVYSiIu4sT24v7UyoqzdzpioCvcisDUim_oHY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/favourites/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favourites",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Get users cart",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjYxOTE2MDE1LCJleHAiOjE2NjE5MTk2MTUsImp0aSI6IjVhMzlkMmQ4LTQ4NGMtNDE0NS1iMDAxLTA1ZGFkZTlmYjU3NiJ9.SKKpwnIVYSiIu4sT24v7UyoqzdzpioCvcisDUim_oHY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/cart/aggregate/in_cart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cart",
+								"aggregate",
+								"in_cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add cart item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjYxOTE3MTczLCJleHAiOjE2NjE5MjA3NzMsImp0aSI6IjljZTNkMGVhLWE5ODktNGEyOC1iOWZlLTYyOGY1ZTUyZTBkYyJ9.JERYZHi4UHyQZiMJ5VXceKRg9Ne8A1rCtBA82klHGho",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"game_id\": \"9jsd9fsdfgggggggggggg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/favourites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favourites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove cart item",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjYxOTE2MDE1LCJleHAiOjE2NjE5MTk2MTUsImp0aSI6IjVhMzlkMmQ4LTQ4NGMtNDE0NS1iMDAxLTA1ZGFkZTlmYjU3NiJ9.SKKpwnIVYSiIu4sT24v7UyoqzdzpioCvcisDUim_oHY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/favourites/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favourites",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Game Purchases",
+			"item": [
+				{
+					"name": "Get User Purchases",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjYxOTE2MDE1LCJleHAiOjE2NjE5MTk2MTUsImp0aSI6IjVhMzlkMmQ4LTQ4NGMtNDE0NS1iMDAxLTA1ZGFkZTlmYjU3NiJ9.SKKpwnIVYSiIu4sT24v7UyoqzdzpioCvcisDUim_oHY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/favourites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favourites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aggregate data",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjYxOTE2MDE1LCJleHAiOjE2NjE5MTk2MTUsImp0aSI6IjVhMzlkMmQ4LTQ4NGMtNDE0NS1iMDAxLTA1ZGFkZTlmYjU3NiJ9.SKKpwnIVYSiIu4sT24v7UyoqzdzpioCvcisDUim_oHY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/purchases/aggregate/total_sales_by?column=game_id&value=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"purchases",
+								"aggregate",
+								"total_sales_by"
+							],
+							"query": [
+								{
+									"key": "column",
+									"value": "game_id"
+								},
+								{
+									"key": "value",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Purchase Data",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjYxOTE2MDE1LCJleHAiOjE2NjE5MTk2MTUsImp0aSI6IjVhMzlkMmQ4LTQ4NGMtNDE0NS1iMDAxLTA1ZGFkZTlmYjU3NiJ9.SKKpwnIVYSiIu4sT24v7UyoqzdzpioCvcisDUim_oHY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"game_id\": \"1234\",\n    \"total\": 1234,\n    \"status\": 0,\n    \"discount\": 0,\n    \"image\": \"url\",\n    \"name\": \"gamename\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/purchases",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"purchases"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Payment Record",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjYxOTE2MDE1LCJleHAiOjE2NjE5MTk2MTUsImp0aSI6IjVhMzlkMmQ4LTQ4NGMtNDE0NS1iMDAxLTA1ZGFkZTlmYjU3NiJ9.SKKpwnIVYSiIu4sT24v7UyoqzdzpioCvcisDUim_oHY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/purchases/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"purchases",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sign in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n        \"email\": \"test@test.com\",\n        \"password\": \"11111111\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/sign_in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"sign_in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n        \"username\": \"USERNAMEE\",\n        \"email\": \"test2@test.com\",\n        \"password\": \"11111111\",\n        \"password_confirm\": \"11111111\",\n        \"first_name\": \"Jesus\",\n        \"last_name\": \"HellO!\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

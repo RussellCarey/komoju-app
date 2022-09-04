@@ -17,11 +17,18 @@ class Users::RegistrationsController < Devise::RegistrationsController
         end
     end
 
+    # Disable devise session default on signup - own logic - need the user just created.
+    def sign_up(resource_name, resource)
+        @current_user = resource
+    end
+
     def register_success
 
-        #! Change!
-        twillo_code = Twillo::Message.send(123123123, "Your registration code for Gamey is 12345")
-        puts twillo_code
+        if(@user.prefered_contact == 0)
+            Twillo::Message.send("NUMBER HERE", "Thank you for signing up for Tokeny. Your registration code is #{@current_user.reg_token}. Please login to activate.")
+        else 
+            SignupMailer.with(user: @current_user).signup_email.deliver_now
+        end
 
         render json: {
             message: "Signed up",
