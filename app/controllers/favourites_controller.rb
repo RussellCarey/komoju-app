@@ -9,13 +9,13 @@ class FavouritesController < ApplicationController
     # end
 
     def show_all
-        favourites = Favourite.where(user_id: current_user.id)
+        favourites = Favourite.where(user_id: @current_user.id)
         render json: { data: favourites }, status: :ok
     end
 
     def create 
         new_favourite = Favourite.new(favourite_params)
-        new_favourite.user_id = current_user.id
+        new_favourite.user_id = @current_user.id
 
         if new_favourite.save 
             render json: { data: new_favourite }, status: :ok

@@ -6,13 +6,13 @@ class GamePurchaseController < ApplicationController
 
     
     def show_all
-        purchases = GamePurchase.where(user_id: current_user.id)
+        purchases = GamePurchase.where(user_id: @current_user.id)
         render json: { data: purchases }, status: :ok
     end
 
     def create 
         purchase = GamePurchase.new(purchase_params)
-        purchase.user_id = current_user.id
+        purchase.user_id = @current_user.id
 
         if purchase.save 
             render json: { data: purchase }, status: :ok
@@ -50,6 +50,6 @@ class GamePurchaseController < ApplicationController
 
     def check_owner
         m = "You dont not own this resource"
-        return render json: { message: m}, status: :unauthorized unless @purchase.user_id == current_user.id
+        return render json: { message: m}, status: :unauthorized unless @purchase.user_id == @current_user.id
     end
 end

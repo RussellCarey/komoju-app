@@ -9,13 +9,13 @@ class CartController < ApplicationController
     # end
 
     def show_all
-        cart_items = Cart.where(user_id: current_user.id)
+        cart_items = Cart.where(user_id: @current_user.id)
         render json: { data: cart_items }, status: :ok
     end
 
     def create 
         new_cart_item = Cart.new(cart_params)
-        new_cart_item.user_id = current_user.id
+        new_cart_item.user_id = @current_user.id
 
         if new_cart_item.save 
             render json: { data: new_cart_item }, status: :ok

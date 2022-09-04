@@ -16,6 +16,9 @@ Rails.application.routes.draw do
     # KOMOJU Token
     post '/create_token', to: 'komoju/token#create_payment_token'
 
+    #? Token Payment Webhook
+    post '/komoju/webhook', to: 'token_purchase#webhook'
+
     # KOMOJU Payment
     post '/make_payment', to: "komoju/payment#make_payment"
     post '/make_payment_no_token', to: "komoju/payment#make_payment_no_token"

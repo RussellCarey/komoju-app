@@ -39,7 +39,6 @@ module Komoju
             params.permit(:id, :amount, :currency, :order_number, :metadata, :payment_details)
         end
 
-
         def parse_return(req)
             data = JSON.parse(req.body)
             render json: {data: data}, status: :ok

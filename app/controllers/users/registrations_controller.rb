@@ -24,6 +24,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
     def register_success
 
+        #!ERROR CHECKING??
         if(@user.prefered_contact == 0)
             Twillo::Message.send("NUMBER HERE", "Thank you for signing up for Tokeny. Your registration code is #{@current_user.reg_token}. Please login to activate.")
         else 
@@ -32,8 +33,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
         render json: {
             message: "Signed up",
-            # current_user works by storing id of current user in the application session.
-            user: current_user,
+            user: @current_user,
         }, status: :ok
     end
 
