@@ -14,13 +14,21 @@ module Users
       token = JsonWebToken.encode(user_id: @user.id)
       time = Time.now + 7.days.to_i
 
+      session[:current_user_id] = @user.id
+
       render json: { token: token, exp: time.strftime("%m-%d-%Y %H:%M"), username: @user.username, email: @user.email, status: @user.authorized_at? }, status: :ok
     end
 
     def activate_user 
-      return render json: { error: 'Token is incorrect' }, status: :unauthorized unless params[:reg_token] == @current_user.reg_token
-      @current_user.activate_user
-      render json: { username: @user.username, email: @user.email, status: @user.authorized_at? }, status: :ok
+      username = params[:username]
+      code = params[:code]
+
+      user = User.find_by_username(username)
+
+      return render json: { error: 'Code provided is incorrect' }, status: :unauthorized unless params[:code].to_i == user.reg_token.to_i
+      
+      user.activate_user
+      render json: { username: user.username, email: user.email, status: user.authorized_at? }, status: :ok
     end
 
     private

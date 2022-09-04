@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
     # Custom Auth
     post '/users/login', to: "users/authentication#login"
-    post '/users/authorize', to: 'users/authenticate#activate_user'
+    post '/users/authorize', to: 'users/authentication#activate_user'
 
     # KOMOJU Token
     post '/create_token', to: 'komoju/token#create_payment_token'
