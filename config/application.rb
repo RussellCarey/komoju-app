@@ -13,12 +13,13 @@ module Server
     # config.skip_session_storage = [:http_auth, :params_auth]
 
     # config.session_store(:cookie_store, key: '_interslice_session')
-    
-    # Cookies are read and written through ActionController#cookies. The cookies being read are the ones received along with the request, 
-    # the cookies being written will be sent out with the response.
-    config.middleware.use(ActionDispatch::Cookies)
 
-    # You can add a new middleware to the middleware stack 
+    # Cookies are read and written through ActionController#cookies. The cookies being read are the ones received along with the request,
+    # the cookies being written will be sent out with the response.
+    config.middleware.delete ActionDispatch::Cookies
+    config.middleware.delete ActionDispatch::Session::CookieStore
+
+    # You can add a new middleware to the middleware stack
     # config.middleware.use(new_middleware, args) - Adds the new middleware at the bottom of the middleware stack.
     # config.middleware.use(config.session_store, config.session_options)
 

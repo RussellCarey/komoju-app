@@ -19,5 +19,9 @@
 		"titleBar.inactiveForeground": "#15202b99",
 		"commandCenter.border": "#15202b99"
 	},
-	"peacock.color": "#42b883"
+	"peacock.color": "#42b883",
+	"[ruby]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	}
 }

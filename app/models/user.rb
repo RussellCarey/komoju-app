@@ -3,7 +3,7 @@
 # https://www.loginradius.com/blog/engineering/guest-post/jwt-vs-sessions/
 
 class User < ApplicationRecord
-  enum prefered_contact: [:mobile, :email]
+  enum prefered_contact: %i[mobile email]
 
   before_validation :generate_user_reg_number
 
@@ -11,16 +11,14 @@ class User < ApplicationRecord
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
   validates :username, presence: true, length: { minimum: 6, maximum: 12 }, uniqueness: true
   validates :first_name, presence: true, length: { minimum: 2 }
-  validates :last_name, presence: true, length: { minimum: 2}
+  validates :last_name, presence: true, length: { minimum: 2 }
   validates :reg_token, presence: true
   validates_confirmation_of :password
-  # Need to add is_banned etc  - Check how its done.
+  # Need to add is_banned etc?
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable,
-  :jwt_authenticatable,
-  jwt_revocation_strategy: JwtDenylist
+  devise :database_authenticatable, :registerable, :jwt_authenticatable, jwt_revocation_strategy: JwtDenylist
   #  :recoverable, :rememberable, :validatable
 
   has_many :favourites
@@ -29,7 +27,7 @@ class User < ApplicationRecord
   has_many :game_purchases
 
   def generate_user_reg_number
-    self.reg_token = rand(0..9999999)
+    self.reg_token = rand(0..9_999_999)
   end
 
   def activate_user
