@@ -2,6 +2,8 @@ module Komoju
     class CustomerController < ApplicationController
         include Komoju
 
+        before_action :authenticate_user!
+
         # Email, payment details
         def create
             req = Komoju::Customer.create(customer_params)

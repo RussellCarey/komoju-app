@@ -1,6 +1,6 @@
 class CartController < ApplicationController
 
-    before_action :authorize_request
+    before_action :authenticate_user!
     before_action :check_owner, only: %i[show_users, destroy]
     before_action :set_cart_item, only: %i[destroy]
     

@@ -2,6 +2,8 @@ module Komoju
     class SubscriptionController < ApplicationController
         include Komoju
 
+        before_action :authenticate_user!
+
         # amount, currency, customer_id, monthly
         def create
             req = Komoju::Subscription.create(subscription_params)

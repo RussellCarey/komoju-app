@@ -1,4 +1,6 @@
 class TokenPurchase < ApplicationRecord
+    enum status: [:failed, :pending, :completed]
+
     validates :user_id, presence: true
     validates :amount, presence: true
     # validates :discount

@@ -1,17 +1,15 @@
 class TokenPurchaseController < ApplicationController
-    
-    before_action :authorize_request
+    include Komoju
+
+    before_action :authenticate_user!
     before_action :check_owner, only: %i[]
 
+    
     def index
 
     end
 
     def show 
-
-    end
-
-    def create 
 
     end
 
@@ -27,7 +25,8 @@ class TokenPurchaseController < ApplicationController
     # https://docs.komoju.com/en/webhooks/overview/#events
     def webhook 
         request_body = request.body.read
-        signature = OpenSSL::HMAC.hexdigest('sha256', Rails.application.credentials.twilio[:sid], request_body)
+        signature = OpenSSL::HMAC.hexdigest('sha256', Rails.application.credentials.komoju[:webook_secret], request_body)
+
         return 400 unless Rack::Utils.secure_compare(signature, request.env["HTTP_X_KOMOJU_SIGNATURE"])
 
         #! Handle events here..

@@ -7,9 +7,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
     private 
     def respond_with(resource, _opts = {})
-        # Returns true if the record is persisted, i.e. it's not a new record and it was not destroyed, otherwise returns false.
-        # https://api.rubyonrails.org/classes/ActiveRecord/Persistence.html
-        # Will return an Auth header wit hthe jwt. Set on the front end as a cookie.
         if resource.persisted?
             register_success()
         else 

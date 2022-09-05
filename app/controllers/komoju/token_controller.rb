@@ -2,6 +2,8 @@ module Komoju
     class TokenController < ApplicationController
         include Komoju
 
+        before_action :authenticate_user!
+
         def create_payment_token
             #! Not good as credit card details touch the server. Call KOMOJU from front end.
             req = Komoju::Token.create(token_params)
