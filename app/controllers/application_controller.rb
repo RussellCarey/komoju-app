@@ -2,27 +2,9 @@ class ApplicationController < ActionController::API
 include JsonWebToken
 
   before_action :configure_permitted_parameters, if: :devise_controller?
-  
 
-  def not_found
-    render json: { error: 'not_found' }
-  end
-
-  def authorize_request
-    header = request.headers['Authorization']
-    header = header.split(' ').last if header
-
-    begin
-      @decoded = JsonWebToken.decode(header)
-      @current_user = User.find(@decoded[:user_id])
-
-    rescue ActiveRecord::RecordNotFound => e
-      render json: { message: "Authentication Error", errors: e.message }, status: :unauthorized
-    rescue JWT::DecodeError => e
-      render json: { message: "Authentication Error", errors: e.message }, status: :unauthorized
-    end
-
-    render json: { error: 'You are not authorized. Please check your email or mobile.' }, status: :unauthorized unless @current_user.authorized_at?
+  def check_is_admin
+    return render json: {message: "You are not authorized to access this resource"}, status: :unauthorized unless current_user.is_admin? 
   end
 
 protected

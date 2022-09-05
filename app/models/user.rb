@@ -1,12 +1,8 @@
 #Notes : https://egghead.io/lessons/ruby-on-rails-add-custom-fields-to-a-devise-user-model-with-a-ruby-on-rails-migration
 # https://btihen.me/post_ruby_rails/rails_devise_users_namespaced/
+# https://www.loginradius.com/blog/engineering/guest-post/jwt-vs-sessions/
 
 class User < ApplicationRecord
-  attr_accessor :unhashed_password
-  attr_accessor :hased_password
-  attr_accessor :password
-
-  # CHeck
   enum prefered_contact: [:mobile, :email]
 
   before_validation :generate_user_reg_number
@@ -18,6 +14,7 @@ class User < ApplicationRecord
   validates :last_name, presence: true, length: { minimum: 2}
   validates :reg_token, presence: true
   validates_confirmation_of :password
+  # Need to add is_banned etc  - Check how its done.
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
