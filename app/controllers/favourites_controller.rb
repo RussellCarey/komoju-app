@@ -1,7 +1,7 @@
 class FavouritesController < ApplicationController
   before_action :authenticate_user!
-  before_action :check_owner, only: %i[show_users, destroy]
   before_action :set_favourites, only: %i[destroy]
+  before_action :check_owner, only: %i[destroy]
 
   # def index
 
@@ -48,7 +48,8 @@ class FavouritesController < ApplicationController
   end
 
   def check_owner
-    ##
+    m = "You dont not own this resource"
+    return render json: { message: m }, status: :unauthorized unless @favourite.user.id == current_user.id
   end
 
   def set_favourites

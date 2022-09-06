@@ -3,22 +3,21 @@ module Komoju
     include Komoju
 
     before_action :authenticate_user!
-    before_action :check_is_admin, except: %i[make_payment, cancel_payment]
 
     # POST https://komoju.com/api/v1/payments
     # amount, currency, external_order_number, metadata[bla]=sdf, payment_details (PAYMENT DETAILS ARE TOKEN)
     #! IMPROVE: Refactor this and improve.
     def make_payment
-      req = Komoju::Payment.charge(payment_params)
+      errors = []
+
+      payload = payment_params
+      payload[:metadata] = { user_id: "#{current_user.id}" }
+
+      req = Komoju::Payment.charge(payload)
+      puts req.body.inspect
       return render json: { message: "Payment not successful." }, status: :unprocessable_entity unless req["status"].include? "200"
 
-      purchase = TokenPurchase.new(token_params)
-      purchase.user_id = current_user.id
-
-      unless purchase.save
-        return(render json: { message: "Payment sucessful but we failed to save the transaction data." }, status: :unprocessable_entity)
-      end
-      return render json: { message: "Payment successful", data: purchase }, status: :ok
+      return render json: { message: "Payment processing" }, status: :ok
     end
 
     def get_all_user_payment_data
@@ -40,7 +39,7 @@ module Komoju
 
     # https://docs.komoju.com/en/api/resources/payments/
     def payment_params
-      params.permit(:id, :amount, :currency, :order_number, :metadata, :payment_details)
+      params.permit(:id, :amount, :currency, :payment_details, :total, :discount)
     end
 
     def token_params

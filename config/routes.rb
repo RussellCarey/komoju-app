@@ -20,6 +20,7 @@ Rails.application.routes.draw do
 
   #? Token Payment Webhook
   post "/komoju/webhook", to: "token_purchase#webhook"
+  post "/komoju/webhook/test", to: "token_purchase#test_webhook"
 
   # KOMOJU Payment
   post "/make_payment", to: "komoju/payment#make_payment"
@@ -56,4 +57,9 @@ Rails.application.routes.draw do
   post "/cart", to: "cart#create"
   delete "/cart/:id", to: "cart#destroy"
   get "/cart/aggregate/:func", to: "cart#aggregate"
+
+  # Token Purchases
+  get "/tokens", to: "token_purchase#show_all"
+  delete "/tokens/:id", to: "token_purchase#destroy"
+  get "/tokens/aggregate/:func", to: "token_purchase#aggregate"
 end

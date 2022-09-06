@@ -49,6 +49,6 @@ class GamePurchaseController < ApplicationController
 
   def check_owner
     m = "You dont not own this resource"
-    return render json: { message: m }, status: :unauthorized unless @purchase.user_id == current_user.id
+    return render json: { message: m }, status: :unauthorized unless @purchase.user.id == current_user.id
   end
 end

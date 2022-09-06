@@ -1,7 +1,7 @@
 class CartController < ApplicationController
   before_action :authenticate_user!
-  before_action :check_owner, only: %i[show_users, destroy]
   before_action :set_cart_item, only: %i[destroy]
+  before_action :check_owner, only: %i[destroy]
 
   def show_all
     cart_items = Cart.where(user_id: current_user.id)
@@ -44,7 +44,8 @@ class CartController < ApplicationController
   end
 
   def check_owner
-    ##
+    m = "You dont not own this resource"
+    return render json: { message: m }, status: :unauthorized unless @cart_item.user.id == current_user.id
   end
 
   def set_cart_item

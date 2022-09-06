@@ -1,4 +1,5 @@
-# file: app/controllers/unauthenticated_controller.rb
+# ActionController::Metal is the simplest possible controller, providing a valid Rack interface
+# without the additional niceties provided by ActionController::Base.
 module Errors
   class UnauthenticatedController < ActionController::Metal
     def self.call(env)

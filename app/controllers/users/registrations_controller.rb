@@ -24,7 +24,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
         "Thank you for signing up for Tokeny. Your registration code is #{@current_user.reg_token}. Please login to activate."
       )
     else
-      SignupMailer.with(user: @current_user).signup_email.deliver_now
+      AuthMailer.with(user: @current_user).signup_email.deliver_now
     end
 
     render json: { message: "Signed up", user: @current_user }, status: :ok

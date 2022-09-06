@@ -26,6 +26,17 @@ class User < ApplicationRecord
   has_many :token_purchases
   has_many :game_purchases
 
+  # Mailing should be on the controller?
+  def add_tokens_to_user(amount)
+    self.token_count += amount
+
+    if self.save
+      return true
+    else
+      return false
+    end
+  end
+
   def generate_user_reg_number
     self.reg_token = rand(0..9_999_999)
   end
