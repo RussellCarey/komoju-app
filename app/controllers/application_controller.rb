@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::API
   include JsonWebToken
 
+  respond_to :json
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   def check_is_admin

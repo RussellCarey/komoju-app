@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_05_101059) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_09_095012) do
   create_table "carts", force: :cascade do |t|
     t.string "game_id", null: false
     t.datetime "created_at", null: false
@@ -82,6 +82,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_05_101059) do
     t.integer "prefered_contact", default: 1
     t.boolean "is_admin", default: false
     t.integer "token_count", default: 0
+    t.string "komoju_customer"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

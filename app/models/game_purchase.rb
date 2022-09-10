@@ -5,7 +5,7 @@ class GamePurchase < ApplicationRecord
   validates :name, presence: true
   validates :image, presence: true
   # validates :discount
-  # validates :status
+  validates :status, inclusion: { in: [0, 1, 2] }
 
   belongs_to :user
 

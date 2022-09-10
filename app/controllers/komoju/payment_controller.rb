@@ -10,11 +10,21 @@ module Komoju
     def make_payment
       errors = []
 
-      payload = payment_params
+      payload = params
       payload[:metadata] = { user_id: "#{current_user.id}" }
 
+      if (payload["save_details"] == true && !@current_user.komoju_customer)
+        current_user.komoju_customer = params["customer"]
+        current_user.save
+      end
+
       req = Komoju::Payment.charge(payload)
-      puts req.body.inspect
+      puts JSON.parse(req.body)
+      puts req["status"]
+      puts req["status"]
+      puts req["status"]
+      puts req["status"]
+
       return render json: { message: "Payment not successful." }, status: :unprocessable_entity unless req["status"].include? "200"
 
       return render json: { message: "Payment processing" }, status: :ok
@@ -39,11 +49,7 @@ module Komoju
 
     # https://docs.komoju.com/en/api/resources/payments/
     def payment_params
-      params.permit(:id, :amount, :currency, :payment_details, :total, :discount)
-    end
-
-    def token_params
-      params.permit(:amount, :discount, :total, :status)
+      params.permit(:id, :amount, :currency, :payment_details, :total, :discount, :save_details, :customer)
     end
 
     def parse_return(req)

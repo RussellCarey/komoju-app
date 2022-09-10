@@ -17,7 +17,8 @@ class FavouritesController < ApplicationController
     new_favourite.user_id = current_user.id
 
     if new_favourite.save
-      render json: { data: new_favourite }, status: :ok
+      favourites = Favourite.where(user_id: current_user.id)
+      render json: { data: favourites }, status: :ok
     else
       render json: { errors: new_favourite.errors.full_messages }, status: :unprocessable_entity
     end
@@ -25,7 +26,8 @@ class FavouritesController < ApplicationController
 
   def destroy
     if @favourite.destroy
-      render json: { data: @favourite }, status: :ok
+      favourites = Favourite.where(user_id: current_user.id)
+      render json: { data: favourites }, status: :ok
     else
       render json: { messages: @favourites.errors.full_messages }, status: :unprocessable_entity
     end
@@ -40,7 +42,7 @@ class FavouritesController < ApplicationController
   private
 
   def favourite_params
-    params.fetch(:favourite, {}).permit(:id, :game_id)
+    params.fetch(:favourite, {}).permit(:game_id, :image, :name, :price)
   end
 
   def aggregate_params

@@ -1,11 +1,9 @@
 class TokenPurchase < ApplicationRecord
-  enum status: %i[failed pending completed]
-
   validates :user_id, presence: true
   validates :amount, presence: true
   # validates :discount
   validates :total, presence: true
-  # validates :status
+  validates :status, inclusion: { in: [0, 1, 2] }
 
   belongs_to :user
 

@@ -3,8 +3,6 @@
 # https://www.loginradius.com/blog/engineering/guest-post/jwt-vs-sessions/
 
 class User < ApplicationRecord
-  enum prefered_contact: %i[mobile email]
-
   before_validation :generate_user_reg_number
 
   validates :email, presence: true, uniqueness: true
@@ -13,13 +11,11 @@ class User < ApplicationRecord
   validates :first_name, presence: true, length: { minimum: 2 }
   validates :last_name, presence: true, length: { minimum: 2 }
   validates :reg_token, presence: true
+  validates :prefered_contact, inclusion: { in: [0, 1] }
+  # validates :authorized_at
   validates_confirmation_of :password
-  # Need to add is_banned etc?
 
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable, :jwt_authenticatable, jwt_revocation_strategy: JwtDenylist
-  #  :recoverable, :rememberable, :validatable
 
   has_many :favourites
   has_many :carts
@@ -33,6 +29,7 @@ class User < ApplicationRecord
     if self.save
       return true
     else
+      puts self.errors.full_messages
       return false
     end
   end

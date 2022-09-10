@@ -6,6 +6,8 @@ class SuccessMailer < ApplicationMailer
   def success_email
     @user = params[:user]
     @amount = params[:amount]
+    @total = params[:total]
+
     mail(to: @user.email, subject: "Thank you!")
   end
 end

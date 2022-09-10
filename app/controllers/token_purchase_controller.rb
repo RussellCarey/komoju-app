@@ -18,30 +18,29 @@ class TokenPurchaseController < ApplicationController
     end
   end
 
-  # https://webhookrelay.com/v1/examples/receiving-webhooks-on-localhost.html -- relay forward --bucket KOMOJU http://localhost:3000/komoju/webhook
+  # https://webhookrelay.com/v1/examples/receiving-webhooks-on-localhost.html   relay forward --bucket KOMOJU http://localhost:3000/komoju/webhook
   # https://docs.komoju.com/en/webhooks/overview/#events
   def webhook
-    puts params[:type]
-    puts params[:type]
-    puts params[:type]
-
     check_sig(request.body.read)
 
     # If fails will send email to user.
     current_user = User.find(params.dig(:data, :metadata, :user_id))
     amount = params.dig(:data, :amount)
+    total = params.dig(:data, :total)
 
     if params[:type] == "payment.captured"
       saved_tokens = current_user.add_tokens_to_user(amount)
 
-      SuccessMailer.with(user: current_user, amount: amount).success_email.deliver_now if saved_tokens
+      SuccessMailer.with(user: current_user, amount: amount, total: total).success_email.deliver_now if saved_tokens
 
       m = "We have taken your payment but could not credit tokens to your account"
       ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_now if !saved_tokens
 
       tp = create_token_purchase(params, saved_tokens ? 2 : 0)
-      m = "We were unable to save the record your order."
-      ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_now if !tp.save
+      m = "We were able to process your order but unable to save the details!"
+      m2 = "We were unable to save the record of your failed order, please contact us for information. "
+      puts tp.errors.full_messages if !tp.save
+      ErrorMailer.with(user: current_user, error: saved_tokens == true ? "#{m}" : "#{m2}").error_email.deliver_now if !tp.save
     end
 
     if params[:type] == "payment.failed"
@@ -50,7 +49,7 @@ class TokenPurchaseController < ApplicationController
       m = "We had trouble processing a recent payment you made. You have not been charged."
       ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_now
 
-      m = "We were unable to save the record your recent order order."
+      m = "We were unable to save the record your recent failed order."
       ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_now if !tp.save
     end
   end

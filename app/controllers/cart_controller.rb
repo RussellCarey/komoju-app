@@ -5,6 +5,9 @@ class CartController < ApplicationController
 
   def show_all
     cart_items = Cart.where(user_id: current_user.id)
+    puts current_user
+    puts "Cart items"
+    puts cart_items
     render json: { data: cart_items }, status: :ok
   end
 
@@ -13,7 +16,8 @@ class CartController < ApplicationController
     new_cart_item.user_id = current_user.id
 
     if new_cart_item.save
-      render json: { data: new_cart_item }, status: :ok
+      cart_items = Cart.where(user_id: current_user.id)
+      render json: { data: cart_items }, status: :ok
     else
       render json: { errors: new_cart_item.errors.full_messages }, status: :unprocessable_entity
     end
@@ -21,7 +25,8 @@ class CartController < ApplicationController
 
   def destroy
     if @cart_item.destroy
-      render json: { data: @cart_item }, status: :ok
+      cart_items = Cart.where(user_id: current_user.id)
+      render json: { data: cart_items }, status: :ok
     else
       render json: { messages: @cart_item.errors.full_messages }, status: :unprocessable_entity
     end
@@ -36,7 +41,7 @@ class CartController < ApplicationController
   private
 
   def cart_params
-    params.fetch(:favourite, {}).permit(:id, :game_id)
+    params.fetch(:cart, {}).permit(:id, :game_id, :image, :name, :price)
   end
 
   def aggregate_params
