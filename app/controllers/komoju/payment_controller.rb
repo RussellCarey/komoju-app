@@ -19,12 +19,6 @@ module Komoju
       end
 
       req = Komoju::Payment.charge(payload)
-      puts JSON.parse(req.body)
-      puts req["status"]
-      puts req["status"]
-      puts req["status"]
-      puts req["status"]
-
       return render json: { message: "Payment not successful." }, status: :unprocessable_entity unless req["status"].include? "200"
 
       return render json: { message: "Payment processing" }, status: :ok

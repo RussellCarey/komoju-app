@@ -4,9 +4,6 @@ This read me, app and images below are in progress...
 A ruby on rails / vue? game purchasing site.  
 Users can purchase tokens using the KOMOJU payment platform.
 
-![alt text](https://github.com/RussellCarey/komoju-app/raw/master/design/front.png)
-![alt text](https://github.com/RussellCarey/komoju-app/raw/master/design/db.png)
-
 ## Table of contents
 
 - [Technologies](#technologies)
@@ -19,19 +16,15 @@ Users can purchase tokens using the KOMOJU payment platform.
 
 ## Technologies, Modules and Tools
 
-- React or Vue
 - Ruby on Rails
 - Ruby
-- Github Actions
-- Styled Components
-- Nginx
 - Axios
 - KOMOJU Payments
 - More to come..
 
 ## Languages
 
-- JavaScript / Typescript / Ruby
+- Ruby
 
 ## Features
 
