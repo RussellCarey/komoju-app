@@ -13,6 +13,8 @@ class GamePurchaseController < ApplicationController
     purchase = GamePurchase.new(purchase_params)
     purchase.user_id = current_user.id
 
+    #! Send game code to user?
+
     if purchase.save
       render json: { data: purchase }, status: :ok
     else

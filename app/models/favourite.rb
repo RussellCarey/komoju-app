@@ -19,18 +19,6 @@ class Favourite < ApplicationRecord
       )
   end
 
-  def self.total_sales_between(params)
-    min = params["min"]
-    max = params["max"]
-    data = run_sql("SELECT game_id, SUM(total) as total FROM favourites WHERE total < #{max} AND total > #{min}")
-  end
-
-  def self.total_sales_between_dates(params)
-    min_date = params["min_date"]
-    max_date = params["max_date"]
-    data = run_sql("SELECT game_id, SUM(total) as total FROM favourites WHERE created_at < #{max_date} AND created_at > #{min_date}")
-  end
-
   private
 
   def self.run_sql(sql)

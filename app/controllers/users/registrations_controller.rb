@@ -17,15 +17,14 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   def register_success
-    #!ERROR CHECKING??
-    if (@user.prefered_contact == 0)
+    unless @user.prefered_contact == 1
       Twillo::Message.send(
         "NUMBER HERE",
         "Thank you for signing up for Tokeny. Your registration code is #{@current_user.reg_token}. Please login to activate."
       )
-    else
-      AuthMailer.with(user: @current_user).signup_email.deliver_now
     end
+
+    AuthMailer.with(user: @current_user).signup_email.deliver_now
 
     render json: { message: "Signed up", user: @current_user }, status: :ok
   end

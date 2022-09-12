@@ -1,4 +1,5 @@
 Fabricator(:user) do
+  id 1
   username "Sir testalot"
   email "testing@test.com"
   password "11111111"

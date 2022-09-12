@@ -7,82 +7,68 @@ def authenticated_header(request, user)
 end
 
 RSpec.describe FavouritesController, type: :controller do
-  let(:test_user) { Fabricate(:user, is_admin: true) }
+  let!(:test_user) { Fabricate(:user, is_admin: true, id: 1) }
+  let(:test_favourite) { Fabricate(:favourite, user_id: test_user.id) }
 
   before { sign_in test_user }
 
-  # context "GET #all" do
-  #   it "Can get the users owned clients and return them" do
-  #     authenticated_header(request, test_user)
-  #     get :all, as: :json
-  #     expect(JSON.parse(response.body).length).to eq(1)
-  #     assert_response :success
-  #   end
+  context "GET #show_all" do
+    it "Can get the users favourites and return them" do
+      authenticated_header(request, test_user)
+      get :show_all, as: :json
+      expect(JSON.parse(response.body).length).to eq(1)
+      assert_response :success
+    end
 
-  #   it "Cannot get all clients if not logged in" do
-  #     sign_out test_user
-
-  #     get :all, as: :json
-  #     assert_response :unauthorized
-  #   end
-  # end
-
-  #  context 'GET #show' do
-  #     it 'Can find and return a single resource ONLY if it is owned by the user' do
-  #         authenticated_header(request, test_user)
-  #         new_client = Fabricate(:client, user_id: test_user.id)
-  #         get :show, params: { id: new_client.id }, as: :json
-  #         assert_response :success
-  #     end
-
-  #     it 'Cannot get a client if not logged in' do
-  #         sign_out test_user
-  #         get :show, params: { id: 2 }, as: :json
-  #         assert_response :unauthorized
-  #     end
-  # end
+    it "Cannot get all clients if not logged in" do
+      sign_out test_user
+      get :show_all, as: :json
+      assert_response :unauthorized
+    end
+  end
 
   context "POST #create" do
     it "Can create a new client" do
-      puts test_user.inspect
       authenticated_header(request, test_user)
       post :create, params: { game_id: 0000, image: "testimage.image.com", name: "Test game", price: 1000, user_id: test_user.id }, as: :json
       assert_response :ok
     end
 
-    # it "Cannot post client if not logged in" do
-    #   sign_out test_user
-
-    #   post :create,
-    #        params: {
-    #          email: "testingclientt@test.com",
-    #          first_name: "Mrrr",
-    #          last_name: "Client",
-    #          address_number: 36,
-    #          address_street: "sdfsdf",
-    #          address_city: "23423432",
-    #          address_county: "243234",
-    #          address_postcode: "PO33RFV",
-    #          user_id: test_user.id
-    #        },
-    #        as: :json
-    #   assert_response :unauthorized
-    # end
+    it "Cannot post client if not logged in" do
+      sign_out test_user
+      post :create, params: { game_id: 0000, image: "testimage.image.com", name: "Test game", price: 1000, user_id: test_user.id }, as: :json
+      assert_response :unauthorized
+    end
   end
 
-  # context 'GET #index ' do
-  #     it 'Can check the user is an admin and can return all clients' do
-  #         sign_in test_user_admin
-  #         authenticated_header(request, test_user_admin)
-  #         get :index, as: :json
-  #         expect(JSON.parse(response.body).length).to eq(2);
-  #         assert_response :success
-  #     end
+  context "DELETE #destroy" do
+    it "Can destroy a favourite" do
+      authenticated_header(request, test_user)
+      post :destroy, params: { id: test_favourite.id }, as: :json
+      assert_response :ok
+    end
 
-  #     it 'Will fail as the user is not an admin' do
-  #         authenticated_header(request, test_user)
-  #         get :index, as: :json
-  #         assert_response :unauthorized
-  #     end
-  # end
+    it "Cannot post client if not logged in" do
+      sign_out test_user
+      post :destroy, params: { id: test_favourite.id }, as: :json
+      assert_response :unauthorized
+    end
+  end
+
+  context "Aggregate functions " do
+    before do
+      test_user_two = Fabricate(:user, is_admin: true, id: 2, email: "test2@test.com", username: "testing2")
+      item_one = Fabricate(:favourite, user_id: test_user.id, created_at: "12/12/2022")
+      item_two = Fabricate(:favourite, user_id: test_user_two.id, created_at: "11/11/2022")
+      item_three = Fabricate(:favourite, user_id: test_user.id, created_at: "10/10/2022")
+    end
+
+    it "Can get the value of all users current favourites" do
+      authenticated_header(request, test_user)
+      post :aggregate, params: { func: "in_favourites" }, as: :json
+      value = JSON.parse(response.body)["data"][0]["total_value"]
+      expect(value).to eq(3702.0)
+      assert_response :ok
+    end
+  end
 end
