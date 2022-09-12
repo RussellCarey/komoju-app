@@ -10,7 +10,7 @@ module Errors
     def respond
       self.status = :unauthorized
       self.content_type = "application/json"
-      self.response_body = { errors: ["Unauthorized Request, is the token correct or present?"] }.to_json
+      self.response_body = { errors: ["Unauthorized Request, is the auth token correct or present?"] }.to_json
     end
   end
 end

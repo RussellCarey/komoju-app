@@ -1,11 +1,8 @@
 class FavouritesController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_favourites, only: %i[destroy]
   before_action :check_owner, only: %i[destroy]
-
-  # def index
-
-  # end
+  before_action :check_is_admin, only: %i[aggregate]
+  before_action :set_favourites, only: %i[destroy]
 
   def show_all
     favourites = Favourite.where(user_id: current_user.id)

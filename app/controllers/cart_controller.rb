@@ -1,13 +1,12 @@
 class CartController < ApplicationController
   before_action :authenticate_user!
+
   before_action :set_cart_item, only: %i[destroy]
   before_action :check_owner, only: %i[destroy]
+  before_action :check_is_admin, only: %i[aggregate]
 
   def show_all
     cart_items = Cart.where(user_id: current_user.id)
-    puts current_user
-    puts "Cart items"
-    puts cart_items
     render json: { data: cart_items }, status: :ok
   end
 

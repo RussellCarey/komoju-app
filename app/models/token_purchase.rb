@@ -16,12 +16,6 @@ class TokenPurchase < ApplicationRecord
     data = run_sql("SELECT COUNT(total) as total_sales FROM token_purchases")
   end
 
-  def self.total_sales_by(params)
-    column = params["column"]
-    value = params["value"]
-    data = run_sql("SELECT game_id, SUM(total) as total FROM token_purchases WHERE #{column} = #{value}")
-  end
-
   def self.total_sales_between(params)
     min = params["min"]
     max = params["max"]
