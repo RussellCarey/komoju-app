@@ -64,6 +64,12 @@ RSpec.describe GamePurchaseController, type: :controller do
       item_four = Fabricate(:game_purchase, user_id: test_user.id, created_at: "25/10/2022", status: 2, game_id: 1111, total: 1111)
     end
 
+    it "will fail if user is not an admin" do
+      sign_out test_user
+      post :aggregate, params: { func: "in_favourites" }, as: :json
+      assert_response :unauthorized
+    end
+
     it "Can get the total value of all completed sales" do
       authenticated_header(request, test_user)
       post :aggregate, params: { func: "total_sales_amount" }, as: :json

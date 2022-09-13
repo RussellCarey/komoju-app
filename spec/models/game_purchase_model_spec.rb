@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe Cart do
+RSpec.describe GamePurchase do
   context "validations" do
     let!(:test_user) { Fabricate(:user, is_admin: true, id: 1) }
     let!(:purchase) { Fabricate(:game_purchase, user_id: test_user.id) }

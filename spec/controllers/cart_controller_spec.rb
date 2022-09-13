@@ -63,6 +63,12 @@ RSpec.describe CartController, type: :controller do
       item_three = Fabricate(:cart, user_id: test_user.id, created_at: "10/10/2022")
     end
 
+    it "will fail if user is not an admin" do
+      sign_out test_user
+      post :aggregate, params: { func: "in_cart" }, as: :json
+      assert_response :unauthorized
+    end
+
     it "Can get the value of all users current cart items" do
       authenticated_header(request, test_user)
       post :aggregate, params: { func: "in_cart" }, as: :json

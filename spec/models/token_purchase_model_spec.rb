@@ -5,7 +5,7 @@ RSpec.describe TokenPurchase do
     let!(:test_user) { Fabricate(:user, is_admin: true, id: 1) }
     let(:token) { Fabricate(:token_purchase, user_id: test_user.id) }
 
-    #! check
+    #! Failing check
     # it "checks presence validation is on the columns" do
     #   expect(token).to validate_presence_of :user_id
     #   expect(token).to validate_presence_of :amount
