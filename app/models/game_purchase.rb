@@ -4,22 +4,17 @@ class GamePurchase < ApplicationRecord
   validates :game_id, presence: true
   validates :name, presence: true
   validates :image, presence: true
-  # validates :discount
   validates :status, inclusion: { in: [0, 1, 2] }
 
   belongs_to :user
 
-  # ["id", "game_id", "discount", "total", "status", "created_at", "updated_at", "user_id"]
-  #! ADD GENRE, PLATFORM etc onto the purchase...
-  # Get total value of all games purchased / by gernre / by platform etc.
-
   # Aggregate data
   def self.total_sales_amount(params)
-    data = run_sql("SELECT game_id, SUM(total) as total FROM game_purchases")
+    data = run_sql("SELECT game_id, SUM(total) as total FROM game_purchases WHERE status = 2")
   end
 
   def self.total_sales(params)
-    data = run_sql("SELECT COUNT(total) as total_sales FROM game_purchases")
+    data = run_sql("SELECT COUNT(total) as total_sales FROM game_purchases WHERE status = 2")
   end
 
   def self.total_sales_by(params)
@@ -37,7 +32,7 @@ class GamePurchase < ApplicationRecord
   def self.total_sales_between_dates(params)
     min_date = params["min_date"]
     max_date = params["max_date"]
-    data = run_sql("SELECT game_id, SUM(total) as total FROM game_purchases WHERE created_at < #{max_date} AND created_at > #{min_date}")
+    data = run_sql("SELECT game_id, SUM(total) as total FROM game_purchases WHERE created_at >= #{min_date} AND created_at <= #{max_date}")
   end
 
   private

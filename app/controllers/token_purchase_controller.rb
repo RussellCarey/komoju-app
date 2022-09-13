@@ -11,7 +11,7 @@ class TokenPurchaseController < ApplicationController
     render json: { data: purchases }, status: :ok
   end
 
-  def destory
+  def destroy
     if @purchase.destroy
       render json: { data: @purchase }, status: :ok
     else
