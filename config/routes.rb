@@ -37,7 +37,7 @@ Rails.application.routes.draw do
   patch "/customers/:id", to: "komoju/customer#update_payment_details"
   delete "/customers/:id", to: "komoju/customer#destroy"
 
-  # Purchase
+  # Purchase ---
   get "/purchases", to: "game_purchase#show_all"
   post "/purchases", to: "game_purchase#create"
   delete "/purchases/:id", to: "game_purchase#destroy"
