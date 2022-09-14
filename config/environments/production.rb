@@ -83,4 +83,16 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # EMAIL FOR PROD TEMP
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    user_name: "39dac60dfd21bb",
+    password: "c71cfd0efe4e1b",
+    address: "smtp.mailtrap.io",
+    domain: "smtp.mailtrap.io",
+    port: "2525",
+    authentication: :cram_md5
+  }
 end
