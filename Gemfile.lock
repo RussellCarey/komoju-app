@@ -111,6 +111,7 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.0)
+    foreman (0.87.2)
     globalid (1.0.0)
       activesupport (>= 5.0)
     haml (5.2.2)
@@ -190,6 +191,11 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.3)
       loofah (~> 2.3)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (7.0.3.1)
       actionpack (= 7.0.3.1)
       activesupport (= 7.0.3.1)
@@ -268,7 +274,6 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
-  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -277,11 +282,13 @@ DEPENDENCIES
   devise-jwt (~> 0.9.0)
   fabrication
   faker!
+  foreman
   pg
   prettier
   puma (~> 5.0)
   rack-cors (~> 1.1)
   rails (~> 7.0.3, >= 7.0.3.1)
+  rails_12factor
   rest-client
   rspec-rails
   shoulda-matchers
