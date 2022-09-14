@@ -60,3 +60,4 @@ end
 
 gem 'rails_12factor'
 gem 'foreman'
+  gem 'pg'
