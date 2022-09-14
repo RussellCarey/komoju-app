@@ -237,7 +237,6 @@ GEM
     ruby2_keywords (0.0.5)
     shoulda-matchers (5.1.0)
       activesupport (>= 5.2.0)
-    sqlite3 (1.4.4)
     strscan (3.0.4)
     syntax_tree (3.5.0)
       prettier_print
@@ -295,7 +294,6 @@ DEPENDENCIES
   rest-client
   rspec-rails
   shoulda-matchers
-  sqlite3 (~> 1.4)
   twilio-ruby
   tzinfo-data
 
