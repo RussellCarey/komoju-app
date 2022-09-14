@@ -17,8 +17,7 @@ Devise.setup do |config|
   # config.secret_key = '176126ad98469f6ba117d89e39b2d1e585066238d0ed205a7b8959a33edb0153586496cc6bc2c2cce803a149bfcd69cb0ec41bd699ec6b2e98b2113ae12c78f3'
 
   config.jwt do |jwt|
-    jwt.secret = ENV["JWT_SECRET"]
-    # jwt.secret = Rails.application.credentials.devise[:jwt_secret]
+    jwt.secret = Rails.env.development? ? Rails.application.credentials.devise[:jwt_secret] : ENV["JWT_SECREY"]
 
     jwt.dispatch_requests = [["POST", %r{^/login$}]]
     jwt.revocation_requests = [["DELETE", %r{^/logout$}]]

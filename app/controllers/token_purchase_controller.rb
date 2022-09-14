@@ -74,6 +74,7 @@ class TokenPurchaseController < ApplicationController
   end
 
   def check_sig(request_body)
+    credentials = Rails.env.development? ? Rails.application.credentials.komoju[:webhook_secret] : ENV["KOMOJU_HOOK_SECRET"]
     signature = OpenSSL::HMAC.hexdigest("sha256", Rails.application.credentials.komoju[:webhook_secret], request_body)
     return 400 unless Rack::Utils.secure_compare(signature, request.env["HTTP_X_KOMOJU_SIGNATURE"])
   end

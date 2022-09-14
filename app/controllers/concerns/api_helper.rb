@@ -28,7 +28,8 @@ module ApiHelper
   private
 
   def generate_headers
-    auth = Base64.encode64(Rails.application.credentials.komoju[:key])
+    key = Rails.env.development? ? Rails.application.credentials.komoju[:key] : ENV["KOMOJU_KEY"]
+    auth = Base64.encode64(key)
     return { "Content-Type" => "application/json", "Authorization" => "Basic #{auth}" }
   end
 
