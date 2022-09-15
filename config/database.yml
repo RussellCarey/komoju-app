@@ -23,6 +23,6 @@ production:
   database: tokeny
   pool: 5
   username: postgres
-  password: Fromthedepths1122!!
+  password: ""
   port: 5432
   host: 139.59.220.64

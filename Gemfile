@@ -7,7 +7,7 @@ ruby "3.1.1"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 
 # Use sqlite3 as the database for Active Record
-# gem "sqlite3", "~> 1.4"
+
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -45,7 +45,7 @@ gem 'twilio-ruby'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  gem 'pg'
+  gem "sqlite3", "~> 1.4"
   gem 'rspec-rails'
   gem 'fabrication'
   gem "prettier"
@@ -53,11 +53,11 @@ group :development, :test do
   gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 end
 
-group :development do
+group :production do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+    gem 'pg'
+    gem 'rails_12factor'
+    gem 'foreman'
 end
 
-gem 'rails_12factor'
-gem 'foreman'
-  gem 'pg'
