@@ -34,6 +34,17 @@ class User < ApplicationRecord
     end
   end
 
+   def remove_tokens_from_user(amount)
+    self.token_count -= amount
+
+    if self.save
+      return true
+    else
+      puts self.errors.full_messages
+      return false
+    end
+  end
+
   def generate_user_reg_number
     self.reg_token = rand(0..9_999_999)
   end

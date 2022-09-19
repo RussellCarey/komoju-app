@@ -5,14 +5,13 @@ module Komoju
     before_action :authenticate_user!
 
     # POST https://komoju.com/api/v1/payments
-    # amount, currency, external_order_number, metadata[bla]=sdf, payment_details (PAYMENT DETAILS ARE TOKEN)
-    #! IMPROVE: Refactor this and improve.
     def make_payment
       errors = []
 
       payload = params
       payload[:metadata] = { user_id: "#{current_user.id}" }
 
+      # Check if user has selected to save their details for later use
       if (payload["save_details"] == true && !@current_user.komoju_customer)
         current_user.komoju_customer = params["customer"]
         current_user.save

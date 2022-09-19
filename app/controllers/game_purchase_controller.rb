@@ -13,12 +13,28 @@ class GamePurchaseController < ApplicationController
     purchase = GamePurchase.new(purchase_params)
     purchase.user_id = current_user.id
 
-    #! Send game code to user?
+    # Save and send fake game code.
+    purchase.code = generate_random_game_code
 
-    if purchase.save
-      render json: { data: purchase }, status: :ok
-    else
-      render json: { errors: purchase.errors.full_messages }, status: :unprocessable_entity
+    # Rollback token change if there any any issue saving tokens or the game data.
+    User.transaction do
+      # Remove tokens from users account
+      token_removal = current_user.remove_tokens_from_user(purchase_params["total"])
+
+      if purchase.save && token_removal
+        # Email the code / details
+        SuccessMailer
+          .with(user: current_user, total: purchase_params["total"], code: purchase.code, name: purchase_params["name"])
+          .game_purchase
+          .deliver_now
+
+        render json: { data: purchase }, status: :ok
+      else
+        m = "Your recent game purchase was unsuccessful. You have not bee charged. Please try again."
+        ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_now
+        render json: { errors: purchase.errors.full_messages }, status: :unprocessable_entity
+        raise ActiveRecord::Rollback
+      end
     end
   end
 
@@ -38,8 +54,12 @@ class GamePurchaseController < ApplicationController
 
   private
 
+  def generate_random_game_code
+    ("a".."z").to_a.shuffle[0, 32].join
+  end
+
   def purchase_params
-    params.fetch(:game_purchase, {}).permit(:id, :user_id, :game_id, :total, :status, :discount, :name, :image)
+    params.fetch(:game_purchase, {}).permit(:id, :game_id, :total, :discount, :name, :image)
   end
 
   def aggregate_params

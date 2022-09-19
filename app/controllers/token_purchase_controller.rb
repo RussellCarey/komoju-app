@@ -31,27 +31,30 @@ class TokenPurchaseController < ApplicationController
 
     if params[:type] == "payment.captured"
       saved_tokens = current_user.add_tokens_to_user(amount)
+      SuccessMailer.with(user: current_user, amount: amount, total: total).token_email.deliver_now if saved_tokens
 
-      SuccessMailer.with(user: current_user, amount: amount, total: total).success_email.deliver_now if saved_tokens
-
-      m = "We have taken your payment but could not credit tokens to your account"
+      m = "Purchase successful but unable to save tokens to your account."
       ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_now if !saved_tokens
 
+      # Save the order data..
       tp = create_token_purchase(params, saved_tokens ? 2 : 0)
-      m = "We were able to process your order but unable to save the details!"
-      m2 = "We were unable to save the record of your failed order, please contact us for information. "
-      puts tp.errors.full_messages if !tp.save
-      ErrorMailer.with(user: current_user, error: saved_tokens == true ? "#{m}" : "#{m2}").error_email.deliver_now if !tp.save
+
+      if !tp.save?
+        m = "Unable to record the data for your recent token transaction. Please contact us for information!"
+        ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_now if !saved_tokens
+      end
     end
 
     if params[:type] == "payment.failed"
-      tp = create_token_purchase(params, 0)
-
       m = "We had trouble processing a recent payment you made. You have not been charged."
       ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_now
 
-      m = "We were unable to save the record your recent failed order."
-      ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_now if !tp.save
+      tp = create_token_purchase(params, 0)
+
+      if !tp.save?
+        m = "Unable to record the data for your recent failed transaction. Please contact us for information!"
+        ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_now if !saved_tokens
+      end
     end
   end
 

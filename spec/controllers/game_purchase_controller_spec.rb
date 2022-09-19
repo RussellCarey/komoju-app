@@ -30,13 +30,13 @@ RSpec.describe GamePurchaseController, type: :controller do
   context "POST #create" do
     it "Can create a new client" do
       authenticated_header(request, test_user)
-      post :create, params: { game_id: 0000, image: "testimage.image.com", name: "Test game", total: 1000, user_id: test_user.id }, as: :json
+      post :create, params: { game_id: 2, image: "testimage.image.com", name: "Test game", total: 1000, user_id: test_user.id }, as: :json
       assert_response :ok
     end
 
     it "Cannot post client if not logged in" do
       sign_out test_user
-      post :create, params: { game_id: 0000, image: "testimage.image.com", name: "Test game", total: 1000, user_id: test_user.id }, as: :json
+      post :create, params: { game_id: 2, image: "testimage.image.com", name: "Test game", total: 1000, user_id: test_user.id }, as: :json
       assert_response :unauthorized
     end
   end
