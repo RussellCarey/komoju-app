@@ -31,8 +31,9 @@ class GamePurchaseController < ApplicationController
         render json: { data: purchase }, status: :ok
       else
         m = "Your recent game purchase was unsuccessful. You have not bee charged. Please try again."
-        ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_now
+        ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_nowe
         render json: { errors: purchase.errors.full_messages }, status: :unprocessable_entity
+
         raise ActiveRecord::Rollback
       end
     end

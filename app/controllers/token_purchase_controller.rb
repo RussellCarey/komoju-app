@@ -39,7 +39,7 @@ class TokenPurchaseController < ApplicationController
       # Save the order data..
       tp = create_token_purchase(params, saved_tokens ? 2 : 0)
 
-      if !tp.save?
+      if !tp.save
         m = "Unable to record the data for your recent token transaction. Please contact us for information!"
         ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_now if !saved_tokens
       end
@@ -51,7 +51,7 @@ class TokenPurchaseController < ApplicationController
 
       tp = create_token_purchase(params, 0)
 
-      if !tp.save?
+      if !tp.save
         m = "Unable to record the data for your recent failed transaction. Please contact us for information!"
         ErrorMailer.with(user: current_user, error: "#{m}").error_email.deliver_now if !saved_tokens
       end

@@ -6,8 +6,6 @@ module Komoju
 
     # POST https://komoju.com/api/v1/payments
     def make_payment
-      errors = []
-
       payload = params
       payload[:metadata] = { user_id: "#{current_user.id}" }
 
@@ -18,9 +16,10 @@ module Komoju
       end
 
       req = Komoju::Payment.charge(payload)
+
       return render json: { message: "Payment not successful." }, status: :unprocessable_entity unless req["status"].include? "200"
 
-      return render json: { message: "Payment processing" }, status: :ok
+      render json: { message: "Payment processing" }, status: :ok
     end
 
     def get_all_user_payment_data

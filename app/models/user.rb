@@ -34,7 +34,7 @@ class User < ApplicationRecord
     end
   end
 
-   def remove_tokens_from_user(amount)
+  def remove_tokens_from_user(amount)
     self.token_count -= amount
 
     if self.save
@@ -51,5 +51,12 @@ class User < ApplicationRecord
 
   def activate_user
     self.authorized_at = DateTime.now
+
+    if self.save
+      return true
+    else
+      puts self.errors.full_messages
+      return false
+    end
   end
 end

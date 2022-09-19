@@ -3,6 +3,7 @@
 class AuthMailer < ApplicationMailer
   # The default method sets default values for all emails sent
   default from: "admin@tokeny.com"
+
   def signup_email
     @user = params[:user]
     mail(to: @user.email, subject: "Welcome to Tokeny!")

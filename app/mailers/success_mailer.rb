@@ -3,6 +3,7 @@
 class SuccessMailer < ApplicationMailer
   # The default method sets default values for all emails sent
   default from: "admin@tokeny.com"
+
   def token_email
     @user = params[:user]
     @amount = params[:amount]
