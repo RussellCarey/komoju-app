@@ -10,9 +10,13 @@ class GamePurchase < ApplicationRecord
 
   #Aggregate scopes
   scope :total_sales_amount, -> { calculate(:sum, :total) }
+  scope :total_sales_amount_for_years, ->(years) { where(created_at: Time.now.prev_year(years)...Time.now).where(status: 2).calculate(:sum, :total) }
+  scope :total_sales_amount_for_months,
+        ->(months) { where(created_at: Time.now.prev_month(months)...Time.now).where(status: 2).calculate(:sum, :total) }
+
   scope :total_sales, -> { calculate(:count, :total) }
-  scope :total_sales_for_years, ->(years) { where(created_at: Time.now.prev_year(years)...Time.now).where(status: 2).calculate(:sum, :total) }
-  scope :total_sales_for_months, ->(months) { where(created_at: Time.now.prev_month(months)...Time.now).where(status: 2).calculate(:sum, :total) }
+  scope :total_sales_for_years, ->(years) { where(created_at: Time.now.prev_year(years)...Time.now).where(status: 2).calculate(:count, :total) }
+  scope :total_sales_for_months, ->(months) { where(created_at: Time.now.prev_month(months)...Time.now).where(status: 2).calculate(:count, :total) }
 
   # Aggregate data
   def self.total_sales_amount(params)

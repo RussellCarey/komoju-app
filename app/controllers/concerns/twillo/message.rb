@@ -12,7 +12,7 @@ module Twillo
 
       message = @client.messages.create(body: "#{message}", to: number, from: "+16187624770") unless !@client
 
-      # CHECK WE SEND THE MESSAGE
+      # CHECK WE SEND THE MESSAGE??
     end
   end
 end

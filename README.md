@@ -12,8 +12,6 @@ Users can purchase tokens using the KOMOJU payment platform.
 - [Languages](#languages)
 - [Features](#features)
 - [Status](#status)
-- [For future development](#features-for-future-development)
-- [Inspiration](#inspiration)
 - [Contact](#contact)
 
 ## Technologies, Modules and Tools
