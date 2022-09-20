@@ -20,6 +20,9 @@ module Users
     end
 
     def activate_user
+      puts params[:code]
+      puts current_user.inspect
+      puts current_user.reg_token
       return render json: { error: "Code provided is incorrect" }, status: :unauthorized unless params[:code].to_i == current_user.reg_token.to_i
       current_user.activate_user
       render json: { username: current_user.username, email: current_user.email, is_authorized: current_user.authorized_at? }, status: :ok

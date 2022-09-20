@@ -18,15 +18,15 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   def register_success
     # If the user selects they want to have mobile notifications too. Send one.
-    unless @user.prefered_contact == 1
-      Twillo::Message.send(
-        "NUMBER HERE",
-        "Thank you for signing up for Tokeny. Your registration code is #{@current_user.reg_token}. Please login to activate."
-      )
-    end
+    # unless @user.prefered_contact == 1
+    Twillo::Message.send(
+      "+817084771532",
+      "Thank you #{@current_user.email} for signing up for Tokeny. Your registration code is #{@current_user.reg_token}. Please login to activate."
+    )
+    # end
 
     # Send signup email regardless of if the user wants to send SNS
-    AuthMailer.with(user: @current_user).signup_email.deliver_now
+    AuthMailer.with(user: @current_user, reg_token: @current_user.reg_token).signup_email.deliver_now
 
     render json: { message: "Signed up", user: @current_user }, status: :ok
   end

@@ -6,6 +6,8 @@ class AuthMailer < ApplicationMailer
 
   def signup_email
     @user = params[:user]
+    @reg_token = params[:reg_token]
+
     mail(to: @user.email, subject: "Welcome to Tokeny!")
   end
 end

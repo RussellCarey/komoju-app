@@ -3,14 +3,14 @@
 # https://www.loginradius.com/blog/engineering/guest-post/jwt-vs-sessions/
 
 class User < ApplicationRecord
-  before_validation :generate_user_reg_number
+  before_create :generate_user_reg_number
 
   validates :email, presence: true, uniqueness: true
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
   validates :username, presence: true, length: { minimum: 6, maximum: 12 }, uniqueness: true
   validates :first_name, presence: true, length: { minimum: 2 }
   validates :last_name, presence: true, length: { minimum: 2 }
-  validates :reg_token, presence: true
+  # validates :reg_token, presence: true
   validates :prefered_contact, inclusion: { in: [0, 1] }
   # validates :authorized_at
   validates_confirmation_of :password

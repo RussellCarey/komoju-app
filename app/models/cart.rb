@@ -7,6 +7,9 @@ class Cart < ApplicationRecord
 
   belongs_to :user
 
+  #Aggregate scopes
+  scope :in_carts_total_value, -> { calculate(:sum, :price) }
+
   #Aggregate data
   def self.in_cart(params)
     data =
