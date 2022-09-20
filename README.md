@@ -40,9 +40,9 @@ Users can:
 
 Admins can:
 
-- Get data / values of all the current carts and favourites lists.
-- Get sales values between a date range or all time.
-- Other aggregate methods.
+- Get data of all the current carts and favourites lists
+- Get sales values between a date range or all time
+- Other aggregate methods
 
 ## Status
 
