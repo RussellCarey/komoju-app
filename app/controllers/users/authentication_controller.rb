@@ -16,6 +16,7 @@ module Users
     end
 
     def get_user_details
+      return render json: { user: nil }, status: 404 if !current_user
       return render json: { user: current_user }, status: :ok unless !current_user
     end
 

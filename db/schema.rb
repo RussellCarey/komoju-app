@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_19_042756) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_27_230052) do
   create_table "carts", force: :cascade do |t|
     t.string "game_id", null: false
     t.datetime "created_at", null: false
@@ -55,6 +55,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_19_042756) do
     t.index ["jti"], name: "index_jwt_denylist_on_jti"
   end
 
+# Could not dump table "messages" because of following StandardError
+#   Unknown type 'blocked' for column 'boolean'
+
   create_table "token_purchases", force: :cascade do |t|
     t.float "amount", null: false
     t.integer "discount", default: 0
@@ -84,6 +87,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_19_042756) do
     t.boolean "is_admin", default: false
     t.integer "token_count", default: 0
     t.string "komoju_customer"
+    t.string "mobile_number"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -91,5 +95,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_19_042756) do
   add_foreign_key "carts", "users"
   add_foreign_key "favourites", "users"
   add_foreign_key "game_purchases", "users"
+  add_foreign_key "messages", "users"
   add_foreign_key "token_purchases", "users"
 end

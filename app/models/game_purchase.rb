@@ -30,19 +30,20 @@ class GamePurchase < ApplicationRecord
   def self.total_sales_by(params)
     column = params["column"]
     value = params["value"]
-    data = run_sql("SELECT game_id, SUM(total) as total FROM game_purchases WHERE #{column} = #{value}")
+    data = run_sql("SELECT game_id, SUM(total) as total FROM game_purchases WHERE #{column} = #{value} AND status = 2")
   end
 
   def self.total_sales_between(params)
     min = params["min"]
     max = params["max"]
-    data = run_sql("SELECT game_id, SUM(total) as total FROM game_purchases WHERE total < #{max} AND total > #{min}")
+    data = run_sql("SELECT game_id, SUM(total) as total FROM game_purchases WHERE total < #{max} AND total > #{min} AND status = 2")
   end
 
   def self.total_sales_between_dates(params)
     min_date = params["min_date"]
     max_date = params["max_date"]
-    data = run_sql("SELECT game_id, SUM(total) as total FROM game_purchases WHERE created_at >= #{min_date} AND created_at <= #{max_date}")
+    data =
+      run_sql("SELECT game_id, SUM(total) as total FROM game_purchases WHERE created_at >= #{min_date} AND created_at <= #{max_date} AND status = 2")
   end
 
   private

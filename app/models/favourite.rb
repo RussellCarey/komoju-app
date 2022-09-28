@@ -9,6 +9,7 @@ class Favourite < ApplicationRecord
 
   # Aggregate scopes
   scope :in_favourites_total_value, -> { calculate(:sum, :price) }
+  scope :amount_in_favourites, -> { calculate(:count, :price) }
 
   # Aggregate data
   def self.in_favourites(params)
