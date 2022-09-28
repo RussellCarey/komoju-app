@@ -60,4 +60,8 @@ Rails.application.routes.draw do
   get "/tokens", to: "token_purchase#show_all"
   delete "/tokens/:id", to: "token_purchase#destroy"
   get "/tokens/aggregate/:func", to: "token_purchase#aggregate"
+
+  # Websocket
+  mount ActionCable.server => "/api/cable"
+  get "/messages", to: "messages#index"
 end
