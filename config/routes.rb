@@ -64,4 +64,5 @@ Rails.application.routes.draw do
   # Websocket
   mount ActionCable.server => "/api/cable"
   get "/messages", to: "messages#index"
+  post "/send_message", to: "messages#create"
 end
