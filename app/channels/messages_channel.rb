@@ -3,7 +3,8 @@
 class MessagesChannel < ApplicationCable::Channel
   def subscribed
     stream_from "messages_channel"
-    ActionCable.server.broadcast("messages_channel", { messages: Message.all })
+    # Send last few mesages to populate in the chat?
+    ActionCable.server.broadcast("messages_channel", { messages: Message.all.limit(6) })
   end
 
   def unsubscribed
