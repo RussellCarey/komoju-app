@@ -31,6 +31,9 @@ class TokenPurchaseController < ApplicationController
 
     if params[:type] == "payment.captured"
       saved_tokens = current_user.add_tokens_to_user(amount)
+
+      # Websocket the user their new token amount
+      ActionCable.server.broadcast(current_user, { token_count: current_user.token_count }) if saved_tokens
       SuccessMailer.with(user: current_user, amount: amount, total: total).token_email.deliver_now if saved_tokens
 
       m = "Purchase successful but unable to save tokens to your account."
